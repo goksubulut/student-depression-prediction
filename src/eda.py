@@ -55,7 +55,7 @@ def plot_univariate_categorical(df: pd.DataFrame) -> None:
     for i, col in enumerate(CATEGORICAL_COLS):
         ax = axes[i]
         order = df[col].value_counts().index
-        sns.countplot(data=df, x=col, order=order, ax=ax, palette="Set2")
+        sns.countplot(data=df, x=col, order=order, ax=ax, hue=col, palette="Set2", legend=False)
         ax.set_title(f"Count of {col}", fontsize=11)
         ax.set_xlabel(col)
         ax.set_ylabel("Count")
@@ -71,7 +71,7 @@ def plot_bivariate_numeric(df: pd.DataFrame) -> None:
     axes = axes.flatten()
     for i, col in enumerate(NUMERIC_COLS):
         ax = axes[i]
-        sns.boxplot(data=df, x="Depression", y=col, ax=ax, palette="Set1")
+        sns.boxplot(data=df, x="Depression", y=col, ax=ax, hue="Depression", palette="Set1", legend=False)
         ax.set_title(f"{col} by Depression", fontsize=11)
         ax.set_xlabel("Depression (0=No, 1=Yes)")
         ax.set_ylabel(col)
