@@ -1,0 +1,10 @@
+.claude/
+
+# Project-specific
+data/cleaned.csv
+models/*.pkl
+models/*.joblib
+mlruns/
+mlartifacts/
+reports/figures/*.png
+reports/figures/*.jpg

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/goksubulut/student-depression-prediction/main/.gitignore\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/goksubulut/student-depression-prediction/master/.gitignore\")"
+    ]
+  }
+}
