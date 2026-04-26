@@ -145,6 +145,59 @@ Tüm veri bilimi ve analiz adımlarının bulguları, kararları ve sonuçları.
 - GridSearchCV ile en iyi C=0.1 bulundu (default 1.0'dan hafif regularization artışı fayda sağladı).
 - **Best model kaydedildi:** `models/best_model.pkl`
 
+### SVM Sonuçları (Ek Model)
+| Parametre | Değer |
+|---|---|
+| Kernel | RBF |
+| Best C | 1.0 |
+| Best gamma | auto |
+| CV F1-macro | 0.8397 ± 0.0040 |
+| CV ROC-AUC | 0.9190 |
+| CV Accuracy | 0.8436 |
+| MLflow Run ID | `c4cc4ad037604fd099a107b03adca38f` |
+| Model dosyası | `models/svm_model.pkl` |
+
+SVM (RBF, C=1.0, gamma=auto), LR_Tuned ile aynı F1-macro skorunu elde etti (0.8397). Bu veri setinde doğrusal ve RBF kernel karşılaştırılabilir sınırlar çiziyor — veriyi zaten doğrusal olarak ayrıştırılabilir kılıyor.
+
+---
+
+## STEP 5b — SHAP Explainability
+
+**Tarih:** 2026-04-26
+**Dosya:** `src/shap_analysis.py`
+**Explainer:** `shap.LinearExplainer` (LogisticRegression için)
+
+### Kaydedilen Grafikler
+| Dosya | İçerik |
+|---|---|
+| `shap_summary_beeswarm.png` | Her örnek için feature impact dağılımı |
+| `shap_bar_importance.png` | Global önem — mean \|SHAP\| |
+| `shap_waterfall_true_positive.png` | Doğru depresyon tahmini için bireysel açıklama |
+| `shap_waterfall_false_negative.png` | Kaçırılan vaka için bireysel açıklama |
+| `shap_dependence_Have_you_ever...png` | Suicidal thoughts SHAP dependence |
+| `shap_dependence_Academic_Pressure.png` | Academic Pressure SHAP dependence |
+
+### Top 10 Özellik — Mean |SHAP|
+| Sıra | Özellik | Mean \|SHAP\| |
+|---|---|---|
+| 1 | Have you ever had suicidal thoughts ? | 1.079 |
+| 2 | Academic Pressure | 0.893 |
+| 3 | Financial Stress | 0.659 |
+| 4 | Dietary Habits_Healthy | 0.435 |
+| 5 | Work/Study Hours | 0.355 |
+| 6 | Age | 0.352 |
+| 7 | Study Satisfaction | 0.279 |
+| 8 | Dietary Habits_Moderate | 0.243 |
+| 9 | Family History of Mental Illness | 0.134 |
+| 10 | CGPA | 0.078 |
+
+### Bulgular
+- **Suicidal thoughts** (SHAP=1.08) modelin en baskın sinyali — varlığı tek başına depresyon tahminini güçlü şekilde yukarı çekiyor.
+- **Academic Pressure** (0.89) — yüksek baskı skoru SHAP değerini pozitif yönde sürüklüyor; düşük değerler negatif katkı yapıyor.
+- **Financial Stress** (0.66) — monoton pozitif ilişki: stres arttıkça SHAP artar.
+- **Dietary Habits_Healthy** (0.44) — sağlıklı beslenme depresyon olasılığını düşürüyor (negatif SHAP).
+- SHAP sıralaması point-biserial korelasyon sıralamasıyla büyük ölçüde örtüşüyor — model yorumlanabilir ve tutarlı.
+
 ---
 
 ## STEP 5 — Evaluation & Error Analysis

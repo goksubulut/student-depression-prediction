@@ -12,6 +12,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GridSearchCV, StratifiedKFold, cross_validate
+from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
 try:
@@ -217,3 +218,67 @@ def _tune_best(name: str, X_train, y_train, scale_pos_weight: float) -> tuple:
     best_params = grid.best_params_
     logger.info("Best params for %s: %s | CV F1=%.4f", name, best_params, grid.best_score_)
     return best, best_params, None
+
+
+def train_svm(X_train: np.ndarray, y_train: np.ndarray) -> dict:
+    """
+    Train and tune an SVM classifier with MLflow tracking.
+
+    Uses RBF kernel SVC with GridSearchCV over C and gamma.
+    class_weight='balanced' handles class imbalance.
+    probability=True enables ROC-AUC scoring via predict_proba.
+
+    Parameters
+    ----------
+    X_train : preprocessed training features
+    y_train : training labels
+
+    Returns
+    -------
+    dict with model, run_id, scores, best_params
+    """
+    mlflow.set_experiment(EXPERIMENT_NAME)
+
+    # Base SVM — linear kernel first as fast baseline
+    logger.info("Training SVM (RBF kernel, GridSearch over C & gamma)...")
+
+    base = SVC(
+        kernel="rbf",
+        class_weight="balanced",
+        probability=True,
+        random_state=RANDOM_STATE,
+    )
+    param_grid = {
+        "C": [0.1, 1.0, 10.0],
+        "gamma": ["scale", "auto"],
+    }
+    grid = GridSearchCV(
+        base, param_grid, cv=CV, scoring="f1_macro",
+        n_jobs=-1, refit=True, verbose=1,
+    )
+
+    t0 = time.time()
+    grid.fit(X_train, y_train)
+    elapsed = time.time() - t0
+
+    best_svm = grid.best_estimator_
+    best_params = grid.best_params_
+    logger.info("SVM best params: %s | CV F1=%.4f", best_params, grid.best_score_)
+
+    # Full CV scores on best estimator
+    scores = _cv_scores(best_svm, X_train, y_train)
+    run_id = _log_and_save("SVM_RBF_Tuned", best_svm, best_params, scores, elapsed)
+
+    # Fit on full train set and save
+    best_svm.fit(X_train, y_train)
+    model_path = os.path.join(MODELS_DIR, "svm_model.pkl")
+    with open(model_path, "wb") as f:
+        pickle.dump(best_svm, f)
+    logger.info("SVM model saved to %s", model_path)
+
+    logger.info(
+        "[SVM_RBF_Tuned] F1-macro=%.4f±%.4f | ROC-AUC=%.4f",
+        scores["f1_macro_mean"], scores["f1_macro_std"], scores["roc_auc_mean"],
+    )
+
+    return {"model": best_svm, "run_id": run_id, "scores": scores, "best_params": best_params}
