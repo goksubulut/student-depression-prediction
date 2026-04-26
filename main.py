@@ -102,16 +102,17 @@ def main() -> None:
     logger.info("MLflow best run ID           : %s", best_run_id)
     logger.info("=" * 60)
 
-    print("\n╔══════════════════════════════════════════════════════════╗")
-    print("║            STUDENT DEPRESSION PREDICTION — SUMMARY        ║")
-    print("╠══════════════════════════════════════════════════════════╣")
-    print(f"║  Clean dataset shape  : {str(df_clean.shape):<35}║")
-    print(f"║  Selected features    : {len(selected_features):<35}║")
-    print(f"║  Best model           : {best_model_name:<35}║")
-    print(f"║  Test F1-macro        : {metrics['f1_macro']:<35.4f}║")
-    print(f"║  Test ROC-AUC         : {metrics['roc_auc']:<35.4f}║")
-    print(f"║  MLflow run ID        : {str(best_run_id)[:35]:<35}║")
-    print("╚══════════════════════════════════════════════════════════╝")
+    sep = "=" * 62
+    print(f"\n{sep}")
+    print("  STUDENT DEPRESSION PREDICTION -- FINAL SUMMARY")
+    print(sep)
+    print(f"  Clean dataset shape  : {df_clean.shape}")
+    print(f"  Selected features    : {len(selected_features)}")
+    print(f"  Best model           : {best_model_name}")
+    print(f"  Test F1-macro        : {metrics['f1_macro']:.4f}")
+    print(f"  Test ROC-AUC         : {metrics['roc_auc']:.4f}")
+    print(f"  MLflow run ID        : {best_run_id}")
+    print(sep)
 
 
 if __name__ == "__main__":

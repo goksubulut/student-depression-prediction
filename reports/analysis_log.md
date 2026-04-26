@@ -149,4 +149,50 @@ Tüm veri bilimi ve analiz adımlarının bulguları, kararları ve sonuçları.
 
 ## STEP 5 — Evaluation & Error Analysis
 
-*Henüz tamamlanmadı.*
+**Tarih:** 2026-04-25
+**Dosya:** `src/evaluate.py`, `notebooks/04_error_analysis.ipynb`
+**Model:** LogisticRegression_Tuned (C=0.1)
+**Test seti:** 5.572 satır
+
+### Test Seti Metrikleri
+| Metrik | Değer |
+|---|---|
+| F1-macro | 0.8353 |
+| ROC-AUC | 0.9208 |
+| Average Precision | 0.9401 |
+| Accuracy | 0.84 |
+
+### Sınıf Bazında Sonuçlar
+| Sınıf | Precision | Recall | F1 |
+|---|---|---|---|
+| No Depression (0) | 0.79 | 0.84 | 0.81 |
+| Depression (1) | 0.88 | 0.84 | 0.86 |
+
+### Kaydedilen Grafikler
+| Dosya | İçerik |
+|---|---|
+| `confusion_matrix.png` | Confusion matrix ısı haritası |
+| `roc_curve.png` | ROC eğrisi (AUC=0.9208) |
+| `precision_recall_curve.png` | Precision-Recall eğrisi (AP=0.9401) |
+| `feature_importance.png` | Top 15 permutation importance |
+
+### Hata Analizi
+| | Sayı |
+|---|---|
+| Toplam False Positive (FP) | 368 |
+| Toplam False Negative (FN) | 531 |
+
+**FP Profili** (depresyon yokken var dendi):
+- Ortalama yaş: 28.7 | CGPA: 7.45 | Academic Pressure: 3.8 | Financial Stress: 3.1
+- Yüksek akademik baskı ve intihar düşüncesi olan ama depresyon geliştirmemiş öğrenciler.
+
+**FN Profili** (depresyon varken yok dendi):
+- Ortalama yaş: 25.8 | CGPA: 7.32 | Academic Pressure: 2.7 | Financial Stress: 2.7
+- Düşük akademik baskı skoru taşımasına rağmen depresyonda olan öğrenciler — model bu gizli vakaları kaçırıyor.
+- FN grubunda `Have you ever had suicidal thoughts?` = No oranı yüksek: model bu sinyali bulamadan depresyonu tahmin edemiyor.
+
+### Genel Değerlendirme
+- Model **depresyon olan grubu** daha iyi yakalıyor (F1=0.86 vs 0.81).
+- FN sayısı (531) FP'den (368) fazla — klinik açıdan FN'ler daha kritik (gözden kaçan vakalar).
+- ROC-AUC 0.92 güçlü bir ayrıştırma gücüne işaret ediyor.
+- Eşik değeri düşürülerek recall artırılabilir; trade-off kabul edilebilirse daha az FN elde edilir.
