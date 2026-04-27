@@ -1,0 +1,3 @@
+Gender,Correct,False Negative,False Positive
+Female,0.837,0.094,0.069
+Male,0.846,0.086,0.068

@@ -1,99 +1,70 @@
-# Student Depression Prediction
+# Student Depression Prediction Using Machine Learning
 
-Binary classification pipeline to predict depression in students using academic, lifestyle, and demographic features.
+SENG 352 Data Analysis term project for building a reproducible binary classification pipeline that predicts student depression risk from academic, lifestyle, demographic, and mental-health related survey features.
 
-**Dataset:** [hopesb/student-depression-dataset](https://www.kaggle.com/datasets/hopesb/student-depression-dataset) — 27,901 rows × 18 features.
+## Dataset
 
----
+- **Name:** Student Depression Dataset
+- **Source:** [Kaggle: hopesb/student-depression-dataset](https://www.kaggle.com/datasets/hopesb/student-depression-dataset)
+- **Expected size:** approximately 27,901 rows and 18 columns
+- **Target variable:** `Depression`
+- **Target type:** binary classification
+  - `0` = No Depression
+  - `1` = Depression
+
+Place the CSV file at:
+
+```text
+data/raw/Student Depression Dataset.csv
+```
+
+The workspace also keeps the original downloaded CSV at `data/Student Depression Dataset.csv`.
 
 ## Project Structure
 
-```
+```text
 student-depression-prediction/
 ├── data/
-│   ├── Student Depression Dataset.csv   # raw data
-│   └── cleaned.csv                      # output of DQA step
-├── notebooks/
-│   ├── 01_dqa.ipynb
-│   ├── 02_eda.ipynb
-│   ├── 03_modeling.ipynb
-│   └── 04_error_analysis.ipynb
-├── src/
-│   ├── dqa.py         # Data Quality Assessment
-│   ├── eda.py         # Exploratory Data Analysis
-│   ├── features.py    # Feature engineering pipeline
-│   ├── train.py       # Model training + MLflow tracking
-│   └── evaluate.py    # Evaluation + error analysis
+│   ├── raw/Student Depression Dataset.csv
+│   └── processed/
+├── figures/
 ├── models/
-│   └── best_model.pkl
+├── notebooks/
+│   └── student_depression_prediction_analysis.ipynb
 ├── reports/
-│   └── figures/       # All saved plots
-├── requirements.txt
+│   └── final_report_notes.md
+├── src/
+│   └── project_pipeline.py
 ├── README.md
-└── main.py            # End-to-end runner
+└── requirements.txt
 ```
-
----
-
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 ## How to Run
 
-### Full pipeline (recommended)
+Use Python 3. A virtual environment is recommended.
 
 ```bash
-python main.py
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter notebook notebooks/student_depression_prediction_analysis.ipynb
 ```
 
-This runs all 5 steps sequentially and prints a final summary.
+On macOS, XGBoost may require the OpenMP runtime (`libomp`). If XGBoost cannot be imported, the notebook skips it and still compares the required sklearn models plus `MLPClassifier`.
 
-### Step-by-step
+Run the notebook from top to bottom after restarting the kernel. The notebook uses `random_state = 42` throughout and saves:
 
-```bash
-# 1. Data Quality Assessment
-python -c "from src.dqa import run_dqa; run_dqa('data/Student Depression Dataset.csv', 'data/cleaned.csv')"
+- EDA plots to `figures/`
+- cleaned data to `data/processed/student_depression_clean.csv`
+- model comparison results to `model_comparison_results.csv`
+- feature engineering comparison to `feature_engineering_comparison.csv`
+- tuning results to `best_parameters.csv`
+- final test metrics to `final_test_metrics.csv`
+- final model pipeline to `models/final_model.pkl`
+- error analysis outputs to `reports/`
 
-# 2. EDA (saves figures to reports/figures/)
-python -c "import pandas as pd; from src.eda import run_eda; run_eda(pd.read_csv('data/cleaned.csv'))"
+## Objective
 
-# 3–5. Via Jupyter notebooks
-jupyter notebook notebooks/
-```
+The project compares multiple supervised machine learning models, evaluates them with stratified 5-fold cross-validation and a held-out test set, and discusses false negatives as a critical risk in depression early-warning settings.
 
-### View MLflow UI
-
-```bash
-mlflow ui
-# open http://localhost:5000
-```
-
----
-
-## Model Results
-
-| Model | CV F1-macro | CV ROC-AUC |
-|---|---|---|
-| Logistic Regression | — | — |
-| Decision Tree | — | — |
-| Random Forest | — | — |
-| XGBoost | — | — |
-| LightGBM | — | — |
-| Best (Tuned) | — | — |
-
-*Run `python main.py` to populate this table.*
-
----
-
-## Key Design Decisions
-
-- **No data leakage**: preprocessing fitted on train set only.
-- **Class imbalance**: handled via `class_weight='balanced'` / `scale_pos_weight`.
-- **Feature selection**: RFE with LogisticRegression selects top 15 features.
-- **Tracking**: all experiments logged to local MLflow server.
-- **Random seed**: 42 throughout.
+This model is **not** a clinical diagnostic tool. It is only suitable as a classroom machine-learning project or, with substantial expert review and governance, a decision-support prototype.
