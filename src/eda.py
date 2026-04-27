@@ -164,6 +164,10 @@ def compute_point_biserial(df: pd.DataFrame) -> pd.Series:
         if col == "Depression":
             continue
         valid = df_num[[col, "Depression"]].dropna()
+        # skip constant columns — correlation undefined
+        if valid[col].std() == 0:
+            logger.info("Skipping constant column '%s' in point-biserial correlation.", col)
+            continue
         r, _ = pointbiserialr(valid["Depression"], valid[col])
         correlations[col] = r
     series = pd.Series(correlations).abs().sort_values(ascending=False)

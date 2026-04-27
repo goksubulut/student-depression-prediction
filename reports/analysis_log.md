@@ -177,6 +177,110 @@ SVM (RBF, C=1.0, gamma=auto), LR_Tuned ile aynı F1-macro skorunu elde etti (0.8
 
 ---
 
+## STEP 2b — Embedding-Space Visualization (UMAP & t-SNE)
+
+**Tarih:** 2026-04-27
+**Dosya:** `src/embedding_viz.py`
+
+| Grafik | Yöntem | Örnek sayısı |
+|---|---|---|
+| `umap_embedding.png` | UMAP (n_neighbors=30, min_dist=0.1) | 3.000 |
+| `tsne_embedding.png` | t-SNE (perplexity=40, max_iter=1000) | 2.000 |
+
+Her iki projeksionda da iki sınıf (depresyonlu/depresyonsuz) belirgin şekilde ayrışıyor — veri setinin doğrusal olarak iyi ayrıştırılabilir yapısını görsel olarak teyit ediyor.
+
+---
+
+## STEP 3b — Seed Sensitivity Analysis
+
+**Tarih:** 2026-04-27
+**Dosya:** `src/seed_sensitivity.py`
+
+10 farklı seed (0, 7, 21, 42, 99, 123, 256, 512, 1337, 2024) üzerinde LogisticRegression (C=0.1) CV F1-macro:
+
+| Metrik | Değer |
+|---|---|
+| Ortalama F1 (tüm seedler) | 0.8397 |
+| Std (seed'ler arası) | **0.0005** |
+| Min | 0.8391 (seed=0) |
+| Max | 0.8403 (seed=123, 2024) |
+| seed=42 F1 | 0.8397 |
+
+**Bulgu:** Seed değişikliği modeli neredeyse hiç etkilemiyor (std=0.0005). seed=42 özellikle avantajlı değil — model stabil.
+
+---
+
+## STEP 4f — Bayesian Hyperparameter Optimization
+
+**Tarih:** 2026-04-27
+**Dosya:** `src/bayesian_opt.py`
+
+- **Yöntem:** BayesSearchCV (scikit-optimize), n_iter=30
+- **Arama uzayı:** C ∈ [0.001, 100] log-uniform, solver ∈ {lbfgs, saga}, max_iter ∈ [500, 2000]
+
+| Parametre | GridSearch sonucu | Bayes sonucu |
+|---|---|---|
+| C | 0.1 | **0.0976** |
+| solver | lbfgs | saga |
+| max_iter | 1000 | 500 |
+| CV F1-macro | 0.8397 | **0.8399** |
+
+Bayesian opt GridSearch'ten +0.0002 kazanım sağladı. MLflow run: `f957fc98f6374da399f7111cdf15b6dc`
+
+---
+
+## STEP 4g — Artificial Neural Network (ANN / MLP)
+
+**Tarih:** 2026-04-27
+**Dosya:** `src/ann_model.py`
+
+- **Mimari:** Input(15) → Dense(128) → Dense(64) → Dense(32) → Output(2)
+- **Aktivasyon:** ReLU, **Optimizer:** Adam (lr=0.001), **Regularization:** L2 (α=0.001)
+- **Early stopping:** validation_fraction=0.1, n_iter_no_change=15
+
+| Metrik | ANN | LR_Tuned (Best) |
+|---|---|---|
+| CV F1-macro | 0.8388 ± 0.0030 | **0.8397 ± 0.0046** |
+| CV ROC-AUC | 0.9183 | **0.9192** |
+| CV Accuracy | 0.8450 | 0.8435 |
+
+ANN, LR_Tuned'ı geçemedi. Tabular ve nispeten küçük boyutlu veri setinde doğrusal model daha iyi. Model: `models/ann_model.pkl`
+
+---
+
+## STEP 5c — LIME Explainability
+
+**Tarih:** 2026-04-27
+**Dosya:** `src/lime_analysis.py`
+
+- **Yöntem:** LimeTabularExplainer, num_samples=1000, num_features=10
+- 3 True Positive + 2 False Negative örnek açıklandı
+
+| Grafik | İçerik |
+|---|---|
+| `lime_tp_sample*.png` | Doğru tahmin edilen depresyon vakaları |
+| `lime_fn_sample*.png` | Kaçırılan depresyon vakaları |
+
+LIME sonuçları SHAP ile tutarlı: `Have you ever had suicidal thoughts?` ve `Academic Pressure` her iki yöntemde de en güçlü faktörler.
+
+---
+
+## STEP 5d — Counterfactual Explanations
+
+**Tarih:** 2026-04-27
+**Dosya:** `src/counterfactual.py`
+
+- **Yöntem:** Nearest-neighbour counterfactual — depresyonlu örnekler için en yakın depresyonsuz eğitim örneği bulunup delta hesaplandı
+- 4 örnek açıklandı
+
+| Grafik | İçerik |
+|---|---|
+| `counterfactual_explanations.png` | Tahmini çevirmek için gereken özellik değişimleri |
+
+**Bulgu:** Çoğu vakada `Academic Pressure` ve `Have you ever had suicidal thoughts?` değerlerinin düşürülmesi/değiştirilmesi tahmini Depression=0'a çevirmek için yeterli — klinisyenler için müdahale noktası öneriyor.
+
+---
+
 ## STEP 4d — Subgroup / Fairness Evaluation
 
 **Tarih:** 2026-04-27

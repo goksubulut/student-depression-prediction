@@ -88,6 +88,55 @@ def main() -> None:
         X_test_orig=X_test_raw.reset_index(drop=True),
     )
 
+    # ── 6. SHAP ───────────────────────────────────────────────────────────────
+    logger.info("=" * 60)
+    logger.info("STEP 6 — SHAP Explainability")
+    logger.info("=" * 60)
+    from src.shap_analysis import run_shap_analysis
+    run_shap_analysis(best_model, X_train, X_test, y_test, selected_features)
+
+    # ── 7. Fairness ───────────────────────────────────────────────────────────
+    logger.info("=" * 60)
+    logger.info("STEP 7 — Subgroup & Fairness Evaluation")
+    logger.info("=" * 60)
+    from src.fairness import run_fairness_evaluation
+    run_fairness_evaluation(best_model, X_test, y_test, X_test_raw.reset_index(drop=True))
+
+    # ── 8. Embedding Visualization ────────────────────────────────────────────
+    logger.info("=" * 60)
+    logger.info("STEP 8 — Embedding Visualization (UMAP + t-SNE)")
+    logger.info("=" * 60)
+    from src.embedding_viz import run_embedding_viz
+    run_embedding_viz(X_train, y_train)
+
+    # ── 9. Significance Tests ─────────────────────────────────────────────────
+    logger.info("=" * 60)
+    logger.info("STEP 9 — Statistical Significance Testing")
+    logger.info("=" * 60)
+    import pickle
+    with open(os.path.join(ROOT, "models", "svm_model.pkl"), "rb") as f:
+        svm_model = pickle.load(f)
+    from src.significance import run_significance_tests
+    run_significance_tests(
+        models={"LR_Tuned": best_model, "SVM_RBF": svm_model},
+        X_train=X_train, y_train=y_train,
+        X_test=X_test, y_test=y_test,
+    )
+
+    # ── 10. LIME ──────────────────────────────────────────────────────────────
+    logger.info("=" * 60)
+    logger.info("STEP 10 — LIME Explainability")
+    logger.info("=" * 60)
+    from src.lime_analysis import run_lime_analysis
+    run_lime_analysis(best_model, X_train, X_test, y_test, selected_features)
+
+    # ── 11. Counterfactual ────────────────────────────────────────────────────
+    logger.info("=" * 60)
+    logger.info("STEP 11 — Counterfactual Explanations")
+    logger.info("=" * 60)
+    from src.counterfactual import run_counterfactual_analysis
+    run_counterfactual_analysis(best_model, X_test, y_test, X_train, y_train, selected_features)
+
     # ── Summary ───────────────────────────────────────────────────────────────
     best_model_name = results_df.iloc[0]["model"]
 
