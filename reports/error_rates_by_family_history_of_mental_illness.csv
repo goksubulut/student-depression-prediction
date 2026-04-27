@@ -1,0 +1,3 @@
+Family History of Mental Illness,Correct,False Negative,False Positive
+No,0.837,0.096,0.067
+Yes,0.848,0.083,0.069

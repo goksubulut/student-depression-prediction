@@ -1,0 +1,21 @@
+feature,importance
+Have you ever had suicidal thoughts ?_No,1.1549438715770433
+Have you ever had suicidal thoughts ?_Yes,1.13362166042232
+Stress_Load,0.5690169919447065
+Age,0.5299785255783412
+Dietary Habits_Unhealthy,0.47539259049742266
+Dietary Habits_Healthy,0.47426242821577946
+Academic Pressure,0.47288589760932664
+Financial Stress,0.3930860984747433
+Study Satisfaction,0.311198280447983
+Academic_Lifestyle_Load,0.3031821340862972
+Sleep_Hours_Estimate,0.20584860094609786
+Academic_Pressure_x_Sleep,0.17326279555493412
+Work/Study Hours,0.1578969939957096
+City_Jaipur,0.15675843963005567
+City_Agra,0.15578790692672145
+City_Nagpur,0.13556339073719437
+Sleep Duration_Less than 5 hours,0.13501103371353496
+Family History of Mental Illness_No,0.12842979345513336
+City_Hyderabad,0.1284241402779768
+City_Mumbai,0.11475830311155295

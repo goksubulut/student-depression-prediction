@@ -1,0 +1,881 @@
+id,Gender,Age,City,Profession,Academic Pressure,Work Pressure,CGPA,Study Satisfaction,Job Satisfaction,Sleep Duration,Dietary Habits,Degree,Have you ever had suicidal thoughts ?,Work/Study Hours,Financial Stress,Family History of Mental Illness,actual,predicted,predicted_probability_depression,error_type
+35289,Male,25.0,Srinagar,Student,2.0,0.0,8.58,3.0,0.0,5-6 hours,Unhealthy,MCA,Yes,11.0,5.0,Yes,0,1,0.9116380559359087,False Positive
+22234,Male,33.0,Jaipur,Student,3.0,0.0,9.93,5.0,0.0,Less than 5 hours,Moderate,M.Tech,Yes,1.0,1.0,No,1,0,0.1039302209728803,False Negative
+131853,Male,32.0,Lucknow,Student,4.0,0.0,7.25,3.0,0.0,Less than 5 hours,Moderate,MCA,Yes,9.0,5.0,No,0,1,0.9151252573708826,False Positive
+50394,Female,29.0,Ghaziabad,Student,1.0,0.0,9.11,5.0,0.0,7-8 hours,Moderate,B.Pharm,Yes,2.0,4.0,Yes,1,0,0.17934318783374584,False Negative
+15147,Female,26.0,Vasai-Virar,Student,5.0,0.0,8.52,4.0,0.0,More than 8 hours,Moderate,LLB,No,0.0,4.0,Yes,1,0,0.40705788534439274,False Negative
+77046,Male,24.0,Vadodara,Student,2.0,0.0,8.21,2.0,0.0,7-8 hours,Unhealthy,ME,No,0.0,2.0,Yes,1,0,0.06383856344537678,False Negative
+136734,Male,25.0,Lucknow,Student,3.0,0.0,5.65,2.0,0.0,More than 8 hours,Unhealthy,BE,Yes,11.0,3.0,No,0,1,0.8313801544932459,False Positive
+8127,Male,31.0,Ghaziabad,Student,4.0,0.0,8.04,3.0,0.0,Less than 5 hours,Healthy,B.Arch,Yes,6.0,1.0,No,1,0,0.4062112129676304,False Negative
+103265,Male,31.0,Thane,Student,4.0,0.0,7.8,3.0,0.0,More than 8 hours,Unhealthy,BA,Yes,0.0,2.0,No,1,0,0.4648381266274051,False Negative
+32986,Female,28.0,Varanasi,Student,2.0,0.0,6.92,4.0,0.0,7-8 hours,Moderate,B.Arch,Yes,10.0,4.0,Yes,0,1,0.6162968790464228,False Positive
+58210,Male,18.0,Hyderabad,Student,5.0,0.0,8.42,3.0,0.0,5-6 hours,Moderate,Class 12,No,1.0,1.0,Yes,1,0,0.3268666561358289,False Negative
+32401,Male,33.0,Patna,Student,4.0,0.0,10.0,3.0,0.0,More than 8 hours,Healthy,BSc,Yes,10.0,4.0,Yes,0,1,0.8033936768392264,False Positive
+127984,Male,21.0,Srinagar,Student,2.0,0.0,8.46,2.0,0.0,More than 8 hours,Unhealthy,BCA,No,8.0,5.0,No,1,0,0.43851109244201775,False Negative
+97429,Female,29.0,Mumbai,Student,5.0,0.0,8.04,1.0,0.0,More than 8 hours,Moderate,BCA,Yes,10.0,2.0,Yes,0,1,0.8941898097077725,False Positive
+102861,Female,28.0,Meerut,Student,1.0,0.0,9.21,2.0,0.0,Less than 5 hours,Unhealthy,BSc,Yes,11.0,1.0,No,1,0,0.3873486402256388,False Negative
+111034,Female,33.0,Nagpur,Student,4.0,0.0,6.27,3.0,0.0,More than 8 hours,Moderate,BHM,Yes,5.0,5.0,No,0,1,0.7462321361527188,False Positive
+68107,Male,22.0,Mumbai,Student,5.0,0.0,7.77,1.0,0.0,7-8 hours,Moderate,PhD,No,8.0,1.0,Yes,0,1,0.5110649586075517,False Positive
+133481,Female,28.0,Ludhiana,Student,2.0,0.0,5.32,2.0,0.0,5-6 hours,Healthy,BBA,No,10.0,5.0,No,1,0,0.18818118328505828,False Negative
+99040,Male,28.0,Varanasi,Student,4.0,0.0,8.09,4.0,0.0,5-6 hours,Moderate,B.Arch,Yes,10.0,5.0,No,0,1,0.9173672722323779,False Positive
+36556,Male,25.0,Ghaziabad,Student,5.0,0.0,7.64,3.0,0.0,7-8 hours,Moderate,LLB,No,9.0,2.0,No,1,0,0.4678972672715458,False Negative
+124235,Male,23.0,Visakhapatnam,Student,2.0,0.0,9.56,2.0,0.0,5-6 hours,Unhealthy,MSc,Yes,9.0,4.0,No,0,1,0.841713568937605,False Positive
+6752,Female,19.0,Ludhiana,Student,2.0,0.0,9.11,5.0,0.0,5-6 hours,Moderate,Class 12,Yes,1.0,1.0,No,1,0,0.17011226561836823,False Negative
+73286,Male,24.0,Kolkata,Student,3.0,0.0,8.95,3.0,0.0,Less than 5 hours,Moderate,B.Com,No,9.0,4.0,Yes,0,1,0.5017522184871112,False Positive
+121039,Female,20.0,Kalyan,Student,2.0,0.0,7.83,4.0,0.0,5-6 hours,Unhealthy,Class 12,Yes,3.0,3.0,No,0,1,0.5666736554380786,False Positive
+62296,Male,25.0,Patna,Student,4.0,0.0,9.41,3.0,0.0,More than 8 hours,Healthy,B.Ed,Yes,9.0,5.0,No,0,1,0.9163414762879015,False Positive
+139366,Male,19.0,Jaipur,Student,3.0,0.0,8.37,5.0,0.0,5-6 hours,Healthy,Class 12,No,9.0,5.0,No,1,0,0.33044792160335107,False Negative
+109515,Female,21.0,Srinagar,Student,1.0,0.0,7.38,4.0,0.0,More than 8 hours,Unhealthy,BHM,Yes,0.0,5.0,Yes,1,0,0.4889592662497912,False Negative
+39048,Male,33.0,Kolkata,Student,3.0,0.0,9.97,3.0,0.0,7-8 hours,Unhealthy,M.Tech,No,1.0,2.0,Yes,1,0,0.05852918553158652,False Negative
+105969,Male,18.0,Delhi,Student,5.0,0.0,7.64,5.0,0.0,Less than 5 hours,Unhealthy,Class 12,No,2.0,2.0,Yes,0,1,0.5301351108866942,False Positive
+130566,Male,31.0,Faridabad,Student,3.0,0.0,8.08,4.0,0.0,More than 8 hours,Unhealthy,BSc,Yes,7.0,1.0,No,1,0,0.3011544672844993,False Negative
+21501,Male,27.0,Bhopal,Student,4.0,0.0,5.67,2.0,0.0,More than 8 hours,Moderate,BBA,No,12.0,5.0,Yes,0,1,0.7290116139037802,False Positive
+14763,Female,34.0,Vasai-Virar,Student,5.0,0.0,9.84,5.0,0.0,Less than 5 hours,Moderate,BCA,Yes,0.0,3.0,No,0,1,0.6041765635396218,False Positive
+29704,Male,30.0,Ahmedabad,Student,5.0,0.0,5.42,5.0,0.0,Less than 5 hours,Moderate,MCA,No,10.0,3.0,Yes,1,0,0.48042639655780256,False Negative
+63281,Male,24.0,Lucknow,Student,5.0,0.0,9.63,2.0,0.0,5-6 hours,Moderate,B.Tech,No,12.0,4.0,Yes,0,1,0.8679417861497296,False Positive
+15696,Male,20.0,Bhopal,Student,2.0,0.0,9.5,5.0,0.0,7-8 hours,Unhealthy,Class 12,Yes,4.0,5.0,Yes,0,1,0.8315206195559323,False Positive
+70421,Male,29.0,Indore,Student,5.0,0.0,8.74,4.0,0.0,More than 8 hours,Moderate,B.Com,Yes,8.0,3.0,No,0,1,0.8351341740773129,False Positive
+4316,Female,29.0,Kalyan,Student,5.0,0.0,7.8,2.0,0.0,Less than 5 hours,Healthy,MA,Yes,7.0,1.0,Yes,0,1,0.7531728194011087,False Positive
+114703,Female,26.0,Nashik,Student,4.0,0.0,6.61,2.0,0.0,7-8 hours,Moderate,MSc,No,5.0,4.0,No,1,0,0.3904717772593549,False Negative
+41719,Female,23.0,Jaipur,Student,3.0,0.0,7.52,4.0,0.0,5-6 hours,Unhealthy,B.Tech,Yes,8.0,3.0,No,0,1,0.7840633793732391,False Positive
+9961,Male,33.0,Indore,Student,5.0,0.0,5.76,5.0,0.0,More than 8 hours,Moderate,BCA,Yes,6.0,1.0,No,1,0,0.3861112530197683,False Negative
+86043,Female,25.0,Kanpur,Student,1.0,0.0,6.39,2.0,0.0,7-8 hours,Moderate,MSc,Yes,7.0,3.0,No,1,0,0.31435367663165964,False Negative
+74620,Female,19.0,Visakhapatnam,Student,5.0,0.0,7.68,3.0,0.0,5-6 hours,Moderate,Class 12,No,0.0,2.0,No,1,0,0.30784397631218735,False Negative
+15564,Male,28.0,Patna,Student,1.0,0.0,7.91,1.0,0.0,7-8 hours,Healthy,B.Ed,Yes,8.0,5.0,No,0,1,0.5257856964212148,False Positive
+30174,Female,25.0,Varanasi,Student,4.0,0.0,8.95,1.0,0.0,More than 8 hours,Moderate,BSc,No,11.0,1.0,Yes,1,0,0.31009730686057085,False Negative
+124221,Male,29.0,Hyderabad,Student,3.0,0.0,5.7,2.0,0.0,Less than 5 hours,Healthy,LLB,Yes,8.0,5.0,No,0,1,0.850273574410096,False Positive
+111394,Male,28.0,Vasai-Virar,Student,3.0,0.0,7.7,5.0,0.0,5-6 hours,Healthy,Class 12,Yes,9.0,1.0,Yes,1,0,0.23217585175857244,False Negative
+58557,Female,20.0,Surat,Student,3.0,0.0,8.95,4.0,0.0,5-6 hours,Moderate,Class 12,Yes,9.0,3.0,No,0,1,0.7869210018663592,False Positive
+89989,Male,29.0,Visakhapatnam,Student,5.0,0.0,8.04,4.0,0.0,7-8 hours,Healthy,M.Pharm,No,6.0,3.0,Yes,1,0,0.28381309156936996,False Negative
+46898,Female,18.0,Indore,Student,2.0,0.0,6.88,1.0,0.0,More than 8 hours,Unhealthy,Class 12,No,10.0,3.0,No,1,0,0.33638466408799517,False Negative
+119839,Male,18.0,Bangalore,Student,4.0,0.0,8.74,3.0,0.0,Less than 5 hours,Healthy,Class 12,Yes,4.0,2.0,Yes,0,1,0.8152934271915053,False Positive
+18368,Male,23.0,Vasai-Virar,Student,3.0,0.0,7.25,5.0,0.0,5-6 hours,Moderate,BCA,No,10.0,1.0,Yes,1,0,0.09000942187350176,False Negative
+84780,Male,29.0,Faridabad,Student,1.0,0.0,5.86,3.0,0.0,7-8 hours,Healthy,LLB,Yes,10.0,3.0,Yes,1,0,0.24429083248124203,False Negative
+114885,Male,30.0,Indore,Student,4.0,0.0,8.54,4.0,0.0,More than 8 hours,Healthy,M.Com,Yes,12.0,4.0,Yes,0,1,0.8230783416185782,False Positive
+123345,Male,34.0,Nashik,Student,5.0,0.0,7.71,3.0,0.0,Less than 5 hours,Unhealthy,M.Tech,No,10.0,1.0,Yes,1,0,0.3277409040074611,False Negative
+4624,Male,21.0,Visakhapatnam,Student,5.0,0.0,6.21,4.0,0.0,7-8 hours,Healthy,B.Com,No,10.0,2.0,Yes,1,0,0.44440347544847747,False Negative
+75629,Female,24.0,Hyderabad,Student,4.0,0.0,7.09,3.0,0.0,5-6 hours,Moderate,B.Pharm,No,1.0,4.0,Yes,1,0,0.37092488747102315,False Negative
+106946,Female,31.0,Kanpur,Student,4.0,0.0,7.25,3.0,0.0,5-6 hours,Moderate,BE,Yes,0.0,4.0,No,0,1,0.6428802730395154,False Positive
+75173,Female,21.0,Pune,Student,2.0,0.0,9.34,5.0,0.0,7-8 hours,Unhealthy,B.Arch,Yes,0.0,1.0,Yes,1,0,0.23553256153264934,False Negative
+64947,Male,30.0,Thane,Student,3.0,0.0,6.37,4.0,0.0,5-6 hours,Unhealthy,MSc,Yes,1.0,1.0,No,1,0,0.19948304837963918,False Negative
+112442,Male,27.0,Agra,Student,2.0,0.0,6.47,4.0,0.0,7-8 hours,Moderate,BBA,Yes,6.0,1.0,Yes,1,0,0.16126180562530396,False Negative
+52391,Male,30.0,Srinagar,Student,5.0,0.0,7.52,1.0,0.0,Less than 5 hours,Moderate,B.Ed,No,9.0,1.0,Yes,1,0,0.3921395810869176,False Negative
+50206,Female,20.0,Ludhiana,Student,2.0,0.0,5.56,1.0,0.0,Less than 5 hours,Healthy,Class 12,No,7.0,5.0,No,1,0,0.3797359628054822,False Negative
+126016,Male,28.0,Visakhapatnam,Student,2.0,0.0,7.21,4.0,0.0,Less than 5 hours,Moderate,M.Ed,Yes,10.0,4.0,No,0,1,0.6480708879121396,False Positive
+45996,Male,26.0,Rajkot,Student,2.0,0.0,6.59,4.0,0.0,More than 8 hours,Healthy,LLB,Yes,7.0,5.0,No,0,1,0.5193042734776847,False Positive
+25937,Male,28.0,Meerut,Student,3.0,0.0,7.02,1.0,0.0,5-6 hours,Healthy,BCA,Yes,7.0,1.0,Yes,1,0,0.4112021117902349,False Negative
+110432,Male,19.0,Rajkot,Student,3.0,0.0,8.96,5.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,7.0,4.0,Yes,0,1,0.9293788860260427,False Positive
+81520,Male,20.0,Mumbai,Student,4.0,0.0,6.39,2.0,0.0,Less than 5 hours,Healthy,Class 12,Yes,5.0,2.0,No,0,1,0.7565050617816126,False Positive
+110543,Male,28.0,Patna,Student,4.0,0.0,5.39,3.0,0.0,More than 8 hours,Unhealthy,B.Arch,Yes,11.0,5.0,Yes,0,1,0.9660442207200917,False Positive
+107010,Female,20.0,Pune,Student,2.0,0.0,9.41,4.0,0.0,Less than 5 hours,Moderate,Class 12,No,0.0,2.0,No,1,0,0.043011377529163036,False Negative
+12096,Male,24.0,Kolkata,Student,5.0,0.0,6.63,4.0,0.0,More than 8 hours,Unhealthy,MSc,No,8.0,4.0,No,0,1,0.7041135773620523,False Positive
+4901,Female,33.0,Kolkata,Student,2.0,0.0,7.53,5.0,0.0,More than 8 hours,Moderate,M.Pharm,Yes,0.0,4.0,No,1,0,0.13516326626904027,False Negative
+102844,Male,33.0,Kalyan,Student,3.0,0.0,7.39,1.0,0.0,More than 8 hours,Moderate,MA,Yes,8.0,5.0,No,0,1,0.7863210001617963,False Positive
+95582,Female,33.0,Ludhiana,Student,2.0,0.0,8.14,3.0,0.0,5-6 hours,Healthy,MBBS,Yes,6.0,5.0,Yes,1,0,0.4880856919526116,False Negative
+20628,Male,30.0,Surat,Student,3.0,0.0,5.99,5.0,0.0,7-8 hours,Moderate,BHM,No,9.0,1.0,Yes,1,0,0.036585184516370564,False Negative
+114006,Male,23.0,Pune,Student,4.0,0.0,9.21,5.0,0.0,More than 8 hours,Moderate,MSc,Yes,2.0,2.0,Yes,0,1,0.5292915320515957,False Positive
+115353,Male,24.0,Ahmedabad,Student,5.0,0.0,9.72,4.0,0.0,5-6 hours,Unhealthy,MBBS,No,4.0,1.0,No,1,0,0.3125341754299133,False Negative
+8409,Male,20.0,Nagpur,Student,1.0,0.0,6.99,5.0,0.0,More than 8 hours,Unhealthy,Class 12,Yes,4.0,5.0,No,1,0,0.48132009914364504,False Negative
+71710,Male,28.0,Agra,Student,4.0,0.0,9.24,3.0,0.0,Less than 5 hours,Healthy,MBA,Yes,4.0,2.0,No,0,1,0.5098423239608174,False Positive
+35722,Male,30.0,Hyderabad,Student,2.0,0.0,9.42,1.0,0.0,Less than 5 hours,Moderate,M.Com,No,2.0,3.0,Yes,1,0,0.10033584255701933,False Negative
+109470,Male,24.0,Kalyan,Student,3.0,0.0,7.9,3.0,0.0,5-6 hours,Healthy,MCA,Yes,12.0,2.0,Yes,0,1,0.6824760158502988,False Positive
+81016,Female,23.0,Pune,Student,4.0,0.0,8.95,1.0,0.0,7-8 hours,Unhealthy,M.Com,Yes,4.0,1.0,Yes,0,1,0.8255931777593051,False Positive
+41698,Female,24.0,Visakhapatnam,Student,3.0,0.0,6.89,4.0,0.0,Less than 5 hours,Healthy,B.Pharm,Yes,7.0,2.0,No,1,0,0.4673506619416865,False Negative
+27530,Male,28.0,Indore,Student,4.0,0.0,6.26,3.0,0.0,5-6 hours,Unhealthy,M.Pharm,No,10.0,3.0,No,1,0,0.42255758200942184,False Negative
+101838,Female,19.0,Kalyan,Student,1.0,0.0,5.09,3.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,11.0,2.0,No,1,0,0.48800469047555795,False Negative
+102167,Male,21.0,Nagpur,Student,3.0,0.0,5.74,5.0,0.0,5-6 hours,Unhealthy,B.Com,Yes,5.0,1.0,No,1,0,0.41178927929307846,False Negative
+32883,Male,24.0,Agra,Student,3.0,0.0,9.24,5.0,0.0,5-6 hours,Moderate,BA,Yes,4.0,1.0,Yes,1,0,0.288609535140408,False Negative
+120749,Male,33.0,Kolkata,Student,5.0,0.0,5.88,3.0,0.0,7-8 hours,Moderate,M.Pharm,No,4.0,3.0,No,1,0,0.2396962445998409,False Negative
+49125,Male,31.0,Patna,Student,2.0,0.0,7.35,4.0,0.0,More than 8 hours,Moderate,MD,Yes,6.0,5.0,No,1,0,0.46300290849823583,False Negative
+63601,Male,32.0,Visakhapatnam,Student,1.0,0.0,9.19,3.0,0.0,5-6 hours,Moderate,M.Tech,No,10.0,4.0,No,1,0,0.049338986763705545,False Negative
+131992,Female,18.0,Vasai-Virar,Student,2.0,0.0,5.32,5.0,0.0,More than 8 hours,Unhealthy,Class 12,Yes,4.0,4.0,No,0,1,0.6138800048184956,False Positive
+84223,Female,27.0,Bhopal,Student,1.0,0.0,6.73,1.0,0.0,7-8 hours,Moderate,MA,No,1.0,3.0,Yes,1,0,0.034079956513141524,False Negative
+120210,Male,22.0,Kalyan,Student,1.0,0.0,8.5,2.0,0.0,Less than 5 hours,Moderate,BCA,Yes,7.0,1.0,No,1,0,0.28345074493616423,False Negative
+127811,Male,29.0,Ludhiana,Student,4.0,0.0,8.04,2.0,0.0,More than 8 hours,Moderate,B.Arch,No,0.0,4.0,Yes,1,0,0.25027954574246836,False Negative
+28135,Male,20.0,Mumbai,Student,3.0,0.0,9.9,3.0,0.0,More than 8 hours,Moderate,Class 12,No,6.0,3.0,No,1,0,0.18926837712288855,False Negative
+97722,Female,18.0,Vadodara,Student,5.0,0.0,7.25,5.0,0.0,Less than 5 hours,Healthy,Class 12,No,9.0,2.0,Yes,1,0,0.4895996086601364,False Negative
+81796,Female,20.0,Chennai,Student,3.0,0.0,6.99,3.0,0.0,7-8 hours,Moderate,Class 12,No,3.0,4.0,No,1,0,0.24532390137451082,False Negative
+104524,Male,29.0,Patna,Student,3.0,0.0,6.52,3.0,0.0,7-8 hours,Healthy,BHM,No,0.0,5.0,Yes,1,0,0.12710438532540522,False Negative
+74296,Male,24.0,Agra,Student,1.0,0.0,6.0,5.0,0.0,Less than 5 hours,Unhealthy,B.Ed,Yes,11.0,1.0,Yes,1,0,0.28606127673451776,False Negative
+13223,Female,26.0,Chennai,Student,5.0,0.0,5.56,2.0,0.0,More than 8 hours,Moderate,BA,Yes,8.0,5.0,No,0,1,0.9636136357368265,False Positive
+44005,Female,28.0,Chennai,Student,5.0,0.0,9.79,2.0,0.0,More than 8 hours,Unhealthy,BHM,No,6.0,5.0,No,0,1,0.7729921042791361,False Positive
+107440,Female,18.0,Vasai-Virar,Student,2.0,0.0,7.25,4.0,0.0,7-8 hours,Healthy,Class 12,Yes,10.0,4.0,No,0,1,0.685608803384316,False Positive
+60657,Female,26.0,Kalyan,Student,3.0,0.0,9.13,4.0,0.0,More than 8 hours,Moderate,BSc,Yes,10.0,3.0,Yes,0,1,0.7154729754633716,False Positive
+35335,Male,30.0,Patna,Student,4.0,0.0,9.21,1.0,0.0,Less than 5 hours,Unhealthy,B.Ed,Yes,9.0,1.0,No,0,1,0.8294733663355095,False Positive
+80762,Female,24.0,Delhi,Student,3.0,0.0,8.08,5.0,0.0,Less than 5 hours,Healthy,BBA,No,3.0,5.0,No,1,0,0.20171538626100827,False Negative
+15264,Male,24.0,Hyderabad,Student,2.0,0.0,9.54,2.0,0.0,5-6 hours,Unhealthy,B.Com,No,10.0,3.0,No,1,0,0.2800409551176198,False Negative
+72622,Male,32.0,Rajkot,Student,3.0,0.0,6.78,1.0,0.0,7-8 hours,Unhealthy,M.Tech,Yes,3.0,3.0,No,0,1,0.6074390514551247,False Positive
+70307,Female,24.0,Faridabad,Student,5.0,0.0,8.14,4.0,0.0,Less than 5 hours,Healthy,Class 12,No,10.0,5.0,Yes,0,1,0.796172833581404,False Positive
+21193,Male,27.0,Nashik,Student,2.0,0.0,5.44,4.0,0.0,5-6 hours,Moderate,M.Tech,Yes,7.0,4.0,Yes,0,1,0.5348996304906544,False Positive
+134752,Male,29.0,Meerut,Student,4.0,0.0,7.21,1.0,0.0,Less than 5 hours,Healthy,ME,No,12.0,5.0,Yes,0,1,0.735143483979285,False Positive
+132794,Male,33.0,Kalyan,Student,3.0,0.0,7.52,5.0,0.0,Less than 5 hours,Healthy,PhD,No,10.0,4.0,Yes,1,0,0.14183519438429457,False Negative
+97230,Female,34.0,Hyderabad,Student,4.0,0.0,8.29,4.0,0.0,Less than 5 hours,Healthy,BCA,Yes,6.0,5.0,No,0,1,0.7850831193280317,False Positive
+111752,Female,25.0,Ghaziabad,Student,5.0,0.0,5.48,5.0,0.0,7-8 hours,Healthy,B.Arch,No,3.0,5.0,No,1,0,0.44169318860529716,False Negative
+3500,Male,30.0,Patna,Student,2.0,0.0,9.42,3.0,0.0,5-6 hours,Unhealthy,M.Ed,No,6.0,5.0,No,1,0,0.2323430156647556,False Negative
+100649,Male,31.0,Lucknow,Student,2.0,0.0,7.25,2.0,0.0,Less than 5 hours,Unhealthy,MSc,Yes,3.0,1.0,Yes,1,0,0.2575742647300205,False Negative
+86299,Male,21.0,Srinagar,Student,5.0,0.0,5.16,1.0,0.0,7-8 hours,Unhealthy,B.Com,Yes,12.0,1.0,Yes,0,1,0.9651212850097243,False Positive
+9812,Female,24.0,Hyderabad,Student,5.0,0.0,9.6,2.0,0.0,7-8 hours,Healthy,BCA,No,5.0,4.0,Yes,0,1,0.6784782830598114,False Positive
+61130,Female,29.0,Indore,Student,2.0,0.0,6.02,5.0,0.0,Less than 5 hours,Moderate,M.Ed,Yes,10.0,3.0,Yes,1,0,0.4815967562617827,False Negative
+51226,Female,24.0,Hyderabad,Student,2.0,0.0,6.08,2.0,0.0,More than 8 hours,Unhealthy,B.Arch,Yes,0.0,4.0,Yes,0,1,0.6482129784701428,False Positive
+100460,Female,22.0,Visakhapatnam,Student,3.0,0.0,8.17,1.0,0.0,More than 8 hours,Moderate,MCA,Yes,6.0,4.0,Yes,0,1,0.8777132332952217,False Positive
+97981,Female,18.0,Chennai,Student,4.0,0.0,7.48,3.0,0.0,Less than 5 hours,Healthy,Class 12,No,8.0,1.0,No,1,0,0.21644675648087536,False Negative
+90529,Female,25.0,Vasai-Virar,Student,4.0,0.0,8.07,2.0,0.0,More than 8 hours,Healthy,BSc,Yes,4.0,5.0,No,0,1,0.8682216944533457,False Positive
+80682,Female,29.0,Meerut,Student,3.0,0.0,6.27,4.0,0.0,More than 8 hours,Healthy,B.Com,Yes,10.0,2.0,No,1,0,0.30844030968641784,False Negative
+35966,Male,30.0,Pune,Student,3.0,0.0,5.68,2.0,0.0,Less than 5 hours,Unhealthy,BCA,No,4.0,3.0,Yes,1,0,0.21434148949826068,False Negative
+43184,Female,22.0,Ghaziabad,Student,4.0,0.0,5.64,5.0,0.0,Less than 5 hours,Unhealthy,B.Arch,Yes,1.0,3.0,Yes,0,1,0.8469839086992031,False Positive
+69320,Male,31.0,Pune,Student,1.0,0.0,6.32,3.0,0.0,Less than 5 hours,Moderate,B.Com,Yes,12.0,5.0,No,0,1,0.5981341078915134,False Positive
+139303,Female,25.0,Thane,Student,3.0,0.0,8.28,2.0,0.0,Less than 5 hours,Moderate,BCA,Yes,9.0,3.0,Yes,0,1,0.861654014823666,False Positive
+62843,Female,29.0,Thane,Student,3.0,0.0,8.95,2.0,0.0,Less than 5 hours,Unhealthy,BCA,No,0.0,4.0,No,1,0,0.25706785122559994,False Negative
+42639,Male,34.0,Delhi,Student,5.0,0.0,6.86,5.0,0.0,5-6 hours,Healthy,BCA,Yes,11.0,5.0,Yes,0,1,0.8995823831559571,False Positive
+39847,Female,31.0,Lucknow,Student,5.0,0.0,5.66,2.0,0.0,More than 8 hours,Moderate,B.Ed,No,3.0,1.0,Yes,1,0,0.1225402636559558,False Negative
+48648,Male,24.0,Lucknow,Student,1.0,0.0,9.93,1.0,0.0,5-6 hours,Healthy,B.Ed,Yes,10.0,5.0,No,0,1,0.6973853002621644,False Positive
+16007,Male,24.0,Surat,Student,3.0,0.0,6.79,2.0,0.0,More than 8 hours,Healthy,MSc,Yes,8.0,1.0,Yes,1,0,0.3938424515701087,False Negative
+73404,Male,20.0,Nagpur,Student,3.0,0.0,9.66,5.0,0.0,7-8 hours,Unhealthy,Class 12,No,10.0,3.0,Yes,1,0,0.3799408930720745,False Negative
+100376,Female,27.0,Meerut,Student,5.0,0.0,8.04,4.0,0.0,7-8 hours,Moderate,Class 12,No,11.0,4.0,Yes,0,1,0.7021666510891257,False Positive
+49373,Male,26.0,Bangalore,Student,4.0,0.0,7.77,3.0,0.0,5-6 hours,Moderate,M.Com,No,9.0,1.0,Yes,1,0,0.18752915365389222,False Negative
+44289,Male,25.0,Meerut,Student,3.0,0.0,7.88,1.0,0.0,More than 8 hours,Unhealthy,M.Ed,No,3.0,5.0,No,1,0,0.4684260175290332,False Negative
+19048,Female,23.0,Pune,Student,3.0,0.0,6.16,3.0,0.0,More than 8 hours,Healthy,MCA,Yes,10.0,1.0,Yes,1,0,0.4268047478085768,False Negative
+19994,Male,32.0,Hyderabad,Student,5.0,0.0,7.64,2.0,0.0,Less than 5 hours,Moderate,MD,Yes,1.0,2.0,Yes,0,1,0.7657383010300736,False Positive
+135022,Male,28.0,Vasai-Virar,Student,1.0,0.0,8.28,1.0,0.0,Less than 5 hours,Healthy,BHM,Yes,7.0,2.0,Yes,1,0,0.24302006297167447,False Negative
+94497,Male,25.0,Nagpur,Student,3.0,0.0,6.38,4.0,0.0,7-8 hours,Unhealthy,PhD,Yes,6.0,2.0,Yes,0,1,0.6121309929509633,False Positive
+131444,Female,32.0,Chennai,Student,4.0,0.0,7.72,1.0,0.0,7-8 hours,Unhealthy,MD,Yes,4.0,5.0,No,0,1,0.9190469292226691,False Positive
+129149,Male,23.0,Patna,Student,2.0,0.0,9.88,4.0,0.0,7-8 hours,Healthy,M.Tech,Yes,8.0,2.0,Yes,1,0,0.3597055385662447,False Negative
+52703,Male,26.0,Chennai,Student,5.0,0.0,6.16,4.0,0.0,7-8 hours,Healthy,BBA,No,8.0,4.0,No,1,0,0.4647865100029275,False Negative
+20788,Female,23.0,Surat,Student,4.0,0.0,5.16,2.0,0.0,Less than 5 hours,Healthy,B.Com,No,12.0,1.0,No,1,0,0.25271692941657536,False Negative
+36019,Female,18.0,Indore,Student,2.0,0.0,7.94,5.0,0.0,7-8 hours,Healthy,Class 12,Yes,4.0,2.0,Yes,1,0,0.2734837024286619,False Negative
+132044,Male,31.0,Vasai-Virar,Student,4.0,0.0,6.47,5.0,0.0,Less than 5 hours,Healthy,BE,Yes,8.0,1.0,Yes,1,0,0.37318633834016,False Negative
+112592,Male,21.0,Meerut,Student,1.0,0.0,9.6,4.0,0.0,7-8 hours,Healthy,BCA,Yes,4.0,5.0,No,1,0,0.44525630369357916,False Negative
+18925,Male,27.0,Ahmedabad,Student,4.0,0.0,5.85,4.0,0.0,More than 8 hours,Unhealthy,BSc,No,10.0,1.0,No,1,0,0.17492303894027886,False Negative
+11542,Male,24.0,Bhopal,Student,2.0,0.0,6.1,4.0,0.0,5-6 hours,Moderate,MA,Yes,8.0,1.0,Yes,1,0,0.3003068236400744,False Negative
+18491,Female,24.0,Visakhapatnam,Student,2.0,0.0,8.5,5.0,0.0,Less than 5 hours,Moderate,BA,No,0.0,1.0,No,1,0,0.013802399251745243,False Negative
+53250,Male,24.0,Thane,Student,1.0,0.0,8.04,4.0,0.0,Less than 5 hours,Unhealthy,MBA,Yes,4.0,4.0,No,0,1,0.5289610750689909,False Positive
+55674,Female,28.0,Indore,Student,1.0,0.0,8.04,4.0,0.0,5-6 hours,Moderate,BSc,Yes,12.0,3.0,No,1,0,0.32018433963678217,False Negative
+111362,Female,22.0,Nashik,Student,3.0,0.0,5.11,5.0,0.0,Less than 5 hours,Unhealthy,B.Com,Yes,6.0,4.0,No,0,1,0.847162379174046,False Positive
+118044,Male,31.0,Hyderabad,Student,5.0,0.0,6.89,2.0,0.0,More than 8 hours,Unhealthy,M.Ed,No,6.0,2.0,Yes,1,0,0.41477258908827863,False Negative
+45353,Male,28.0,Kalyan,Student,1.0,0.0,8.73,1.0,0.0,5-6 hours,Moderate,MSc,Yes,10.0,4.0,Yes,0,1,0.6112677335571339,False Positive
+29746,Male,23.0,Hyderabad,Student,5.0,0.0,9.24,4.0,0.0,5-6 hours,Unhealthy,B.Ed,No,10.0,1.0,No,1,0,0.4989705529293581,False Negative
+100374,Male,27.0,Kolkata,Student,2.0,0.0,9.96,5.0,0.0,More than 8 hours,Unhealthy,LLB,No,12.0,5.0,No,1,0,0.30348397401118926,False Negative
+112887,Female,18.0,Kanpur,Student,2.0,0.0,9.86,5.0,0.0,7-8 hours,Healthy,Class 12,Yes,5.0,3.0,Yes,1,0,0.4574145555856399,False Negative
+20528,Female,31.0,Jaipur,Student,3.0,0.0,5.08,4.0,0.0,7-8 hours,Healthy,BE,Yes,7.0,2.0,No,1,0,0.199681077874611,False Negative
+18654,Male,21.0,Mumbai,Student,2.0,0.0,7.91,1.0,0.0,7-8 hours,Moderate,B.Arch,No,11.0,4.0,Yes,1,0,0.4286050230279315,False Negative
+47732,Female,28.0,Vadodara,Student,5.0,0.0,7.09,1.0,0.0,7-8 hours,Healthy,B.Arch,No,2.0,4.0,Yes,1,0,0.4925005631115546,False Negative
+63827,Male,27.0,Faridabad,Student,1.0,0.0,6.25,4.0,0.0,More than 8 hours,Healthy,M.Pharm,Yes,10.0,3.0,No,1,0,0.15471027801470302,False Negative
+130601,Male,23.0,Bangalore,Student,4.0,0.0,5.42,1.0,0.0,Less than 5 hours,Healthy,B.Com,Yes,4.0,5.0,No,0,1,0.9341886204104806,False Positive
+95418,Female,21.0,Nagpur,Student,2.0,0.0,6.04,4.0,0.0,7-8 hours,Unhealthy,MA,Yes,6.0,5.0,Yes,0,1,0.837428110621476,False Positive
+79093,Male,23.0,Kanpur,Student,3.0,0.0,5.88,3.0,0.0,5-6 hours,Moderate,M.Com,Yes,2.0,3.0,No,0,1,0.5775931081274399,False Positive
+116389,Male,32.0,Vasai-Virar,Student,4.0,0.0,8.09,4.0,0.0,Less than 5 hours,Unhealthy,BCA,No,0.0,5.0,No,1,0,0.3350602267791955,False Negative
+69799,Female,29.0,Jaipur,Student,3.0,0.0,9.03,5.0,0.0,5-6 hours,Moderate,BE,No,7.0,3.0,No,1,0,0.07466223354782654,False Negative
+11686,Male,28.0,Delhi,Student,3.0,0.0,8.88,4.0,0.0,5-6 hours,Unhealthy,BA,Yes,9.0,2.0,No,0,1,0.6082604821802593,False Positive
+136630,Female,24.0,Meerut,Student,3.0,0.0,5.85,2.0,0.0,7-8 hours,Moderate,MBBS,Yes,9.0,2.0,No,0,1,0.6858387806784247,False Positive
+92750,Male,19.0,Lucknow,Student,3.0,0.0,6.23,4.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,1.0,3.0,No,0,1,0.6517598281220742,False Positive
+11798,Male,18.0,Thane,Student,1.0,0.0,5.71,3.0,0.0,More than 8 hours,Moderate,Class 12,Yes,12.0,4.0,No,0,1,0.6460995520133844,False Positive
+137321,Female,34.0,Surat,Student,5.0,0.0,5.38,5.0,0.0,5-6 hours,Unhealthy,M.Pharm,No,7.0,5.0,Yes,0,1,0.579823489128441,False Positive
+25733,Male,25.0,Varanasi,Student,3.0,0.0,8.74,4.0,0.0,Less than 5 hours,Unhealthy,B.Arch,Yes,12.0,3.0,Yes,0,1,0.9035931660789455,False Positive
+10624,Male,28.0,Kalyan,Student,1.0,0.0,6.08,5.0,0.0,7-8 hours,Moderate,Class 12,Yes,4.0,5.0,No,1,0,0.2618094911773462,False Negative
+111654,Male,33.0,Kanpur,Student,3.0,0.0,9.95,5.0,0.0,Less than 5 hours,Unhealthy,MBBS,Yes,3.0,4.0,No,0,1,0.6199233199552378,False Positive
+44469,Male,38.0,Patna,Student,5.0,0.0,5.74,1.0,0.0,5-6 hours,Healthy,MBBS,No,8.0,3.0,Yes,1,0,0.27180960698158413,False Negative
+37926,Female,24.0,Bangalore,Student,2.0,0.0,8.92,1.0,0.0,Less than 5 hours,Unhealthy,B.Pharm,No,1.0,5.0,Yes,1,0,0.4371996929981839,False Negative
+9569,Male,32.0,Vasai-Virar,Student,2.0,0.0,9.6,1.0,0.0,More than 8 hours,Unhealthy,MCA,Yes,6.0,4.0,Yes,0,1,0.6591440996109419,False Positive
+5082,Female,20.0,Kanpur,Student,4.0,0.0,5.08,5.0,0.0,More than 8 hours,Moderate,B.Com,Yes,0.0,3.0,Yes,0,1,0.6679511398692518,False Positive
+24751,Female,21.0,Pune,Student,3.0,0.0,9.56,5.0,0.0,7-8 hours,Unhealthy,M.Com,Yes,2.0,1.0,Yes,1,0,0.4570880997764832,False Negative
+15351,Female,28.0,Varanasi,Student,2.0,0.0,6.92,2.0,0.0,5-6 hours,Moderate,B.Arch,Yes,12.0,5.0,No,0,1,0.8184578776117939,False Positive
+88344,Male,32.0,Hyderabad,Student,3.0,0.0,8.9,4.0,0.0,More than 8 hours,Moderate,MBBS,Yes,10.0,2.0,Yes,1,0,0.45349009612158064,False Negative
+116270,Female,30.0,Indore,Student,3.0,0.0,7.53,2.0,0.0,More than 8 hours,Moderate,MD,Yes,6.0,3.0,Yes,0,1,0.5720518817642672,False Positive
+137006,Female,23.0,Surat,Student,4.0,0.0,5.16,2.0,0.0,More than 8 hours,Healthy,B.Tech,Yes,10.0,4.0,Yes,0,1,0.9227419467939526,False Positive
+92130,Male,25.0,Visakhapatnam,Student,2.0,0.0,8.24,1.0,0.0,Less than 5 hours,Moderate,B.Tech,No,0.0,4.0,Yes,1,0,0.18461033361657597,False Negative
+3159,Female,31.0,Bhopal,Student,5.0,0.0,9.05,5.0,0.0,More than 8 hours,Unhealthy,B.Ed,No,11.0,3.0,No,1,0,0.4831688609034427,False Negative
+116078,Male,22.0,Lucknow,Student,5.0,0.0,7.61,1.0,0.0,7-8 hours,Healthy,MCA,No,10.0,1.0,No,1,0,0.42557764461465586,False Negative
+24227,Male,34.0,Kanpur,Student,5.0,0.0,8.95,3.0,0.0,5-6 hours,Unhealthy,MBA,No,11.0,3.0,No,0,1,0.5147629505720479,False Positive
+128674,Male,29.0,Ghaziabad,Student,3.0,0.0,8.04,4.0,0.0,More than 8 hours,Moderate,MCA,Yes,5.0,4.0,No,0,1,0.5537179691284082,False Positive
+24930,Female,27.0,Thane,Student,3.0,0.0,5.58,4.0,0.0,7-8 hours,Moderate,BE,Yes,9.0,1.0,Yes,1,0,0.40899156359686856,False Negative
+2385,Male,30.0,Mumbai,Student,4.0,0.0,6.51,1.0,0.0,More than 8 hours,Healthy,M.Com,Yes,0.0,3.0,Yes,0,1,0.5208771169656341,False Positive
+104586,Female,19.0,Jaipur,Student,5.0,0.0,7.25,4.0,0.0,7-8 hours,Moderate,Class 12,No,7.0,3.0,Yes,0,1,0.6144355474207835,False Positive
+39400,Female,24.0,Vadodara,Student,5.0,0.0,8.0,1.0,0.0,5-6 hours,Healthy,BCA,No,3.0,5.0,No,0,1,0.6774075278206872,False Positive
+25548,Male,30.0,Nashik,Student,3.0,0.0,9.91,3.0,0.0,Less than 5 hours,Moderate,B.Pharm,Yes,4.0,1.0,No,1,0,0.30090108747885225,False Negative
+112966,Male,29.0,Jaipur,Student,3.0,0.0,5.89,3.0,0.0,7-8 hours,Moderate,B.Tech,Yes,10.0,1.0,No,1,0,0.361582144471099,False Negative
+81235,Male,18.0,Vadodara,Student,3.0,0.0,6.75,4.0,0.0,5-6 hours,Moderate,Class 12,No,4.0,4.0,No,1,0,0.27550857180820776,False Negative
+70142,Male,27.0,Lucknow,Student,4.0,0.0,5.37,4.0,0.0,5-6 hours,Moderate,MBA,No,8.0,5.0,No,1,0,0.45125578706655206,False Negative
+137229,Female,24.0,Kanpur,Student,1.0,0.0,7.47,1.0,0.0,Less than 5 hours,Healthy,Class 12,No,11.0,3.0,Yes,1,0,0.11948141696322985,False Negative
+128629,Male,24.0,Jaipur,Student,1.0,0.0,9.04,2.0,0.0,More than 8 hours,Unhealthy,BSc,No,12.0,5.0,Yes,1,0,0.32795933347996925,False Negative
+124967,Female,33.0,Chennai,Student,1.0,0.0,5.88,1.0,0.0,5-6 hours,Moderate,MD,Yes,6.0,3.0,No,1,0,0.18463448957939982,False Negative
+52574,Male,21.0,Bhopal,Student,2.0,0.0,9.6,5.0,0.0,Less than 5 hours,Healthy,Class 12,Yes,11.0,2.0,Yes,0,1,0.5280423467050177,False Positive
+99641,Male,21.0,Rajkot,Student,1.0,0.0,5.67,2.0,0.0,More than 8 hours,Healthy,BBA,Yes,10.0,4.0,Yes,0,1,0.5431603319746479,False Positive
+57322,Male,20.0,Srinagar,Student,2.0,0.0,6.78,5.0,0.0,5-6 hours,Unhealthy,Class 12,Yes,4.0,1.0,Yes,1,0,0.31349079450020645,False Negative
+43756,Female,30.0,Kanpur,Student,3.0,0.0,8.69,5.0,0.0,Less than 5 hours,Healthy,LLM,Yes,8.0,2.0,No,1,0,0.34030282952094343,False Negative
+33150,Male,20.0,Ahmedabad,Student,3.0,0.0,8.42,4.0,0.0,5-6 hours,Unhealthy,Class 12,No,7.0,4.0,No,1,0,0.46329837436057714,False Negative
+36663,Female,29.0,Thane,Student,3.0,0.0,9.04,2.0,0.0,More than 8 hours,Moderate,LLB,Yes,6.0,3.0,Yes,0,1,0.6545707108327948,False Positive
+48959,Female,21.0,Kalyan,Student,2.0,0.0,9.88,4.0,0.0,5-6 hours,Healthy,M.Tech,Yes,12.0,1.0,No,1,0,0.3342588116408872,False Negative
+30053,Female,24.0,Vasai-Virar,Student,3.0,0.0,9.78,2.0,0.0,7-8 hours,Healthy,B.Arch,Yes,10.0,1.0,Yes,0,1,0.5686368639062654,False Positive
+28984,Male,28.0,Varanasi,Student,2.0,0.0,6.04,4.0,0.0,More than 8 hours,Unhealthy,B.Arch,Yes,6.0,5.0,Yes,0,1,0.6865311729113567,False Positive
+68219,Male,25.0,Thane,Student,4.0,0.0,6.28,5.0,0.0,7-8 hours,Unhealthy,LLB,Yes,3.0,3.0,No,0,1,0.7736700206342795,False Positive
+62153,Male,24.0,Ludhiana,Student,1.0,0.0,8.04,4.0,0.0,5-6 hours,Unhealthy,MBBS,Yes,11.0,5.0,No,0,1,0.7710789567653249,False Positive
+9021,Female,29.0,Kalyan,Student,5.0,0.0,5.74,1.0,0.0,Less than 5 hours,Moderate,PhD,No,0.0,3.0,No,1,0,0.37104265778038487,False Negative
+115395,Male,28.0,Rajkot,Student,1.0,0.0,9.96,3.0,0.0,7-8 hours,Moderate,BSc,Yes,10.0,3.0,No,1,0,0.34191329047395236,False Negative
+92948,Male,24.0,Kalyan,Student,5.0,0.0,8.39,3.0,0.0,7-8 hours,Unhealthy,B.Ed,No,0.0,2.0,Yes,1,0,0.40635010034473257,False Negative
+139615,Male,33.0,Meerut,Student,4.0,0.0,7.49,3.0,0.0,5-6 hours,Moderate,M.Com,No,12.0,3.0,No,1,0,0.2713732221320057,False Negative
+1897,Female,20.0,Rajkot,Student,3.0,0.0,9.44,5.0,0.0,7-8 hours,Healthy,Class 12,Yes,2.0,1.0,Yes,1,0,0.27030504241002906,False Negative
+78365,Male,28.0,Hyderabad,Student,2.0,0.0,9.04,2.0,0.0,More than 8 hours,Unhealthy,M.Ed,No,2.0,5.0,No,1,0,0.18554256023878835,False Negative
+127712,Male,29.0,Kolkata,Student,5.0,0.0,9.98,2.0,0.0,More than 8 hours,Unhealthy,LLM,No,1.0,1.0,No,1,0,0.203353244857978,False Negative
+110419,Male,21.0,Visakhapatnam,Student,5.0,0.0,6.25,1.0,0.0,Less than 5 hours,Moderate,BA,Yes,3.0,4.0,No,0,1,0.9690622879759478,False Positive
+125455,Male,28.0,Ludhiana,Student,4.0,0.0,5.75,1.0,0.0,5-6 hours,Moderate,BE,Yes,9.0,3.0,No,0,1,0.8620842659159298,False Positive
+14478,Male,23.0,Hyderabad,Student,5.0,0.0,7.09,3.0,0.0,Less than 5 hours,Unhealthy,BHM,No,9.0,3.0,Yes,0,1,0.8231195120869019,False Positive
+14776,Male,27.0,Jaipur,Student,5.0,0.0,6.41,1.0,0.0,5-6 hours,Unhealthy,M.Com,Yes,3.0,5.0,Yes,0,1,0.9760089189671439,False Positive
+52252,Female,23.0,Vadodara,Student,1.0,0.0,8.91,4.0,0.0,More than 8 hours,Moderate,MBA,Yes,9.0,4.0,Yes,1,0,0.4612227017139533,False Negative
+77093,Female,30.0,Kolkata,Student,4.0,0.0,8.04,4.0,0.0,7-8 hours,Unhealthy,BE,No,12.0,5.0,Yes,0,1,0.7288402471881991,False Positive
+78116,Male,24.0,Pune,Student,4.0,0.0,6.47,3.0,0.0,7-8 hours,Moderate,MBA,Yes,2.0,1.0,No,1,0,0.4558170419689365,False Negative
+43814,Female,26.0,Visakhapatnam,Student,1.0,0.0,9.21,1.0,0.0,5-6 hours,Moderate,MBA,Yes,10.0,3.0,Yes,0,1,0.5326906024376328,False Positive
+39717,Male,21.0,Bhopal,Student,5.0,0.0,9.41,4.0,0.0,5-6 hours,Moderate,BHM,Yes,11.0,3.0,No,0,1,0.9570735137851816,False Positive
+104570,Male,34.0,Thane,Student,3.0,0.0,5.79,4.0,0.0,7-8 hours,Healthy,B.Pharm,Yes,6.0,2.0,No,1,0,0.16272691974604198,False Negative
+78172,Female,24.0,Surat,Student,2.0,0.0,5.74,3.0,0.0,Less than 5 hours,Unhealthy,BHM,No,8.0,3.0,No,1,0,0.20154981943485012,False Negative
+48765,Male,33.0,Varanasi,Student,1.0,0.0,7.48,4.0,0.0,5-6 hours,Healthy,MD,Yes,10.0,3.0,Yes,1,0,0.14093629535031604,False Negative
+130129,Male,28.0,Vasai-Virar,Student,1.0,0.0,6.36,5.0,0.0,Less than 5 hours,Healthy,M.Pharm,No,10.0,5.0,No,1,0,0.06832039691621071,False Negative
+117613,Female,20.0,Nagpur,Student,2.0,0.0,8.92,3.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,4.0,1.0,Yes,0,1,0.5029705357390344,False Positive
+93640,Male,29.0,Rajkot,Student,4.0,0.0,7.03,2.0,0.0,5-6 hours,Unhealthy,M.Com,No,9.0,5.0,Yes,0,1,0.7534203706309968,False Positive
+108309,Male,32.0,Srinagar,Student,1.0,0.0,5.48,3.0,0.0,More than 8 hours,Unhealthy,MD,No,8.0,5.0,Yes,1,0,0.08567953776012342,False Negative
+115272,Female,28.0,Faridabad,Student,1.0,0.0,8.25,3.0,0.0,7-8 hours,Healthy,M.Ed,Yes,6.0,5.0,No,1,0,0.34947812409057183,False Negative
+73133,Female,21.0,Pune,Student,1.0,0.0,6.83,5.0,0.0,7-8 hours,Unhealthy,M.Tech,No,1.0,1.0,Yes,1,0,0.01217007732768498,False Negative
+68426,Female,28.0,Kalyan,Student,2.0,0.0,8.78,3.0,0.0,Less than 5 hours,Unhealthy,BHM,No,5.0,3.0,No,1,0,0.1209368388223269,False Negative
+76473,Male,25.0,Chennai,Student,2.0,0.0,6.42,3.0,0.0,7-8 hours,Unhealthy,B.Pharm,Yes,2.0,4.0,No,0,1,0.5585112424912566,False Positive
+106037,Male,33.0,Pune,Student,4.0,0.0,7.1,1.0,0.0,More than 8 hours,Unhealthy,MBBS,No,6.0,1.0,Yes,1,0,0.1340261865607586,False Negative
+3971,Male,23.0,Bhopal,Student,2.0,0.0,8.24,4.0,0.0,7-8 hours,Moderate,B.Ed,Yes,8.0,3.0,No,0,1,0.5362912126319519,False Positive
+35358,Female,33.0,Srinagar,Student,2.0,0.0,9.84,3.0,0.0,More than 8 hours,Healthy,M.Ed,Yes,10.0,4.0,No,1,0,0.34295910688845593,False Negative
+94118,Female,31.0,Lucknow,Student,5.0,0.0,7.91,3.0,0.0,Less than 5 hours,Unhealthy,MBBS,No,3.0,1.0,Yes,1,0,0.2434835379596009,False Negative
+86263,Male,27.0,Thane,Student,3.0,0.0,8.58,3.0,0.0,5-6 hours,Moderate,B.Com,Yes,6.0,4.0,No,0,1,0.7361793894273923,False Positive
+18213,Male,21.0,Meerut,Student,1.0,0.0,6.83,4.0,0.0,Less than 5 hours,Unhealthy,BCA,Yes,12.0,2.0,Yes,0,1,0.6401625279913103,False Positive
+17085,Female,30.0,Patna,Student,1.0,0.0,7.88,5.0,0.0,More than 8 hours,Unhealthy,MBBS,Yes,1.0,2.0,No,1,0,0.06018738803563222,False Negative
+94766,Female,31.0,Nashik,Student,3.0,0.0,5.6,2.0,0.0,Less than 5 hours,Moderate,BHM,Yes,12.0,2.0,Yes,0,1,0.6844942596898084,False Positive
+20804,Female,21.0,Kalyan,Student,1.0,0.0,6.37,2.0,0.0,Less than 5 hours,Unhealthy,MSc,Yes,1.0,5.0,Yes,0,1,0.7704147647607162,False Positive
+54576,Male,34.0,Srinagar,Student,4.0,0.0,9.89,3.0,0.0,7-8 hours,Healthy,BE,Yes,12.0,2.0,Yes,0,1,0.6203517331149526,False Positive
+64951,Male,21.0,Kalyan,Student,2.0,0.0,7.75,1.0,0.0,Less than 5 hours,Moderate,B.Tech,No,8.0,5.0,No,0,1,0.5559113860817705,False Positive
+54097,Male,33.0,Nagpur,Student,4.0,0.0,8.85,1.0,0.0,5-6 hours,Healthy,BE,No,10.0,5.0,No,1,0,0.43857372340454187,False Negative
+39186,Male,28.0,Bangalore,Student,3.0,0.0,6.79,1.0,0.0,More than 8 hours,Moderate,B.Com,Yes,6.0,3.0,Yes,0,1,0.6674271680635407,False Positive
+9195,Female,34.0,Jaipur,Student,2.0,0.0,7.3,4.0,0.0,Less than 5 hours,Unhealthy,BE,Yes,0.0,2.0,Yes,1,0,0.15528966869242966,False Negative
+88551,Female,33.0,Agra,Student,3.0,0.0,9.71,2.0,0.0,Less than 5 hours,Moderate,B.Ed,No,0.0,5.0,Yes,1,0,0.19421852305901827,False Negative
+21995,Female,26.0,Jaipur,Student,3.0,0.0,5.45,3.0,0.0,7-8 hours,Healthy,BE,Yes,11.0,1.0,No,1,0,0.33569862831912944,False Negative
+69584,Male,18.0,Ahmedabad,Student,2.0,0.0,8.47,4.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,12.0,3.0,No,0,1,0.8765719745509002,False Positive
+65611,Female,28.0,Kalyan,Student,1.0,0.0,5.59,1.0,0.0,Less than 5 hours,Moderate,MSc,Yes,2.0,2.0,No,1,0,0.16539597400043315,False Negative
+31144,Male,20.0,Lucknow,Student,5.0,0.0,8.47,2.0,0.0,Less than 5 hours,Moderate,Class 12,No,4.0,2.0,Yes,0,1,0.579335301653426,False Positive
+41844,Female,34.0,Chennai,Student,5.0,0.0,6.35,1.0,0.0,More than 8 hours,Unhealthy,MCA,Yes,10.0,4.0,No,0,1,0.9511534168468084,False Positive
+119450,Female,27.0,Patna,Student,3.0,0.0,8.23,3.0,0.0,Less than 5 hours,Moderate,MCA,No,12.0,4.0,Yes,0,1,0.5130165913313617,False Positive
+76676,Female,28.0,Ahmedabad,Student,3.0,0.0,5.37,3.0,0.0,More than 8 hours,Healthy,BSc,Yes,11.0,2.0,Yes,1,0,0.4895287999089857,False Negative
+88431,Male,20.0,Indore,Student,3.0,0.0,8.58,3.0,0.0,5-6 hours,Healthy,Class 12,No,10.0,4.0,Yes,1,0,0.41063525330836115,False Negative
+93348,Female,21.0,Srinagar,Student,1.0,0.0,7.85,3.0,0.0,7-8 hours,Healthy,B.Ed,Yes,8.0,4.0,No,1,0,0.43461013518689867,False Negative
+136282,Male,19.0,Rajkot,Student,1.0,0.0,9.91,4.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,2.0,4.0,Yes,0,1,0.5532068529970288,False Positive
+25606,Male,25.0,Lucknow,Student,3.0,0.0,5.79,4.0,0.0,Less than 5 hours,Unhealthy,B.Com,No,7.0,3.0,Yes,1,0,0.2969255087555389,False Negative
+20722,Female,20.0,Ludhiana,Student,3.0,0.0,5.74,1.0,0.0,Less than 5 hours,Moderate,Class 12,No,1.0,1.0,No,1,0,0.10441922924781516,False Negative
+98725,Female,30.0,Surat,Student,4.0,0.0,5.99,3.0,0.0,7-8 hours,Moderate,MSc,Yes,4.0,5.0,No,0,1,0.8288496768537216,False Positive
+60935,Female,26.0,Ludhiana,Student,2.0,0.0,6.23,4.0,0.0,Less than 5 hours,Moderate,BA,Yes,2.0,1.0,No,1,0,0.14956382970207488,False Negative
+65787,Female,30.0,Delhi,Student,2.0,0.0,9.21,3.0,0.0,7-8 hours,Unhealthy,PhD,Yes,9.0,1.0,No,1,0,0.3039613263696606,False Negative
+63175,Male,34.0,Vasai-Virar,Student,3.0,0.0,6.03,3.0,0.0,7-8 hours,Moderate,BE,No,7.0,2.0,No,1,0,0.04144072037467112,False Negative
+48614,Female,18.0,Vasai-Virar,Student,4.0,0.0,9.6,5.0,0.0,Less than 5 hours,Moderate,Class 12,No,6.0,1.0,No,1,0,0.20118989338556337,False Negative
+116645,Male,28.0,Hyderabad,Student,4.0,0.0,9.96,2.0,0.0,More than 8 hours,Healthy,MD,No,2.0,2.0,No,1,0,0.08596400397030639,False Negative
+6585,Male,24.0,Kalyan,Student,3.0,0.0,7.03,4.0,0.0,5-6 hours,Moderate,B.Tech,Yes,3.0,3.0,No,0,1,0.5644948177855829,False Positive
+60591,Male,25.0,Rajkot,Student,4.0,0.0,6.61,4.0,0.0,5-6 hours,Healthy,M.Ed,Yes,6.0,1.0,No,1,0,0.4196490683003629,False Negative
+108332,Female,34.0,Patna,Student,4.0,0.0,6.0,2.0,0.0,5-6 hours,Unhealthy,BCA,No,6.0,4.0,Yes,1,0,0.41891454057168576,False Negative
+129743,Male,27.0,Delhi,Student,4.0,0.0,6.27,4.0,0.0,Less than 5 hours,Unhealthy,B.Pharm,No,0.0,5.0,Yes,0,1,0.5007031925310625,False Positive
+12046,Male,28.0,Rajkot,Student,3.0,0.0,5.57,4.0,0.0,Less than 5 hours,Unhealthy,B.Arch,Yes,11.0,1.0,Yes,0,1,0.6559566210364723,False Positive
+7844,Female,32.0,Thane,Student,2.0,0.0,9.44,5.0,0.0,7-8 hours,Unhealthy,M.Tech,Yes,10.0,3.0,Yes,1,0,0.4739087667394379,False Negative
+69996,Female,20.0,Mumbai,Student,1.0,0.0,7.9,1.0,0.0,Less than 5 hours,Unhealthy,Class 12,No,9.0,4.0,No,1,0,0.33929643041886376,False Negative
+93720,Male,18.0,Agra,Student,4.0,0.0,6.21,2.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,0.0,4.0,Yes,0,1,0.9221010570601803,False Positive
+77790,Female,34.0,Visakhapatnam,Student,2.0,0.0,7.27,5.0,0.0,More than 8 hours,Unhealthy,LLM,Yes,11.0,2.0,Yes,1,0,0.2556530865866468,False Negative
+18394,Male,24.0,Delhi,Student,3.0,0.0,7.12,4.0,0.0,Less than 5 hours,Moderate,MBBS,Yes,9.0,2.0,No,0,1,0.6560054329280228,False Positive
+90645,Female,32.0,Lucknow,Student,5.0,0.0,6.25,1.0,0.0,More than 8 hours,Moderate,MBBS,No,10.0,3.0,No,1,0,0.474946839401184,False Negative
+23826,Male,26.0,Hyderabad,Student,5.0,0.0,5.57,2.0,0.0,5-6 hours,Healthy,MA,No,10.0,1.0,No,1,0,0.2653525826540959,False Negative
+25190,Male,33.0,Vadodara,Student,4.0,0.0,6.36,4.0,0.0,5-6 hours,Unhealthy,M.Tech,Yes,12.0,5.0,Yes,0,1,0.9380434568964954,False Positive
+99103,Female,20.0,Patna,Student,3.0,0.0,8.17,4.0,0.0,Less than 5 hours,Moderate,Class 12,No,1.0,4.0,No,1,0,0.25615348501932106,False Negative
+75625,Female,18.0,Kalyan,Student,1.0,0.0,9.88,3.0,0.0,7-8 hours,Moderate,Class 12,No,6.0,5.0,Yes,1,0,0.23759282236201812,False Negative
+26602,Male,19.0,Varanasi,Student,4.0,0.0,7.09,4.0,0.0,5-6 hours,Unhealthy,Class 12,No,2.0,3.0,Yes,1,0,0.4136075505077152,False Negative
+29462,Female,21.0,Visakhapatnam,Student,1.0,0.0,6.08,4.0,0.0,7-8 hours,Unhealthy,MCA,Yes,11.0,4.0,No,0,1,0.6909860291496227,False Positive
+136002,Male,33.0,Visakhapatnam,Student,1.0,0.0,5.85,4.0,0.0,More than 8 hours,Healthy,B.Com,No,11.0,5.0,No,1,0,0.02736220848316808,False Negative
+24114,Female,29.0,Hyderabad,Student,4.0,0.0,7.92,2.0,0.0,7-8 hours,Moderate,BHM,Yes,3.0,3.0,Yes,0,1,0.7666879847068381,False Positive
+31571,Male,25.0,Srinagar,Student,3.0,0.0,8.89,1.0,0.0,Less than 5 hours,Moderate,B.Ed,No,4.0,4.0,Yes,1,0,0.4255182318636265,False Negative
+87499,Male,31.0,Bangalore,Student,2.0,0.0,9.71,2.0,0.0,5-6 hours,Healthy,B.Tech,Yes,4.0,5.0,Yes,0,1,0.5705641570138169,False Positive
+34572,Female,23.0,Pune,Student,4.0,0.0,5.57,3.0,0.0,Less than 5 hours,Healthy,BE,Yes,11.0,5.0,No,0,1,0.9512142834370019,False Positive
+75612,Male,22.0,Kanpur,Student,2.0,0.0,7.51,3.0,0.0,7-8 hours,Moderate,BHM,Yes,7.0,3.0,Yes,0,1,0.6091992029039024,False Positive
+1843,Female,20.0,Indore,Student,4.0,0.0,7.1,3.0,0.0,5-6 hours,Moderate,Class 12,Yes,9.0,3.0,No,0,1,0.896258012582327,False Positive
+94734,Male,23.0,Kolkata,Student,2.0,0.0,8.37,5.0,0.0,More than 8 hours,Unhealthy,BCA,No,9.0,2.0,No,1,0,0.0731723073516516,False Negative
+137182,Male,32.0,Agra,Student,4.0,0.0,5.85,3.0,0.0,More than 8 hours,Moderate,LLB,No,8.0,2.0,No,1,0,0.09188796011564458,False Negative
+60904,Female,24.0,Bangalore,Student,2.0,0.0,8.95,4.0,0.0,More than 8 hours,Unhealthy,BBA,No,5.0,5.0,Yes,1,0,0.2647268290012397,False Negative
+15994,Female,26.0,Vadodara,Student,3.0,0.0,9.1,3.0,0.0,7-8 hours,Healthy,BCA,Yes,9.0,4.0,No,0,1,0.7389870096128793,False Positive
+103057,Male,31.0,Ghaziabad,Student,1.0,0.0,6.08,4.0,0.0,Less than 5 hours,Unhealthy,MBA,Yes,8.0,5.0,Yes,0,1,0.6267629458948248,False Positive
+29172,Female,21.0,Indore,Student,2.0,0.0,7.48,4.0,0.0,Less than 5 hours,Moderate,B.Arch,No,4.0,5.0,No,1,0,0.2599442563508147,False Negative
+14618,Male,18.0,Ahmedabad,Student,2.0,0.0,9.26,1.0,0.0,More than 8 hours,Healthy,Class 12,No,8.0,5.0,No,1,0,0.36983763146240606,False Negative
+139245,Male,18.0,Pune,Student,5.0,0.0,8.14,2.0,0.0,More than 8 hours,Unhealthy,Class 12,No,5.0,3.0,No,0,1,0.728847141023415,False Positive
+6819,Male,20.0,Vadodara,Student,2.0,0.0,6.99,3.0,0.0,More than 8 hours,Unhealthy,Class 12,No,6.0,3.0,Yes,1,0,0.17207964353356767,False Negative
+131708,Female,24.0,Bangalore,Student,1.0,0.0,9.79,3.0,0.0,More than 8 hours,Moderate,B.Ed,No,3.0,5.0,Yes,1,0,0.08563731118879317,False Negative
+111103,Female,27.0,Surat,Student,2.0,0.0,9.49,4.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,7.0,4.0,Yes,0,1,0.7642971249028557,False Positive
+75048,Male,22.0,Kalyan,Student,3.0,0.0,8.04,2.0,0.0,7-8 hours,Unhealthy,M.Com,No,9.0,3.0,No,1,0,0.4492434040751094,False Negative
+12945,Female,34.0,Lucknow,Student,4.0,0.0,7.15,1.0,0.0,7-8 hours,Moderate,M.Tech,Yes,10.0,1.0,No,0,1,0.5513753541364168,False Positive
+21385,Male,25.0,Vasai-Virar,Student,5.0,0.0,9.94,3.0,0.0,5-6 hours,Unhealthy,BCA,No,10.0,2.0,No,0,1,0.6045267407048327,False Positive
+113329,Male,22.0,Agra,Student,5.0,0.0,9.93,5.0,0.0,7-8 hours,Unhealthy,BA,No,2.0,5.0,No,0,1,0.7037780519200658,False Positive
+136866,Female,28.0,Rajkot,Student,3.0,0.0,8.9,5.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,7.0,2.0,No,1,0,0.4444870084606479,False Negative
+126926,Male,24.0,Kanpur,Student,3.0,0.0,7.8,2.0,0.0,Less than 5 hours,Unhealthy,PhD,Yes,0.0,3.0,No,0,1,0.7581613050938114,False Positive
+38336,Male,18.0,Varanasi,Student,3.0,0.0,8.56,3.0,0.0,More than 8 hours,Unhealthy,Class 12,No,7.0,1.0,No,1,0,0.15912628576260116,False Negative
+96625,Female,23.0,Srinagar,Student,3.0,0.0,8.17,3.0,0.0,Less than 5 hours,Unhealthy,BSc,No,0.0,5.0,No,1,0,0.44654044873978466,False Negative
+34581,Female,25.0,Jaipur,Student,2.0,0.0,7.53,3.0,0.0,5-6 hours,Moderate,PhD,Yes,11.0,3.0,Yes,0,1,0.6309597101338504,False Positive
+48528,Female,28.0,Bangalore,Student,5.0,0.0,9.89,4.0,0.0,7-8 hours,Healthy,M.Com,No,3.0,3.0,Yes,1,0,0.26444058778325724,False Negative
+1809,Male,22.0,Thane,Student,3.0,0.0,6.03,3.0,0.0,5-6 hours,Unhealthy,BA,Yes,7.0,4.0,Yes,0,1,0.9104931842597528,False Positive
+112042,Female,28.0,Patna,Student,4.0,0.0,5.71,3.0,0.0,7-8 hours,Healthy,BSc,No,10.0,3.0,Yes,1,0,0.29580257542378047,False Negative
+51408,Male,23.0,Thane,Student,3.0,0.0,7.47,2.0,0.0,7-8 hours,Healthy,BCA,No,11.0,3.0,No,1,0,0.26344456386252574,False Negative
+97551,Male,24.0,Hyderabad,Student,3.0,0.0,7.22,3.0,0.0,More than 8 hours,Moderate,BBA,No,10.0,3.0,Yes,1,0,0.2778134971708877,False Negative
+23865,Female,21.0,Delhi,Student,1.0,0.0,7.25,3.0,0.0,More than 8 hours,Healthy,B.Pharm,No,7.0,2.0,No,1,0,0.017074537779662554,False Negative
+93211,Male,22.0,Kanpur,Student,5.0,0.0,5.79,3.0,0.0,Less than 5 hours,Healthy,B.Com,Yes,11.0,1.0,No,0,1,0.8508229370903929,False Positive
+87506,Male,20.0,Kolkata,Student,5.0,0.0,9.85,2.0,0.0,More than 8 hours,Unhealthy,Class 12,No,1.0,3.0,No,0,1,0.6349839746657259,False Positive
+89434,Female,21.0,Vadodara,Student,3.0,0.0,9.39,4.0,0.0,Less than 5 hours,Unhealthy,BHM,No,11.0,4.0,Yes,0,1,0.6780770702284924,False Positive
+46908,Female,21.0,Ahmedabad,Student,3.0,0.0,8.04,4.0,0.0,5-6 hours,Moderate,B.Ed,No,2.0,4.0,Yes,1,0,0.2607189099388699,False Negative
+99984,Female,29.0,Ghaziabad,Student,2.0,0.0,9.59,4.0,0.0,Less than 5 hours,Moderate,B.Com,Yes,5.0,4.0,Yes,0,1,0.5633572233986467,False Positive
+37408,Female,22.0,Varanasi,Student,2.0,0.0,5.74,4.0,0.0,5-6 hours,Unhealthy,BSc,Yes,6.0,5.0,Yes,0,1,0.841896640139544,False Positive
+40691,Female,18.0,Surat,Student,2.0,0.0,9.4,5.0,0.0,7-8 hours,Moderate,Class 12,Yes,6.0,3.0,No,0,1,0.5350763012470865,False Positive
+22139,Male,29.0,Indore,Student,3.0,0.0,8.73,5.0,0.0,5-6 hours,Healthy,MA,No,6.0,5.0,Yes,1,0,0.1623739208858734,False Negative
+56972,Female,19.0,Indore,Student,3.0,0.0,7.46,3.0,0.0,5-6 hours,Moderate,Class 12,No,4.0,5.0,No,1,0,0.42617977127605,False Negative
+87876,Male,31.0,Patna,Student,2.0,0.0,6.53,3.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,9.0,2.0,Yes,0,1,0.5151947996775036,False Positive
+5609,Female,32.0,Rajkot,Student,2.0,0.0,5.46,2.0,0.0,5-6 hours,Moderate,B.Com,Yes,5.0,2.0,Yes,1,0,0.23164356882422182,False Negative
+102351,Female,29.0,Meerut,Student,2.0,0.0,8.96,2.0,0.0,5-6 hours,Healthy,B.Tech,Yes,4.0,4.0,No,1,0,0.43836733978833564,False Negative
+127722,Male,29.0,Chennai,Student,3.0,0.0,8.91,1.0,0.0,5-6 hours,Healthy,MBA,No,10.0,4.0,No,1,0,0.2455551549140134,False Negative
+58798,Female,20.0,Ahmedabad,Student,2.0,0.0,5.91,4.0,0.0,More than 8 hours,Moderate,Class 12,Yes,4.0,4.0,No,0,1,0.5269999748125719,False Positive
+50811,Female,33.0,Faridabad,Student,2.0,0.0,7.88,4.0,0.0,5-6 hours,Unhealthy,BHM,Yes,11.0,4.0,Yes,0,1,0.6487505400728771,False Positive
+2689,Female,23.0,Jaipur,Student,1.0,0.0,9.91,4.0,0.0,More than 8 hours,Unhealthy,B.Com,Yes,7.0,5.0,No,0,1,0.5821907498381059,False Positive
+27990,Male,23.0,Thane,Student,1.0,0.0,5.51,4.0,0.0,More than 8 hours,Unhealthy,M.Com,Yes,11.0,3.0,No,1,0,0.44418446469389006,False Negative
+100201,Male,28.0,Kalyan,Student,3.0,0.0,6.19,3.0,0.0,7-8 hours,Moderate,MSc,No,12.0,2.0,Yes,1,0,0.1534284083383055,False Negative
+139509,Male,33.0,Kalyan,Student,2.0,0.0,7.7,5.0,0.0,Less than 5 hours,Unhealthy,MSc,No,8.0,3.0,Yes,1,0,0.07478607505689891,False Negative
+128724,Female,22.0,Ludhiana,Student,1.0,0.0,6.37,2.0,0.0,More than 8 hours,Moderate,BCA,Yes,9.0,4.0,Yes,0,1,0.6031954167515883,False Positive
+138172,Male,26.0,Nashik,Student,2.0,0.0,7.75,4.0,0.0,5-6 hours,Moderate,M.Ed,Yes,11.0,1.0,Yes,1,0,0.3246063946550491,False Negative
+94670,Female,25.0,Pune,Student,3.0,0.0,9.88,1.0,0.0,More than 8 hours,Moderate,MBBS,No,12.0,4.0,Yes,0,1,0.5262380398293588,False Positive
+76156,Female,20.0,Lucknow,Student,4.0,0.0,8.95,4.0,0.0,7-8 hours,Unhealthy,Class 12,Yes,12.0,1.0,Yes,0,1,0.8899828944084941,False Positive
+35565,Female,34.0,Jaipur,Student,1.0,0.0,9.44,4.0,0.0,Less than 5 hours,Unhealthy,MCA,Yes,10.0,2.0,No,1,0,0.203129096075993,False Negative
+104613,Male,23.0,Meerut,Student,2.0,0.0,7.64,3.0,0.0,7-8 hours,Moderate,B.Tech,No,8.0,1.0,Yes,1,0,0.06203396372170225,False Negative
+137089,Male,21.0,Vasai-Virar,Student,1.0,0.0,9.66,3.0,0.0,5-6 hours,Moderate,M.Com,Yes,6.0,3.0,Yes,1,0,0.45523560311484923,False Negative
+20807,Male,33.0,Srinagar,Student,1.0,0.0,6.08,2.0,0.0,5-6 hours,Unhealthy,B.Tech,Yes,10.0,2.0,Yes,1,0,0.2945664338165963,False Negative
+11317,Male,20.0,Faridabad,Student,3.0,0.0,7.91,1.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,6.0,2.0,Yes,0,1,0.8912369974613896,False Positive
+86727,Female,34.0,Vasai-Virar,Student,3.0,0.0,8.44,4.0,0.0,7-8 hours,Unhealthy,BE,Yes,9.0,2.0,No,1,0,0.43377173723344487,False Negative
+87821,Male,19.0,Agra,Student,5.0,0.0,6.21,5.0,0.0,More than 8 hours,Unhealthy,Class 12,No,1.0,1.0,Yes,1,0,0.22125165682886774,False Negative
+58116,Female,19.0,Vasai-Virar,Student,1.0,0.0,7.1,4.0,0.0,More than 8 hours,Unhealthy,Class 12,Yes,12.0,4.0,No,0,1,0.6840440827734527,False Positive
+123446,Male,22.0,Bhopal,Student,3.0,0.0,8.21,1.0,0.0,Less than 5 hours,Moderate,MCA,Yes,12.0,5.0,No,0,1,0.9746973929688523,False Positive
+84716,Female,24.0,Kolkata,Student,2.0,0.0,5.85,4.0,0.0,7-8 hours,Healthy,B.Arch,Yes,11.0,3.0,No,1,0,0.47100048388025945,False Negative
+48866,Male,26.0,Mumbai,Student,2.0,0.0,5.12,2.0,0.0,5-6 hours,Unhealthy,B.Ed,No,11.0,3.0,Yes,1,0,0.22961665951109278,False Negative
+22002,Female,24.0,Ludhiana,Student,2.0,0.0,7.72,3.0,0.0,Less than 5 hours,Healthy,B.Pharm,Yes,10.0,3.0,No,0,1,0.5784212012340538,False Positive
+59939,Female,19.0,Ghaziabad,Student,4.0,0.0,9.93,1.0,0.0,Less than 5 hours,Moderate,Class 12,No,12.0,2.0,No,0,1,0.6731996470350915,False Positive
+110255,Male,19.0,Thane,Student,5.0,0.0,8.54,1.0,0.0,7-8 hours,Moderate,Class 12,Yes,10.0,3.0,Yes,0,1,0.9834895602435759,False Positive
+16626,Male,34.0,Thane,Student,1.0,0.0,6.99,3.0,0.0,Less than 5 hours,Moderate,LLB,Yes,11.0,5.0,Yes,0,1,0.6135768614377247,False Positive
+84142,Male,23.0,Visakhapatnam,Student,3.0,0.0,8.96,1.0,0.0,7-8 hours,Healthy,M.Tech,Yes,1.0,1.0,No,1,0,0.30836674431175926,False Negative
+73273,Male,29.0,Srinagar,Student,5.0,0.0,9.7,4.0,0.0,5-6 hours,Healthy,MCA,No,4.0,3.0,Yes,1,0,0.24974306400271254,False Negative
+105651,Male,21.0,Rajkot,Student,2.0,0.0,8.49,4.0,0.0,5-6 hours,Unhealthy,B.Arch,No,11.0,4.0,Yes,1,0,0.4383041620599934,False Negative
+72331,Male,29.0,Kolkata,Student,2.0,0.0,9.49,2.0,0.0,More than 8 hours,Moderate,LLM,Yes,4.0,4.0,No,1,0,0.4708610790503991,False Negative
+46925,Female,21.0,Srinagar,Student,1.0,0.0,9.47,4.0,0.0,7-8 hours,Healthy,MCA,Yes,6.0,1.0,No,1,0,0.09811707736897426,False Negative
+129120,Male,30.0,Varanasi,Student,4.0,0.0,8.17,2.0,0.0,Less than 5 hours,Healthy,MSc,No,6.0,1.0,No,1,0,0.07182555383909374,False Negative
+23676,Female,18.0,Delhi,Student,3.0,0.0,7.6,4.0,0.0,More than 8 hours,Moderate,Class 12,Yes,1.0,2.0,Yes,1,0,0.48298195789656234,False Negative
+44021,Female,25.0,Thane,Student,1.0,0.0,8.28,4.0,0.0,Less than 5 hours,Moderate,BCA,Yes,9.0,4.0,Yes,0,1,0.5965787407407269,False Positive
+44286,Female,22.0,Patna,Student,2.0,0.0,5.69,5.0,0.0,More than 8 hours,Unhealthy,MBBS,Yes,4.0,1.0,Yes,1,0,0.24858305015016102,False Negative
+115130,Female,23.0,Lucknow,Student,3.0,0.0,6.27,4.0,0.0,Less than 5 hours,Moderate,B.Pharm,Yes,12.0,1.0,Yes,0,1,0.6634880105990074,False Positive
+129733,Female,28.0,Surat,Student,3.0,0.0,5.08,2.0,0.0,7-8 hours,Unhealthy,BHM,Yes,12.0,3.0,Yes,0,1,0.8623727119153531,False Positive
+65277,Male,20.0,Pune,Student,3.0,0.0,6.21,2.0,0.0,Less than 5 hours,Healthy,Class 12,Yes,6.0,1.0,Yes,0,1,0.5560379950195967,False Positive
+122549,Male,19.0,Agra,Student,5.0,0.0,7.72,2.0,0.0,5-6 hours,Moderate,Class 12,No,1.0,1.0,No,1,0,0.24219749742292457,False Negative
+108451,Male,29.0,Jaipur,Student,4.0,0.0,8.24,2.0,0.0,7-8 hours,Healthy,MCA,No,10.0,4.0,Yes,1,0,0.41060637440061143,False Negative
+132095,Male,21.0,Delhi,Student,3.0,0.0,6.83,5.0,0.0,More than 8 hours,Unhealthy,B.Ed,No,11.0,3.0,No,1,0,0.29727247718691585,False Negative
+133442,Male,28.0,Ludhiana,Student,5.0,0.0,9.86,4.0,0.0,Less than 5 hours,Healthy,BA,No,10.0,4.0,No,0,1,0.5767962881904125,False Positive
+138817,Female,18.0,Kalyan,Student,3.0,0.0,5.7,3.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,7.0,1.0,No,0,1,0.7505016154985957,False Positive
+82104,Male,18.0,Vadodara,Student,4.0,0.0,7.13,2.0,0.0,Less than 5 hours,Moderate,Class 12,No,11.0,2.0,Yes,0,1,0.6348004105466697,False Positive
+26283,Male,29.0,Ahmedabad,Student,1.0,0.0,9.88,2.0,0.0,Less than 5 hours,Moderate,B.Ed,Yes,11.0,4.0,No,0,1,0.635090245086103,False Positive
+107294,Female,33.0,Srinagar,Student,3.0,0.0,7.77,3.0,0.0,Less than 5 hours,Unhealthy,B.Pharm,Yes,4.0,2.0,Yes,1,0,0.4940105619431229,False Negative
+133936,Female,33.0,Chennai,Student,3.0,0.0,6.37,3.0,0.0,Less than 5 hours,Healthy,B.Com,Yes,6.0,1.0,Yes,1,0,0.20368839598906188,False Negative
+139830,Male,27.0,Mumbai,Student,4.0,0.0,6.28,2.0,0.0,5-6 hours,Unhealthy,PhD,No,8.0,3.0,Yes,1,0,0.4953175429326556,False Negative
+59359,Male,34.0,Vasai-Virar,Student,1.0,0.0,7.83,5.0,0.0,7-8 hours,Unhealthy,BBA,Yes,8.0,5.0,No,1,0,0.35448372326097344,False Negative
+127419,Male,23.0,Lucknow,Student,5.0,0.0,8.17,5.0,0.0,Less than 5 hours,Moderate,BCA,No,10.0,5.0,Yes,0,1,0.8479333248344149,False Positive
+124524,Male,29.0,Vasai-Virar,Student,5.0,0.0,8.5,4.0,0.0,7-8 hours,Unhealthy,BSc,No,5.0,3.0,No,1,0,0.4345527518430157,False Negative
+75627,Female,33.0,Ludhiana,Student,2.0,0.0,5.74,3.0,0.0,5-6 hours,Healthy,B.Tech,Yes,6.0,5.0,Yes,1,0,0.4776075663798482,False Negative
+105396,Female,20.0,Ludhiana,Student,3.0,0.0,7.77,4.0,0.0,More than 8 hours,Moderate,Class 12,Yes,8.0,5.0,No,0,1,0.8776594405882268,False Positive
+93558,Female,27.0,Agra,Student,3.0,0.0,7.08,2.0,0.0,7-8 hours,Unhealthy,B.Ed,Yes,11.0,1.0,No,0,1,0.6160112313669572,False Positive
+16159,Female,32.0,Nashik,Student,5.0,0.0,5.86,1.0,0.0,More than 8 hours,Healthy,B.Com,No,6.0,5.0,No,1,0,0.4933221493566165,False Negative
+60050,Male,27.0,Pune,Student,3.0,0.0,6.7,3.0,0.0,5-6 hours,Moderate,BHM,No,10.0,5.0,Yes,1,0,0.4362528685635345,False Negative
+7105,Female,19.0,Srinagar,Student,3.0,0.0,6.16,2.0,0.0,More than 8 hours,Unhealthy,Class 12,No,6.0,4.0,Yes,0,1,0.5242249330039481,False Positive
+75070,Male,21.0,Ahmedabad,Student,1.0,0.0,8.74,3.0,0.0,7-8 hours,Moderate,MSc,Yes,8.0,1.0,No,1,0,0.20771208317421158,False Negative
+62492,Female,23.0,Jaipur,Student,2.0,0.0,8.95,2.0,0.0,5-6 hours,Moderate,MCA,No,2.0,4.0,Yes,1,0,0.15026585883655316,False Negative
+140558,Male,24.0,Nagpur,Student,3.0,0.0,8.54,3.0,0.0,5-6 hours,Moderate,Class 12,Yes,11.0,2.0,No,0,1,0.6516891098528733,False Positive
+101447,Female,23.0,Agra,Student,3.0,0.0,8.28,1.0,0.0,5-6 hours,Unhealthy,PhD,Yes,11.0,3.0,No,0,1,0.9075386811726684,False Positive
+26330,Male,28.0,Hyderabad,Student,5.0,0.0,9.06,3.0,0.0,More than 8 hours,Unhealthy,MD,No,8.0,2.0,No,1,0,0.4658760951004634,False Negative
+8314,Male,19.0,Ludhiana,Student,2.0,0.0,9.26,3.0,0.0,5-6 hours,Healthy,Class 12,No,12.0,3.0,Yes,1,0,0.22328276072054007,False Negative
+64759,Male,29.0,Pune,Student,3.0,0.0,5.86,3.0,0.0,7-8 hours,Healthy,BCA,Yes,11.0,5.0,No,0,1,0.7803322551868698,False Positive
+34279,Male,25.0,Agra,Student,2.0,0.0,7.39,2.0,0.0,7-8 hours,Unhealthy,B.Arch,No,8.0,5.0,Yes,1,0,0.42415177602701193,False Negative
+136865,Female,23.0,Kalyan,Student,5.0,0.0,9.96,5.0,0.0,Less than 5 hours,Moderate,BCA,No,3.0,3.0,No,1,0,0.4332592091946282,False Negative
+129405,Male,28.0,Varanasi,Student,2.0,0.0,7.53,1.0,0.0,Less than 5 hours,Moderate,M.Com,No,7.0,5.0,Yes,1,0,0.35568287586948266,False Negative
+14678,Female,30.0,Thane,Student,2.0,0.0,7.04,4.0,0.0,5-6 hours,Moderate,BCA,Yes,10.0,3.0,Yes,1,0,0.4545998965132598,False Negative
+9424,Female,34.0,Pune,Student,4.0,0.0,5.98,3.0,0.0,7-8 hours,Unhealthy,M.Com,No,11.0,4.0,No,1,0,0.41620727977267563,False Negative
+68414,Female,28.0,Thane,Student,1.0,0.0,6.83,5.0,0.0,7-8 hours,Moderate,MD,No,4.0,1.0,Yes,1,0,0.005967384682565402,False Negative
+7858,Male,25.0,Thane,Student,5.0,0.0,5.77,2.0,0.0,7-8 hours,Moderate,BE,No,5.0,3.0,Yes,0,1,0.5637842029084174,False Positive
+62741,Female,20.0,Kolkata,Student,1.0,0.0,9.72,5.0,0.0,Less than 5 hours,Unhealthy,Class 12,No,2.0,5.0,Yes,1,0,0.20948682836128596,False Negative
+49256,Male,25.0,Vadodara,Student,4.0,0.0,5.12,5.0,0.0,5-6 hours,Unhealthy,MD,No,10.0,2.0,Yes,1,0,0.31399409873538164,False Negative
+49915,Male,24.0,Mumbai,Student,2.0,0.0,8.44,3.0,0.0,More than 8 hours,Unhealthy,MBBS,Yes,11.0,1.0,Yes,1,0,0.46528607504587,False Negative
+79652,Female,32.0,Hyderabad,Student,5.0,0.0,6.33,5.0,0.0,Less than 5 hours,Healthy,BBA,Yes,4.0,3.0,No,0,1,0.6654429592884221,False Positive
+114780,Female,26.0,Visakhapatnam,Student,3.0,0.0,6.75,2.0,0.0,Less than 5 hours,Unhealthy,B.Ed,No,3.0,1.0,No,1,0,0.10019958731164452,False Negative
+58425,Female,28.0,Vadodara,Student,5.0,0.0,8.73,4.0,0.0,7-8 hours,Healthy,MCA,No,11.0,2.0,No,1,0,0.2893880464676865,False Negative
+83013,Female,21.0,Kanpur,Student,1.0,0.0,7.09,3.0,0.0,Less than 5 hours,Moderate,BCA,Yes,6.0,3.0,No,1,0,0.4645925307627093,False Negative
+63067,Male,23.0,Jaipur,Student,1.0,0.0,5.74,3.0,0.0,7-8 hours,Unhealthy,B.Arch,Yes,8.0,2.0,No,1,0,0.31554196956809466,False Negative
+49021,Female,23.0,Delhi,Student,1.0,0.0,5.76,1.0,0.0,7-8 hours,Moderate,BE,Yes,10.0,2.0,No,1,0,0.37718116816094094,False Negative
+44794,Female,26.0,Surat,Student,1.0,0.0,7.09,4.0,0.0,Less than 5 hours,Moderate,B.Com,Yes,9.0,4.0,Yes,0,1,0.5421846310988104,False Positive
+140024,Male,29.0,Jaipur,Student,1.0,0.0,5.69,5.0,0.0,More than 8 hours,Unhealthy,MCA,Yes,4.0,5.0,Yes,1,0,0.3147484846664721,False Negative
+20990,Male,30.0,Mumbai,Student,2.0,0.0,9.44,2.0,0.0,7-8 hours,Unhealthy,LLM,No,7.0,2.0,Yes,1,0,0.07995696743335162,False Negative
+7158,Male,32.0,Rajkot,Student,4.0,0.0,7.21,2.0,0.0,More than 8 hours,Unhealthy,MBA,Yes,7.0,1.0,Yes,0,1,0.6084288350909809,False Positive
+119691,Male,21.0,Ludhiana,Student,2.0,0.0,5.27,5.0,0.0,5-6 hours,Healthy,Class 12,Yes,9.0,4.0,No,0,1,0.5324179272910151,False Positive
+133364,Female,27.0,Bhopal,Student,3.0,0.0,5.41,3.0,0.0,5-6 hours,Moderate,BCA,Yes,12.0,2.0,Yes,0,1,0.6930483514846095,False Positive
+4621,Male,23.0,Pune,Student,1.0,0.0,9.39,2.0,0.0,5-6 hours,Moderate,B.Com,Yes,9.0,5.0,Yes,0,1,0.7609607916115305,False Positive
+64094,Male,29.0,Delhi,Student,5.0,0.0,7.13,5.0,0.0,5-6 hours,Moderate,B.Ed,Yes,3.0,2.0,No,0,1,0.5932940533401628,False Positive
+109474,Female,18.0,Ludhiana,Student,4.0,0.0,8.04,5.0,0.0,Less than 5 hours,Moderate,Class 12,No,10.0,1.0,Yes,1,0,0.33198355202483587,False Negative
+71409,Female,30.0,Ludhiana,Student,1.0,0.0,5.59,3.0,0.0,5-6 hours,Healthy,BE,Yes,12.0,3.0,No,1,0,0.22022794040659008,False Negative
+77191,Male,32.0,Kalyan,Student,4.0,0.0,7.08,5.0,0.0,5-6 hours,Unhealthy,LLB,Yes,4.0,1.0,Yes,1,0,0.4307753793231612,False Negative
+130448,Female,32.0,Visakhapatnam,Student,3.0,0.0,6.76,1.0,0.0,5-6 hours,Healthy,ME,Yes,12.0,1.0,Yes,1,0,0.4144037670661233,False Negative
+119548,Female,20.0,Kanpur,Student,3.0,0.0,5.55,2.0,0.0,7-8 hours,Unhealthy,Class 12,No,12.0,2.0,Yes,1,0,0.4623155790407158,False Negative
+7008,Male,29.0,Kanpur,Student,4.0,0.0,9.66,4.0,0.0,7-8 hours,Healthy,B.Ed,Yes,4.0,2.0,Yes,1,0,0.4797704869198291,False Negative
+140448,Male,22.0,Faridabad,Student,5.0,0.0,7.21,2.0,0.0,Less than 5 hours,Unhealthy,B.Tech,No,8.0,5.0,No,0,1,0.9351242563781728,False Positive
+65658,Male,19.0,Vasai-Virar,Student,4.0,0.0,5.64,2.0,0.0,Less than 5 hours,Moderate,Class 12,No,5.0,1.0,Yes,1,0,0.2944395108626358,False Negative
+109153,Female,24.0,Rajkot,Student,2.0,0.0,9.1,3.0,0.0,Less than 5 hours,Healthy,BBA,Yes,0.0,4.0,Yes,0,1,0.5193711605198114,False Positive
+94794,Male,34.0,Delhi,Student,3.0,0.0,9.36,4.0,0.0,Less than 5 hours,Unhealthy,MSc,Yes,10.0,4.0,No,0,1,0.7772574539692422,False Positive
+63869,Female,19.0,Chennai,Student,4.0,0.0,8.74,5.0,0.0,7-8 hours,Unhealthy,Class 12,No,1.0,5.0,No,0,1,0.5637371055342468,False Positive
+84552,Female,19.0,Surat,Student,3.0,0.0,7.75,3.0,0.0,Less than 5 hours,Healthy,Class 12,No,6.0,4.0,No,1,0,0.34101101176021364,False Negative
+23423,Female,34.0,Chennai,Student,2.0,0.0,7.5,2.0,0.0,Less than 5 hours,Unhealthy,B.Pharm,Yes,12.0,2.0,Yes,0,1,0.5544429070607706,False Positive
+59865,Female,19.0,Agra,Student,1.0,0.0,6.08,1.0,0.0,More than 8 hours,Unhealthy,Class 12,Yes,7.0,5.0,No,0,1,0.7775531877681846,False Positive
+66103,Male,24.0,Delhi,Student,3.0,0.0,5.79,3.0,0.0,More than 8 hours,Healthy,B.Arch,Yes,2.0,3.0,No,1,0,0.3895952112925608,False Negative
+39496,Female,30.0,Rajkot,Student,5.0,0.0,6.0,4.0,0.0,5-6 hours,Moderate,LLB,Yes,3.0,4.0,No,0,1,0.8384502875475066,False Positive
+95743,Female,28.0,Hyderabad,Student,2.0,0.0,9.63,1.0,0.0,7-8 hours,Unhealthy,B.Ed,Yes,2.0,1.0,No,1,0,0.2962175421481075,False Negative
+124484,Male,27.0,Thane,Student,4.0,0.0,8.91,1.0,0.0,7-8 hours,Unhealthy,B.Com,No,11.0,4.0,Yes,0,1,0.7932159498628693,False Positive
+120170,Female,22.0,Vasai-Virar,Student,1.0,0.0,6.88,2.0,0.0,Less than 5 hours,Moderate,BCA,Yes,3.0,1.0,No,1,0,0.18216081177790644,False Negative
+57917,Female,19.0,Kanpur,Student,5.0,0.0,9.21,1.0,0.0,7-8 hours,Moderate,Class 12,No,11.0,3.0,No,0,1,0.8412293064567959,False Positive
+120612,Female,25.0,Hyderabad,Student,3.0,0.0,5.75,5.0,0.0,More than 8 hours,Moderate,MSc,Yes,10.0,1.0,No,1,0,0.3215778286257448,False Negative
+138003,Female,32.0,Hyderabad,Student,3.0,0.0,9.92,3.0,0.0,More than 8 hours,Healthy,MBA,Yes,7.0,3.0,No,1,0,0.37438299413268084,False Negative
+71463,Female,28.0,Varanasi,Student,4.0,0.0,8.14,2.0,0.0,5-6 hours,Moderate,B.Arch,Yes,10.0,2.0,Yes,0,1,0.8145792133152853,False Positive
+138419,Male,23.0,Hyderabad,Student,1.0,0.0,5.59,5.0,0.0,5-6 hours,Healthy,MBA,Yes,7.0,2.0,No,1,0,0.11312477322696066,False Negative
+56964,Male,24.0,Bhopal,Student,5.0,0.0,8.96,5.0,0.0,More than 8 hours,Unhealthy,B.Ed,No,8.0,3.0,No,0,1,0.5829583262241042,False Positive
+7761,Male,24.0,Srinagar,Student,3.0,0.0,7.48,4.0,0.0,Less than 5 hours,Moderate,B.Ed,Yes,10.0,1.0,Yes,0,1,0.5993850917005684,False Positive
+4509,Female,29.0,Indore,Student,4.0,0.0,7.72,4.0,0.0,Less than 5 hours,Moderate,BSc,No,5.0,5.0,No,1,0,0.43413383327395705,False Negative
+676,Female,19.0,Visakhapatnam,Student,3.0,0.0,5.68,1.0,0.0,5-6 hours,Moderate,Class 12,Yes,10.0,5.0,Yes,0,1,0.9649469803752224,False Positive
+124890,Female,20.0,Pune,Student,4.0,0.0,6.16,5.0,0.0,7-8 hours,Healthy,Class 12,No,0.0,3.0,Yes,1,0,0.1321342661446907,False Negative
+69265,Male,24.0,Vasai-Virar,Student,3.0,0.0,7.6,2.0,0.0,More than 8 hours,Moderate,BSc,Yes,8.0,1.0,No,1,0,0.4749005841807475,False Negative
+110039,Male,22.0,Kanpur,Student,2.0,0.0,8.04,5.0,0.0,Less than 5 hours,Healthy,MBA,Yes,7.0,4.0,Yes,0,1,0.615584643776343,False Positive
+121151,Male,23.0,Kalyan,Student,3.0,0.0,8.23,5.0,0.0,Less than 5 hours,Healthy,BA,Yes,0.0,3.0,No,1,0,0.395360322327208,False Negative
+28562,Male,33.0,Varanasi,Student,5.0,0.0,6.89,2.0,0.0,5-6 hours,Moderate,LLB,Yes,8.0,2.0,Yes,0,1,0.8145847304445349,False Positive
+51768,Male,19.0,Ghaziabad,Student,1.0,0.0,9.44,2.0,0.0,More than 8 hours,Unhealthy,Class 12,No,12.0,1.0,Yes,1,0,0.092675851609291,False Negative
+122874,Female,30.0,Agra,Student,3.0,0.0,8.91,2.0,0.0,Less than 5 hours,Unhealthy,B.Pharm,Yes,8.0,3.0,Yes,0,1,0.8161263615276404,False Positive
+56469,Female,26.0,Vasai-Virar,Student,3.0,0.0,5.7,5.0,0.0,Less than 5 hours,Healthy,BBA,No,5.0,2.0,Yes,1,0,0.05403911896011999,False Negative
+80143,Female,20.0,Ahmedabad,Student,3.0,0.0,6.76,1.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,4.0,4.0,No,0,1,0.9029456268807152,False Positive
+67390,Female,30.0,Kalyan,Student,3.0,0.0,6.74,1.0,0.0,5-6 hours,Healthy,MHM,Yes,11.0,3.0,Yes,0,1,0.7156779387144626,False Positive
+2696,Male,21.0,Thane,Student,1.0,0.0,7.77,1.0,0.0,5-6 hours,Healthy,B.Com,Yes,8.0,2.0,No,1,0,0.31456102470260977,False Negative
+80070,Female,28.0,Kanpur,Student,2.0,0.0,9.6,4.0,0.0,5-6 hours,Healthy,MA,Yes,2.0,2.0,Yes,1,0,0.1406751599676222,False Negative
+1370,Female,29.0,Ahmedabad,Student,4.0,0.0,5.58,4.0,0.0,Less than 5 hours,Moderate,MBA,Yes,4.0,1.0,Yes,1,0,0.47801701177958833,False Negative
+107151,Male,20.0,Hyderabad,Student,1.0,0.0,8.81,3.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,12.0,1.0,No,0,1,0.5533503876953529,False Positive
+119027,Female,21.0,Varanasi,Student,4.0,0.0,6.38,3.0,0.0,7-8 hours,Healthy,Class 12,No,7.0,4.0,No,1,0,0.40467493980477703,False Negative
+111134,Male,21.0,Bhopal,Student,5.0,0.0,7.51,2.0,0.0,More than 8 hours,Unhealthy,MA,No,12.0,2.0,Yes,0,1,0.8030978688245871,False Positive
+76035,Male,29.0,Agra,Student,4.0,0.0,8.09,4.0,0.0,More than 8 hours,Healthy,BA,Yes,6.0,1.0,No,1,0,0.2423435655041577,False Negative
+60999,Female,18.0,Srinagar,Student,1.0,0.0,9.88,2.0,0.0,7-8 hours,Moderate,Class 12,No,8.0,3.0,No,1,0,0.11067826199138037,False Negative
+47669,Female,28.0,Ludhiana,Student,2.0,0.0,8.58,3.0,0.0,Less than 5 hours,Healthy,B.Com,Yes,12.0,2.0,No,1,0,0.413755582077246,False Negative
+53084,Male,34.0,Ludhiana,Student,3.0,0.0,8.96,5.0,0.0,More than 8 hours,Healthy,MCA,Yes,10.0,3.0,Yes,1,0,0.351284750911902,False Negative
+114474,Male,28.0,Meerut,Student,3.0,0.0,7.1,1.0,0.0,5-6 hours,Moderate,Class 12,Yes,1.0,2.0,No,1,0,0.3988359659567345,False Negative
+132229,Female,21.0,Jaipur,Student,4.0,0.0,6.69,2.0,0.0,Less than 5 hours,Moderate,B.Arch,No,6.0,2.0,Yes,1,0,0.40870536992841183,False Negative
+77032,Male,24.0,Ahmedabad,Student,4.0,0.0,8.73,4.0,0.0,More than 8 hours,Unhealthy,B.Arch,No,8.0,3.0,Yes,0,1,0.505225249713485,False Positive
+2568,Female,28.0,Vasai-Virar,Student,2.0,0.0,6.0,5.0,0.0,More than 8 hours,Unhealthy,M.Ed,No,12.0,5.0,Yes,1,0,0.25388964671578496,False Negative
+138975,Male,29.0,Srinagar,Student,3.0,0.0,9.71,3.0,0.0,7-8 hours,Moderate,B.Pharm,Yes,2.0,1.0,No,1,0,0.2088755520895247,False Negative
+125511,Male,21.0,Ludhiana,Student,5.0,0.0,9.72,3.0,0.0,7-8 hours,Moderate,B.Ed,Yes,10.0,3.0,Yes,0,1,0.9714079283690247,False Positive
+60359,Male,20.0,Ludhiana,Student,3.0,0.0,5.66,1.0,0.0,7-8 hours,Moderate,Class 12,Yes,9.0,1.0,Yes,0,1,0.7291232516989539,False Positive
+33424,Male,21.0,Chennai,Student,2.0,0.0,8.59,5.0,0.0,5-6 hours,Unhealthy,Class 12,Yes,2.0,5.0,No,0,1,0.7021274304369098,False Positive
+81277,Male,24.0,Thane,Student,2.0,0.0,8.58,5.0,0.0,5-6 hours,Healthy,LLB,Yes,6.0,2.0,No,1,0,0.21883959828076804,False Negative
+36269,Female,31.0,Meerut,Student,2.0,0.0,6.61,5.0,0.0,More than 8 hours,Unhealthy,B.Pharm,Yes,8.0,1.0,No,1,0,0.13062820115310375,False Negative
+84256,Male,19.0,Kalyan,Student,3.0,0.0,7.91,3.0,0.0,More than 8 hours,Unhealthy,Class 12,No,10.0,3.0,No,1,0,0.4205069025159768,False Negative
+61331,Female,21.0,Bhopal,Student,5.0,0.0,9.74,2.0,0.0,Less than 5 hours,Healthy,B.Ed,Yes,12.0,1.0,Yes,0,1,0.9395908360942841,False Positive
+87282,Female,22.0,Visakhapatnam,Student,5.0,0.0,8.92,5.0,0.0,7-8 hours,Moderate,MBA,No,6.0,1.0,No,1,0,0.22158818241145126,False Negative
+122406,Female,28.0,Surat,Student,3.0,0.0,8.73,4.0,0.0,5-6 hours,Unhealthy,MSc,No,5.0,5.0,No,1,0,0.3219785283003574,False Negative
+7065,Female,33.0,Thane,Student,1.0,0.0,7.47,3.0,0.0,Less than 5 hours,Unhealthy,PhD,Yes,8.0,3.0,No,1,0,0.3486076463363113,False Negative
+71155,Female,27.0,Delhi,Student,5.0,0.0,7.17,3.0,0.0,7-8 hours,Healthy,PhD,No,6.0,2.0,Yes,1,0,0.27040099803319384,False Negative
+66049,Male,18.0,Ludhiana,Student,3.0,0.0,5.74,5.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,5.0,3.0,No,0,1,0.8179259293586394,False Positive
+114761,Female,31.0,Visakhapatnam,Student,5.0,0.0,5.52,1.0,0.0,5-6 hours,Healthy,MA,No,1.0,5.0,No,1,0,0.40824838339147396,False Negative
+16754,Female,28.0,Mumbai,Student,4.0,0.0,9.89,4.0,0.0,5-6 hours,Unhealthy,BBA,Yes,1.0,3.0,Yes,0,1,0.7363377085061201,False Positive
+23856,Male,25.0,Vadodara,Student,1.0,0.0,9.41,4.0,0.0,More than 8 hours,Moderate,B.Com,Yes,6.0,2.0,Yes,1,0,0.14544963960804297,False Negative
+137887,Female,21.0,Jaipur,Student,5.0,0.0,9.4,5.0,0.0,More than 8 hours,Healthy,BE,Yes,12.0,3.0,No,0,1,0.901274174372902,False Positive
+136474,Male,31.0,Faridabad,Student,3.0,0.0,5.98,2.0,0.0,More than 8 hours,Unhealthy,M.Tech,Yes,10.0,1.0,No,1,0,0.4408331946514049,False Negative
+79817,Female,20.0,Kolkata,Student,4.0,0.0,7.87,5.0,0.0,Less than 5 hours,Moderate,BHM,No,4.0,2.0,No,1,0,0.2227404168358477,False Negative
+9516,Male,20.0,Lucknow,Student,4.0,0.0,7.39,4.0,0.0,More than 8 hours,Unhealthy,Class 12,No,4.0,4.0,Yes,0,1,0.5436676961364253,False Positive
+140000,Male,34.0,Nashik,Student,3.0,0.0,7.7,4.0,0.0,7-8 hours,Moderate,MBBS,Yes,11.0,3.0,Yes,0,1,0.5707610632429184,False Positive
+133681,Female,25.0,Srinagar,Student,4.0,0.0,8.74,2.0,0.0,More than 8 hours,Moderate,Class 12,Yes,12.0,4.0,Yes,0,1,0.9468515832541695,False Positive
+42066,Female,33.0,Patna,Student,4.0,0.0,5.59,3.0,0.0,More than 8 hours,Moderate,BCA,Yes,11.0,1.0,Yes,0,1,0.5243824747161138,False Positive
+42130,Female,20.0,Lucknow,Student,2.0,0.0,6.91,5.0,0.0,Less than 5 hours,Unhealthy,Class 12,No,12.0,5.0,Yes,0,1,0.5922600628782916,False Positive
+132904,Female,21.0,Vasai-Virar,Student,4.0,0.0,8.95,4.0,0.0,5-6 hours,Moderate,Class 12,No,11.0,2.0,No,1,0,0.33921811417706865,False Negative
+71605,Female,23.0,Ludhiana,Student,2.0,0.0,5.7,3.0,0.0,More than 8 hours,Moderate,B.Com,Yes,10.0,4.0,No,0,1,0.6659283796144408,False Positive
+120046,Female,23.0,Bangalore,Student,1.0,0.0,9.86,2.0,0.0,Less than 5 hours,Healthy,MSc,Yes,1.0,4.0,Yes,1,0,0.40931848546256006,False Negative
+115841,Female,32.0,Ahmedabad,Student,1.0,0.0,6.25,4.0,0.0,7-8 hours,Healthy,LLM,Yes,10.0,3.0,No,1,0,0.1354601408292698,False Negative
+2770,Female,27.0,Hyderabad,Student,2.0,0.0,5.58,2.0,0.0,More than 8 hours,Unhealthy,B.Pharm,No,12.0,5.0,Yes,1,0,0.45021739377562525,False Negative
+3857,Female,20.0,Ludhiana,Student,4.0,0.0,9.11,4.0,0.0,Less than 5 hours,Unhealthy,Class 12,No,7.0,5.0,No,0,1,0.8139134821954717,False Positive
+86347,Female,20.0,Faridabad,Student,5.0,0.0,8.77,2.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,0.0,3.0,No,0,1,0.9280315620267535,False Positive
+84632,Male,19.0,Pune,Student,4.0,0.0,7.27,4.0,0.0,7-8 hours,Moderate,Class 12,Yes,8.0,5.0,No,0,1,0.9522218746245962,False Positive
+81112,Male,22.0,Lucknow,Student,1.0,0.0,7.99,1.0,0.0,5-6 hours,Healthy,B.Arch,No,10.0,3.0,Yes,1,0,0.10611920198848647,False Negative
+9092,Male,19.0,Lucknow,Student,3.0,0.0,7.25,3.0,0.0,7-8 hours,Moderate,Class 12,Yes,5.0,1.0,Yes,0,1,0.5465913537434924,False Positive
+1126,Female,29.0,Ghaziabad,Student,2.0,0.0,5.88,3.0,0.0,Less than 5 hours,Healthy,M.Com,No,0.0,2.0,No,1,0,0.013681108075146303,False Negative
+95542,Female,28.0,Vadodara,Student,4.0,0.0,5.85,4.0,0.0,More than 8 hours,Unhealthy,M.Pharm,Yes,7.0,3.0,Yes,0,1,0.8040576941775943,False Positive
+13054,Female,25.0,Kalyan,Student,5.0,0.0,5.27,2.0,0.0,Less than 5 hours,Moderate,LLM,No,9.0,4.0,Yes,0,1,0.8176211898283653,False Positive
+133232,Male,31.0,Surat,Student,2.0,0.0,5.56,3.0,0.0,5-6 hours,Moderate,BBA,No,0.0,3.0,Yes,1,0,0.026574490815822496,False Negative
+130508,Female,27.0,Mumbai,Student,2.0,0.0,9.44,1.0,0.0,Less than 5 hours,Moderate,BBA,Yes,9.0,1.0,No,1,0,0.424578554022478,False Negative
+97333,Female,27.0,Jaipur,Student,3.0,0.0,8.04,1.0,0.0,Less than 5 hours,Healthy,BCA,Yes,6.0,5.0,No,0,1,0.8432869611873006,False Positive
+61207,Male,29.0,Bhopal,Student,2.0,0.0,6.51,4.0,0.0,5-6 hours,Healthy,ME,Yes,8.0,3.0,No,1,0,0.26958401372546287,False Negative
+57635,Male,25.0,Surat,Student,3.0,0.0,9.05,2.0,0.0,5-6 hours,Unhealthy,M.Com,Yes,1.0,5.0,No,0,1,0.8781786849427127,False Positive
+129784,Male,24.0,Vasai-Virar,Student,2.0,0.0,6.37,2.0,0.0,5-6 hours,Moderate,B.Arch,Yes,10.0,2.0,No,0,1,0.5249260805731891,False Positive
+135815,Female,28.0,Srinagar,Student,4.0,0.0,9.44,2.0,0.0,Less than 5 hours,Unhealthy,BHM,No,0.0,2.0,No,1,0,0.19681778345004303,False Negative
+36488,Female,27.0,Thane,Student,2.0,0.0,9.47,3.0,0.0,More than 8 hours,Moderate,BBA,No,4.0,4.0,No,1,0,0.07798957718093456,False Negative
+35053,Male,23.0,Jaipur,Student,1.0,0.0,8.59,2.0,0.0,More than 8 hours,Unhealthy,B.Ed,Yes,9.0,2.0,Yes,1,0,0.4129844282267344,False Negative
+121247,Female,28.0,Thane,Student,3.0,0.0,9.7,4.0,0.0,More than 8 hours,Unhealthy,B.Com,No,6.0,2.0,Yes,1,0,0.1054497807158288,False Negative
+139298,Female,18.0,Indore,Student,5.0,0.0,7.28,4.0,0.0,Less than 5 hours,Moderate,Class 12,No,3.0,2.0,No,1,0,0.42030150244852965,False Negative
+67686,Male,20.0,Hyderabad,Student,4.0,0.0,5.74,3.0,0.0,5-6 hours,Healthy,Class 12,No,7.0,4.0,Yes,0,1,0.5148699188830073,False Positive
+55278,Male,30.0,Ghaziabad,Student,5.0,0.0,5.61,1.0,0.0,7-8 hours,Unhealthy,ME,Yes,2.0,2.0,No,0,1,0.8250550655882111,False Positive
+83284,Female,24.0,Jaipur,Student,2.0,0.0,9.41,5.0,0.0,Less than 5 hours,Unhealthy,MA,Yes,11.0,2.0,Yes,0,1,0.633425330227189,False Positive
+3466,Female,32.0,Ghaziabad,Student,4.0,0.0,8.79,2.0,0.0,Less than 5 hours,Unhealthy,B.Ed,No,12.0,1.0,No,1,0,0.29302320863854847,False Negative
+44667,Female,19.0,Agra,Student,3.0,0.0,9.05,4.0,0.0,More than 8 hours,Moderate,Class 12,Yes,9.0,1.0,No,1,0,0.4797967971635597,False Negative
+108546,Female,27.0,Ahmedabad,Student,2.0,0.0,9.97,3.0,0.0,More than 8 hours,Unhealthy,PhD,Yes,2.0,5.0,No,0,1,0.6708864957385204,False Positive
+58677,Male,18.0,Thane,Student,4.0,0.0,5.99,4.0,0.0,Less than 5 hours,Moderate,Class 12,No,8.0,3.0,No,0,1,0.5139078778485239,False Positive
+45491,Male,28.0,Rajkot,Student,2.0,0.0,8.43,3.0,0.0,5-6 hours,Healthy,BE,Yes,4.0,3.0,No,1,0,0.25130230534783327,False Negative
+139707,Male,25.0,Pune,Student,3.0,0.0,5.74,1.0,0.0,Less than 5 hours,Moderate,BA,No,12.0,2.0,No,1,0,0.2846197287713142,False Negative
+113367,Male,23.0,Jaipur,Student,3.0,0.0,6.53,1.0,0.0,More than 8 hours,Healthy,B.Ed,Yes,9.0,1.0,Yes,1,0,0.4839120270128382,False Negative
+73636,Female,23.0,Visakhapatnam,Student,5.0,0.0,7.48,2.0,0.0,5-6 hours,Moderate,B.Arch,Yes,6.0,3.0,No,0,1,0.9337708720308943,False Positive
+91311,Female,28.0,Varanasi,Student,3.0,0.0,7.77,3.0,0.0,7-8 hours,Moderate,B.Arch,Yes,10.0,1.0,Yes,1,0,0.480331926202959,False Negative
+78397,Female,20.0,Ludhiana,Student,3.0,0.0,7.77,4.0,0.0,7-8 hours,Moderate,Class 12,Yes,1.0,1.0,No,1,0,0.31550347593999334,False Negative
+4313,Male,26.0,Lucknow,Student,5.0,0.0,9.96,1.0,0.0,Less than 5 hours,Moderate,B.Tech,No,12.0,1.0,Yes,0,1,0.6383518860823146,False Positive
+69292,Female,29.0,Kalyan,Student,5.0,0.0,7.88,1.0,0.0,Less than 5 hours,Healthy,BHM,Yes,1.0,2.0,Yes,0,1,0.7577756616300199,False Positive
+32353,Female,21.0,Hyderabad,Student,3.0,0.0,9.11,3.0,0.0,7-8 hours,Unhealthy,BA,Yes,9.0,2.0,Yes,0,1,0.8571035616401596,False Positive
+88143,Female,31.0,Pune,Student,1.0,0.0,5.82,1.0,0.0,More than 8 hours,Moderate,MSc,Yes,12.0,4.0,Yes,1,0,0.43916968284358915,False Negative
+53287,Male,25.0,Kalyan,Student,3.0,0.0,8.9,3.0,0.0,7-8 hours,Moderate,M.Ed,Yes,9.0,3.0,No,0,1,0.7494905377526755,False Positive
+109676,Male,20.0,Nagpur,Student,3.0,0.0,9.04,3.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,11.0,4.0,Yes,0,1,0.9614152499169705,False Positive
+94541,Female,34.0,Indore,Student,2.0,0.0,5.27,3.0,0.0,More than 8 hours,Unhealthy,MD,Yes,3.0,5.0,No,1,0,0.42792091848633607,False Negative
+34126,Male,25.0,Vasai-Virar,Student,5.0,0.0,5.85,1.0,0.0,7-8 hours,Moderate,BBA,Yes,12.0,2.0,Yes,0,1,0.953136664342398,False Positive
+35280,Male,18.0,Hyderabad,Student,1.0,0.0,9.24,5.0,0.0,5-6 hours,Unhealthy,Class 12,No,7.0,4.0,No,1,0,0.16515177694521177,False Negative
+74890,Male,31.0,Mumbai,Student,5.0,0.0,7.38,2.0,0.0,7-8 hours,Moderate,B.Ed,Yes,2.0,2.0,No,0,1,0.6658499229809218,False Positive
+13917,Male,33.0,Ghaziabad,Student,3.0,0.0,8.9,3.0,0.0,Less than 5 hours,Unhealthy,B.Ed,No,8.0,5.0,No,1,0,0.42998952684480213,False Negative
+17109,Male,33.0,Ahmedabad,Student,4.0,0.0,7.08,1.0,0.0,5-6 hours,Unhealthy,B.Pharm,No,1.0,3.0,Yes,1,0,0.2511203044678627,False Negative
+687,Female,22.0,Pune,Student,1.0,0.0,6.17,4.0,0.0,7-8 hours,Healthy,BCA,No,10.0,5.0,No,1,0,0.10015512917759016,False Negative
+90175,Male,25.0,Surat,Student,5.0,0.0,7.1,2.0,0.0,5-6 hours,Unhealthy,BBA,No,6.0,3.0,No,0,1,0.6590379035557917,False Positive
+32167,Male,29.0,Nagpur,Student,5.0,0.0,8.95,5.0,0.0,7-8 hours,Healthy,BE,Yes,3.0,2.0,No,1,0,0.491422470676145,False Negative
+128889,Female,28.0,Visakhapatnam,Student,1.0,0.0,7.68,5.0,0.0,5-6 hours,Healthy,BCA,Yes,7.0,5.0,Yes,1,0,0.32551540245988686,False Negative
+34642,Male,21.0,Meerut,Student,2.0,0.0,5.27,4.0,0.0,5-6 hours,Healthy,MCA,Yes,11.0,2.0,No,1,0,0.4139377213925705,False Negative
+75785,Female,25.0,Srinagar,Student,4.0,0.0,8.78,3.0,0.0,Less than 5 hours,Unhealthy,B.Pharm,No,10.0,4.0,No,0,1,0.7175823200975402,False Positive
+56192,Female,21.0,Thane,Student,2.0,0.0,6.32,3.0,0.0,5-6 hours,Healthy,BCA,Yes,11.0,3.0,Yes,0,1,0.6628656956330875,False Positive
+115682,Male,27.0,Rajkot,Student,3.0,0.0,8.83,1.0,0.0,Less than 5 hours,Healthy,MBA,Yes,12.0,5.0,No,0,1,0.9301642076156046,False Positive
+70135,Female,21.0,Surat,Student,3.0,0.0,7.09,1.0,0.0,5-6 hours,Moderate,B.Arch,No,11.0,5.0,No,0,1,0.7199299630771269,False Positive
+68777,Male,29.0,Mumbai,Student,5.0,0.0,7.77,3.0,0.0,7-8 hours,Unhealthy,B.Tech,Yes,4.0,1.0,Yes,0,1,0.7735875413308895,False Positive
+40888,Female,25.0,Delhi,Student,1.0,0.0,9.74,4.0,0.0,Less than 5 hours,Unhealthy,BSc,Yes,9.0,2.0,Yes,1,0,0.47450006469503886,False Negative
+110424,Male,18.0,Agra,Student,3.0,0.0,8.79,5.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,12.0,1.0,Yes,0,1,0.8091899091353366,False Positive
+53955,Male,30.0,Bhopal,Student,3.0,0.0,8.44,2.0,0.0,7-8 hours,Moderate,MSc,Yes,8.0,2.0,Yes,0,1,0.5638810382738347,False Positive
+127591,Female,27.0,Rajkot,Student,3.0,0.0,5.55,4.0,0.0,5-6 hours,Moderate,B.Ed,No,6.0,4.0,Yes,1,0,0.2003616712927292,False Negative
+106106,Male,32.0,Surat,Student,4.0,0.0,8.7,3.0,0.0,7-8 hours,Moderate,MCA,No,9.0,3.0,No,1,0,0.24515615652211814,False Negative
+130295,Female,33.0,Bhopal,Student,1.0,0.0,7.85,3.0,0.0,7-8 hours,Healthy,Others,Yes,7.0,2.0,No,1,0,0.06837727490760885,False Negative
+491,Male,19.0,Pune,Student,3.0,0.0,9.05,1.0,0.0,More than 8 hours,Moderate,Class 12,No,1.0,5.0,No,1,0,0.4074268206424187,False Negative
+35621,Male,33.0,Srinagar,Student,3.0,0.0,9.89,3.0,0.0,Less than 5 hours,Moderate,LLB,Yes,11.0,1.0,No,1,0,0.43673109434669133,False Negative
+118648,Male,21.0,Vadodara,Student,3.0,0.0,5.12,4.0,0.0,More than 8 hours,Unhealthy,BCA,No,11.0,2.0,No,1,0,0.22125281867130478,False Negative
+66467,Female,29.0,Kolkata,Student,3.0,0.0,8.95,4.0,0.0,7-8 hours,Moderate,MBBS,Yes,0.0,2.0,No,1,0,0.25343045754899063,False Negative
+139072,Male,25.0,Lucknow,Student,1.0,0.0,9.24,5.0,0.0,5-6 hours,Unhealthy,M.Tech,Yes,10.0,2.0,Yes,1,0,0.331182990747394,False Negative
+14738,Female,19.0,Lucknow,Student,1.0,0.0,8.61,5.0,0.0,More than 8 hours,Healthy,Class 12,Yes,8.0,4.0,No,1,0,0.31541830319810615,False Negative
+46312,Female,19.0,Lucknow,Student,5.0,0.0,6.16,3.0,0.0,7-8 hours,Healthy,Class 12,Yes,2.0,3.0,Yes,0,1,0.8879186012566564,False Positive
+587,Female,33.0,Delhi,Student,2.0,0.0,5.51,5.0,0.0,Less than 5 hours,Unhealthy,BSc,Yes,12.0,1.0,No,1,0,0.2580225311299554,False Negative
+101587,Female,19.0,Agra,Student,3.0,0.0,7.6,3.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,6.0,4.0,No,0,1,0.8678357292473426,False Positive
+10367,Male,25.0,Delhi,Student,2.0,0.0,9.24,3.0,0.0,Less than 5 hours,Unhealthy,LLM,No,5.0,1.0,No,1,0,0.06514919726908656,False Negative
+121015,Female,20.0,Chennai,Student,4.0,0.0,5.59,4.0,0.0,5-6 hours,Moderate,Class 12,No,4.0,3.0,Yes,1,0,0.3038501249103186,False Negative
+59491,Male,28.0,Bhopal,Student,1.0,0.0,5.12,3.0,0.0,More than 8 hours,Unhealthy,B.Pharm,Yes,10.0,3.0,Yes,1,0,0.394339451289021,False Negative
+74868,Female,29.0,Ludhiana,Student,2.0,0.0,9.37,2.0,0.0,5-6 hours,Unhealthy,MA,Yes,12.0,1.0,Yes,0,1,0.5339190806486043,False Positive
+117357,Male,21.0,Nashik,Student,1.0,0.0,9.4,3.0,0.0,Less than 5 hours,Unhealthy,BE,Yes,6.0,4.0,Yes,0,1,0.7739966824330785,False Positive
+45898,Female,31.0,Srinagar,Student,1.0,0.0,9.91,1.0,0.0,7-8 hours,Moderate,M.Ed,Yes,12.0,3.0,No,1,0,0.4002081686542985,False Negative
+135639,Female,31.0,Srinagar,Student,2.0,0.0,8.59,3.0,0.0,7-8 hours,Moderate,LLB,Yes,9.0,4.0,Yes,0,1,0.6020748408368768,False Positive
+114866,Female,34.0,Chennai,Student,5.0,0.0,6.99,2.0,0.0,7-8 hours,Moderate,M.Pharm,Yes,4.0,2.0,No,0,1,0.6500912340991644,False Positive
+8599,Female,30.0,Nagpur,Student,1.0,0.0,9.91,1.0,0.0,Less than 5 hours,Moderate,M.Com,Yes,2.0,4.0,Yes,1,0,0.4067760768478974,False Negative
+40723,Male,23.0,Pune,Student,1.0,0.0,6.1,2.0,0.0,More than 8 hours,Healthy,BHM,Yes,1.0,2.0,No,1,0,0.07148101471574117,False Negative
+123010,Male,25.0,Lucknow,Student,2.0,0.0,7.77,1.0,0.0,More than 8 hours,Unhealthy,B.Tech,No,8.0,3.0,No,1,0,0.19044988105922947,False Negative
+121552,Female,34.0,Surat,Student,4.0,0.0,9.78,4.0,0.0,Less than 5 hours,Unhealthy,LLB,Yes,12.0,4.0,No,0,1,0.922071188673656,False Positive
+34750,Female,28.0,Rajkot,Student,4.0,0.0,8.54,3.0,0.0,Less than 5 hours,Healthy,BA,No,10.0,1.0,Yes,1,0,0.1621374846091703,False Negative
+10802,Male,28.0,Chennai,Student,4.0,0.0,9.63,4.0,0.0,7-8 hours,Unhealthy,B.Com,No,9.0,1.0,No,1,0,0.1621410125328158,False Negative
+852,Male,29.0,Vasai-Virar,Student,3.0,0.0,8.59,2.0,0.0,7-8 hours,Moderate,MCA,No,8.0,5.0,Yes,1,0,0.44090153593325027,False Negative
+73210,Male,26.0,Indore,Student,1.0,0.0,7.49,2.0,0.0,Less than 5 hours,Others,LLB,Yes,6.0,4.0,No,0,1,0.5444500563611099,False Positive
+102457,Male,33.0,Meerut,Student,3.0,0.0,9.96,5.0,0.0,More than 8 hours,Healthy,B.Arch,Yes,10.0,1.0,No,1,0,0.14733168132208185,False Negative
+98802,Female,31.0,Ludhiana,Student,5.0,0.0,5.74,3.0,0.0,5-6 hours,Healthy,MBBS,No,7.0,1.0,Yes,1,0,0.1265302020704187,False Negative
+112962,Male,26.0,Thane,Student,1.0,0.0,7.15,3.0,0.0,More than 8 hours,Unhealthy,BSc,Yes,7.0,2.0,Yes,1,0,0.27415582406007466,False Negative
+86825,Female,34.0,Hyderabad,Student,3.0,0.0,5.27,4.0,0.0,More than 8 hours,Unhealthy,BE,Yes,12.0,2.0,No,1,0,0.4699822550906172,False Negative
+54881,Male,20.0,Kolkata,Student,4.0,0.0,9.5,2.0,0.0,Less than 5 hours,Healthy,Class 12,No,12.0,3.0,No,0,1,0.6315917135533617,False Positive
+40230,Male,29.0,Bangalore,Student,3.0,0.0,7.83,5.0,0.0,7-8 hours,Unhealthy,BCA,Yes,6.0,4.0,No,0,1,0.6921021061554421,False Positive
+127395,Male,25.0,Pune,Student,1.0,0.0,8.92,4.0,0.0,5-6 hours,Moderate,MCA,Yes,10.0,1.0,Yes,1,0,0.18381836947614721,False Negative
+3885,Male,31.0,Pune,Student,5.0,0.0,9.91,3.0,0.0,5-6 hours,Moderate,BA,No,11.0,3.0,No,1,0,0.45839561961504605,False Negative
+17695,Female,32.0,Ludhiana,Student,5.0,0.0,8.71,3.0,0.0,7-8 hours,Healthy,B.Tech,Yes,6.0,1.0,No,0,1,0.5462717174698382,False Positive
+85465,Female,23.0,Kolkata,Student,3.0,0.0,9.03,1.0,0.0,Less than 5 hours,Unhealthy,BE,No,4.0,3.0,Yes,1,0,0.49912526805900265,False Negative
+72806,Male,29.0,Kanpur,Student,3.0,0.0,9.21,3.0,0.0,7-8 hours,Healthy,B.Com,Yes,11.0,4.0,No,0,1,0.7195827364271288,False Positive
+82866,Female,33.0,Mumbai,Student,1.0,0.0,8.17,5.0,0.0,Less than 5 hours,Healthy,PhD,Yes,2.0,4.0,Yes,1,0,0.10900100518678417,False Negative
+14281,Female,30.0,Jaipur,Student,5.0,0.0,8.08,1.0,0.0,7-8 hours,Unhealthy,BHM,Yes,11.0,2.0,No,0,1,0.9250850131423275,False Positive
+63342,Female,25.0,Kalyan,Student,3.0,0.0,7.17,1.0,0.0,5-6 hours,Healthy,B.Com,Yes,0.0,3.0,Yes,0,1,0.5363424787481793,False Positive
+63192,Male,26.0,Faridabad,Student,4.0,0.0,7.77,1.0,0.0,7-8 hours,Healthy,BA,Yes,10.0,5.0,No,0,1,0.9478181227494943,False Positive
+90605,Male,24.0,Meerut,Student,4.0,0.0,9.86,4.0,0.0,More than 8 hours,Healthy,MA,Yes,4.0,3.0,No,0,1,0.6410801069634655,False Positive
+127265,Male,22.0,Ghaziabad,Student,3.0,0.0,8.58,4.0,0.0,Less than 5 hours,Moderate,BHM,Yes,4.0,5.0,Yes,0,1,0.8960311720215531,False Positive
+27430,Female,33.0,Agra,Student,5.0,0.0,8.14,2.0,0.0,Less than 5 hours,Healthy,BHM,No,8.0,1.0,No,1,0,0.12491334821786837,False Negative
+92939,Male,19.0,Ahmedabad,Student,3.0,0.0,5.38,5.0,0.0,More than 8 hours,Healthy,Class 12,No,10.0,5.0,No,1,0,0.3358678329265926,False Negative
+102071,Male,32.0,Bhopal,Student,2.0,0.0,8.74,1.0,0.0,7-8 hours,Moderate,B.Ed,Yes,10.0,3.0,No,0,1,0.5389812719341119,False Positive
+99797,Male,28.0,Patna,Student,3.0,0.0,7.8,2.0,0.0,5-6 hours,Healthy,B.Pharm,Yes,9.0,1.0,No,1,0,0.35661372438928834,False Negative
+137352,Male,18.0,Meerut,Student,1.0,0.0,6.25,3.0,0.0,More than 8 hours,Unhealthy,Class 12,Yes,7.0,4.0,Yes,0,1,0.694993339299225,False Positive
+74313,Male,24.0,Pune,Student,3.0,0.0,5.32,4.0,0.0,7-8 hours,Moderate,B.Com,Yes,7.0,2.0,Yes,0,1,0.5241265769799242,False Positive
+81412,Male,24.0,Hyderabad,Student,1.0,0.0,8.04,2.0,0.0,More than 8 hours,Moderate,MBBS,Yes,8.0,4.0,No,0,1,0.5035768176411971,False Positive
+39796,Male,25.0,Thane,Student,3.0,0.0,9.05,4.0,0.0,5-6 hours,Unhealthy,MHM,Yes,0.0,1.0,No,1,0,0.3224288552248025,False Negative
+52158,Male,24.0,Bhopal,Student,1.0,0.0,7.21,3.0,0.0,5-6 hours,Moderate,MBBS,No,3.0,4.0,No,1,0,0.05710761663966458,False Negative
+12265,Female,18.0,Meerut,Student,3.0,0.0,7.25,5.0,0.0,7-8 hours,Moderate,Class 12,Yes,7.0,5.0,Yes,0,1,0.909818878501547,False Positive
+67594,Female,24.0,Kalyan,Student,4.0,0.0,5.16,1.0,0.0,Less than 5 hours,Moderate,BSc,No,10.0,2.0,No,1,0,0.47021893734189685,False Negative
+54317,Male,34.0,Rajkot,Student,4.0,0.0,7.25,2.0,0.0,More than 8 hours,Healthy,B.Arch,Yes,2.0,2.0,No,1,0,0.29092728060106904,False Negative
+63698,Female,20.0,Pune,Student,2.0,0.0,9.44,3.0,0.0,Less than 5 hours,Healthy,Class 12,Yes,7.0,1.0,No,1,0,0.3223352626506366,False Negative
+103141,Female,29.0,Vasai-Virar,Student,3.0,0.0,9.67,2.0,0.0,Less than 5 hours,Healthy,MBBS,Yes,5.0,5.0,No,0,1,0.7985270539852668,False Positive
+54703,Male,21.0,Jaipur,Student,5.0,0.0,7.25,5.0,0.0,5-6 hours,Moderate,MCA,No,11.0,2.0,No,1,0,0.44294742499558987,False Negative
+29406,Female,18.0,Agra,Student,5.0,0.0,5.6,1.0,0.0,5-6 hours,Moderate,Class 12,No,9.0,1.0,No,0,1,0.5092234969312115,False Positive
+137112,Male,33.0,Pune,Student,4.0,0.0,5.42,3.0,0.0,Less than 5 hours,Moderate,MSc,Yes,0.0,3.0,No,1,0,0.4662005391502146,False Negative
+87979,Male,27.0,Kalyan,Student,1.0,0.0,7.24,3.0,0.0,More than 8 hours,Moderate,B.Tech,Yes,12.0,1.0,Yes,1,0,0.18031008086417685,False Negative
+135413,Male,20.0,Delhi,Student,1.0,0.0,5.12,2.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,1.0,4.0,No,0,1,0.6129022844103758,False Positive
+80991,Female,20.0,Kolkata,Student,2.0,0.0,5.74,5.0,0.0,7-8 hours,Unhealthy,Class 12,Yes,2.0,3.0,No,1,0,0.46060848134534604,False Negative
+46817,Female,22.0,Vasai-Virar,Student,4.0,0.0,8.89,1.0,0.0,7-8 hours,Healthy,BA,No,2.0,2.0,Yes,1,0,0.2205035072946792,False Negative
+109760,Male,25.0,Lucknow,Student,4.0,0.0,9.39,2.0,0.0,7-8 hours,Unhealthy,B.Arch,Yes,0.0,4.0,Yes,0,1,0.9148881260795622,False Positive
+86936,Female,28.0,Thane,Student,3.0,0.0,6.56,4.0,0.0,5-6 hours,Healthy,BHM,Yes,11.0,2.0,Yes,1,0,0.4680848325158364,False Negative
+81415,Male,33.0,Bhopal,Student,3.0,0.0,7.17,4.0,0.0,5-6 hours,Healthy,MBBS,Yes,12.0,3.0,Yes,0,1,0.5376248121640805,False Positive
+3987,Female,18.0,Ahmedabad,Student,2.0,0.0,8.24,5.0,0.0,More than 8 hours,Moderate,Class 12,Yes,3.0,3.0,Yes,1,0,0.4435839218807832,False Negative
+75766,Female,33.0,Meerut,Student,2.0,0.0,8.52,2.0,0.0,Less than 5 hours,Unhealthy,B.Tech,Yes,7.0,1.0,No,1,0,0.3371971302780974,False Negative
+89309,Male,29.0,Ghaziabad,Student,3.0,0.0,8.91,5.0,0.0,Less than 5 hours,Moderate,LLB,Yes,2.0,3.0,No,1,0,0.4434228213666608,False Negative
+96269,Male,20.0,Chennai,Student,3.0,0.0,9.92,5.0,0.0,More than 8 hours,Unhealthy,Class 12,Yes,5.0,3.0,No,0,1,0.692915851504459,False Positive
+81056,Female,20.0,Hyderabad,Student,3.0,0.0,7.77,4.0,0.0,7-8 hours,Unhealthy,Class 12,No,10.0,4.0,Yes,0,1,0.6086103506084645,False Positive
+16510,Male,30.0,Patna,Student,4.0,0.0,8.62,5.0,0.0,5-6 hours,Moderate,BCA,Yes,3.0,1.0,No,1,0,0.29859709514312976,False Negative
+108804,Male,33.0,Pune,Student,5.0,0.0,9.44,3.0,0.0,7-8 hours,Unhealthy,LLM,No,6.0,4.0,Yes,0,1,0.6097824420184976,False Positive
+26291,Female,31.0,Pune,Student,1.0,0.0,6.82,1.0,0.0,7-8 hours,Unhealthy,M.Tech,Yes,12.0,5.0,No,0,1,0.7187880973326412,False Positive
+127212,Female,24.0,Thane,Student,1.0,0.0,5.71,2.0,0.0,Less than 5 hours,Moderate,M.Tech,Yes,5.0,3.0,No,1,0,0.3858925145895305,False Negative
+70962,Male,22.0,Indore,Student,1.0,0.0,7.5,3.0,0.0,5-6 hours,Unhealthy,MCA,Yes,2.0,1.0,Yes,1,0,0.19605420825228514,False Negative
+32810,Female,19.0,Hyderabad,Student,2.0,0.0,5.56,3.0,0.0,More than 8 hours,Healthy,Class 12,No,10.0,4.0,Yes,1,0,0.2091324264988253,False Negative
+51904,Male,28.0,Nashik,Student,5.0,0.0,7.52,5.0,0.0,7-8 hours,Unhealthy,PhD,No,2.0,1.0,No,1,0,0.13846754802393021,False Negative
+98817,Female,33.0,Visakhapatnam,Student,3.0,0.0,6.76,1.0,0.0,7-8 hours,Moderate,M.Tech,Yes,7.0,2.0,No,1,0,0.42081670708812136,False Negative
+136013,Male,23.0,Vadodara,Student,2.0,0.0,8.59,5.0,0.0,Less than 5 hours,Moderate,BE,Yes,12.0,4.0,No,0,1,0.7733761813327675,False Positive
+78060,Female,32.0,Chennai,Student,4.0,0.0,9.79,3.0,0.0,5-6 hours,Moderate,MBA,Yes,3.0,2.0,Yes,1,0,0.4901716452161255,False Negative
+27948,Female,20.0,Pune,Student,4.0,0.0,5.7,5.0,0.0,7-8 hours,Moderate,Class 12,Yes,10.0,2.0,Yes,0,1,0.8069325340539828,False Positive
+41686,Male,27.0,Ghaziabad,Student,1.0,0.0,9.97,3.0,0.0,7-8 hours,Unhealthy,BCA,Yes,10.0,2.0,No,1,0,0.3457461016897869,False Negative
+83392,Male,29.0,Meerut,Student,1.0,0.0,5.56,1.0,0.0,More than 8 hours,Moderate,M.Ed,Yes,5.0,4.0,No,1,0,0.3009627929634153,False Negative
+16956,Female,27.0,Nashik,Student,1.0,0.0,7.38,3.0,0.0,5-6 hours,Healthy,B.Arch,Yes,4.0,5.0,No,1,0,0.3329917552921721,False Negative
+49421,Female,26.0,Vadodara,Student,2.0,0.0,5.75,1.0,0.0,Less than 5 hours,Moderate,B.Pharm,Yes,12.0,3.0,No,0,1,0.7460141425549737,False Positive
+64771,Male,21.0,Thane,Student,2.0,0.0,7.51,1.0,0.0,7-8 hours,Moderate,MCA,No,10.0,2.0,No,1,0,0.1703551766324524,False Negative
+118489,Male,21.0,Jaipur,Student,1.0,0.0,8.04,3.0,0.0,7-8 hours,Unhealthy,BE,Yes,3.0,2.0,Yes,1,0,0.2952932073854642,False Negative
+59121,Male,27.0,Visakhapatnam,Student,3.0,0.0,8.24,2.0,0.0,Less than 5 hours,Unhealthy,B.Tech,Yes,7.0,1.0,Yes,0,1,0.6965711437208869,False Positive
+76547,Male,18.0,Visakhapatnam,Student,1.0,0.0,6.99,2.0,0.0,Less than 5 hours,Healthy,Class 12,Yes,7.0,3.0,No,1,0,0.4888401764694442,False Negative
+27852,Male,22.0,Nagpur,Student,1.0,0.0,6.78,1.0,0.0,Less than 5 hours,Moderate,B.Com,Yes,12.0,2.0,No,0,1,0.5381123865459688,False Positive
+109071,Male,31.0,Visakhapatnam,Student,3.0,0.0,7.02,4.0,0.0,Less than 5 hours,Healthy,MA,No,10.0,5.0,No,1,0,0.23738375281725013,False Negative
+104872,Male,28.0,Indore,Student,2.0,0.0,9.41,3.0,0.0,5-6 hours,Unhealthy,BE,No,9.0,2.0,Yes,1,0,0.10454379577358222,False Negative
+138999,Female,20.0,Ludhiana,Student,3.0,0.0,8.62,4.0,0.0,5-6 hours,Unhealthy,Class 12,No,4.0,3.0,No,1,0,0.2599738023323544,False Negative
+38241,Male,27.0,Jaipur,Student,1.0,0.0,5.64,4.0,0.0,5-6 hours,Moderate,BCA,Yes,8.0,3.0,No,1,0,0.20063928069169198,False Negative
+1881,Male,28.0,Bhopal,Student,3.0,0.0,8.44,4.0,0.0,7-8 hours,Unhealthy,MBA,No,11.0,4.0,Yes,1,0,0.4285105313399907,False Negative
+10629,Female,19.0,Ludhiana,Student,2.0,0.0,5.6,5.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,6.0,3.0,No,0,1,0.558304505156758,False Positive
+67813,Male,32.0,Kalyan,Student,2.0,0.0,7.09,4.0,0.0,7-8 hours,Unhealthy,B.Ed,Yes,12.0,2.0,Yes,1,0,0.4376203441725968,False Negative
+61731,Female,28.0,Bangalore,Student,4.0,0.0,9.72,3.0,0.0,5-6 hours,Moderate,M.Ed,No,4.0,3.0,Yes,1,0,0.2527800062438227,False Negative
+62744,Male,27.0,Nagpur,Student,3.0,0.0,5.56,3.0,0.0,7-8 hours,Moderate,M.Ed,Yes,11.0,2.0,No,0,1,0.5571529330871976,False Positive
+126143,Female,34.0,Nashik,Student,3.0,0.0,5.72,3.0,0.0,Less than 5 hours,Unhealthy,B.Com,Yes,3.0,3.0,Yes,0,1,0.5589479267945997,False Positive
+31206,Male,26.0,Pune,Student,3.0,0.0,7.77,3.0,0.0,5-6 hours,Healthy,M.Ed,Yes,1.0,3.0,Yes,1,0,0.4179476719152973,False Negative
+24423,Male,32.0,Bhopal,Student,3.0,0.0,5.7,3.0,0.0,Less than 5 hours,Moderate,BE,Yes,0.0,1.0,Yes,1,0,0.20454083087351588,False Negative
+48595,Male,30.0,Patna,Student,1.0,0.0,8.59,3.0,0.0,More than 8 hours,Moderate,BE,No,11.0,1.0,No,1,0,0.01169514382420298,False Negative
+53232,Female,30.0,Kalyan,Student,3.0,0.0,7.82,1.0,0.0,5-6 hours,Healthy,M.Ed,Yes,4.0,3.0,No,1,0,0.4787142534199393,False Negative
+113924,Male,20.0,Meerut,Student,4.0,0.0,5.72,5.0,0.0,7-8 hours,Healthy,BHM,Yes,6.0,4.0,No,0,1,0.8224541151363939,False Positive
+130126,Female,29.0,Meerut,Student,1.0,0.0,6.75,1.0,0.0,Less than 5 hours,Healthy,Class 12,Yes,2.0,4.0,Yes,1,0,0.3233933876314163,False Negative
+133626,Male,29.0,Agra,Student,3.0,0.0,7.1,5.0,0.0,5-6 hours,Healthy,ME,Yes,1.0,4.0,Yes,1,0,0.3248776601701175,False Negative
+78835,Male,19.0,Ahmedabad,Student,2.0,0.0,9.43,3.0,0.0,5-6 hours,Moderate,Class 12,Yes,7.0,5.0,No,0,1,0.8586404080848378,False Positive
+33778,Female,18.0,Pune,Student,3.0,0.0,6.82,4.0,0.0,5-6 hours,Healthy,Class 12,Yes,10.0,2.0,No,0,1,0.61176491239135,False Positive
+76020,Male,22.0,Rajkot,Student,3.0,0.0,5.76,2.0,0.0,5-6 hours,Moderate,MA,Yes,7.0,2.0,Yes,0,1,0.717238715492035,False Positive
+138771,Male,21.0,Pune,Student,3.0,0.0,6.36,3.0,0.0,Less than 5 hours,Moderate,Class 12,No,8.0,1.0,Yes,1,0,0.15139456373815144,False Negative
+112105,Male,25.0,Agra,Student,3.0,0.0,8.95,4.0,0.0,More than 8 hours,Moderate,B.Arch,Yes,5.0,4.0,No,0,1,0.6365123963025072,False Positive
+83550,Female,26.0,Chennai,Student,3.0,0.0,6.89,4.0,0.0,5-6 hours,Moderate,BHM,Yes,4.0,1.0,No,1,0,0.23428731940740513,False Negative
+139879,Male,22.0,Jaipur,Student,2.0,0.0,6.52,4.0,0.0,Less than 5 hours,Moderate,B.Ed,Yes,9.0,2.0,No,1,0,0.4733606292756126,False Negative
+60167,Male,18.0,Bhopal,Student,5.0,0.0,6.65,5.0,0.0,5-6 hours,Unhealthy,Class 12,No,2.0,4.0,Yes,0,1,0.7288597339618142,False Positive
+115175,Female,22.0,Surat,Student,1.0,0.0,7.03,4.0,0.0,Less than 5 hours,Moderate,BCA,Yes,7.0,5.0,No,0,1,0.672956801164902,False Positive
+44097,Male,33.0,Ghaziabad,Student,3.0,0.0,7.64,3.0,0.0,Less than 5 hours,Healthy,B.Tech,Yes,4.0,5.0,No,0,1,0.6461410200444586,False Positive
+5302,Male,26.0,Visakhapatnam,Student,3.0,0.0,7.37,3.0,0.0,5-6 hours,Moderate,BHM,No,12.0,3.0,Yes,1,0,0.2843694170330415,False Negative
+50557,Male,29.0,Mumbai,Student,5.0,0.0,7.09,4.0,0.0,Less than 5 hours,Healthy,LLB,Yes,6.0,3.0,No,0,1,0.7881289009960448,False Positive
+31338,Female,19.0,Ludhiana,Student,3.0,0.0,5.76,2.0,0.0,5-6 hours,Moderate,Class 12,Yes,2.0,2.0,Yes,0,1,0.644463283742982,False Positive
+20280,Male,20.0,Rajkot,Student,5.0,0.0,6.37,5.0,0.0,7-8 hours,Healthy,Class 12,No,2.0,1.0,No,1,0,0.1161731672946952,False Negative
+115859,Male,22.0,Chennai,Student,1.0,0.0,9.41,4.0,0.0,More than 8 hours,Unhealthy,BCA,No,1.0,5.0,No,1,0,0.0810913759049282,False Negative
+74713,Male,28.0,Hyderabad,Student,4.0,0.0,7.49,3.0,0.0,5-6 hours,Unhealthy,M.Pharm,Yes,7.0,4.0,Yes,0,1,0.9302264803403666,False Positive
+117244,Male,32.0,Thane,Student,1.0,0.0,5.85,1.0,0.0,7-8 hours,Unhealthy,BCA,Yes,11.0,2.0,No,1,0,0.3163664744093783,False Negative
+126100,Female,26.0,Delhi,Student,4.0,0.0,5.12,3.0,0.0,7-8 hours,Healthy,BCA,Yes,10.0,3.0,No,0,1,0.7777595445412874,False Positive
+28472,Female,34.0,Varanasi,Student,3.0,0.0,6.81,3.0,0.0,Less than 5 hours,Moderate,M.Pharm,Yes,6.0,4.0,Yes,0,1,0.6577041934553819,False Positive
+140681,Male,23.0,Srinagar,Student,3.0,0.0,6.0,2.0,0.0,More than 8 hours,Healthy,MBBS,Yes,12.0,4.0,No,0,1,0.8261147029744776,False Positive
+45014,Male,33.0,Ghaziabad,Student,3.0,0.0,9.95,1.0,0.0,Less than 5 hours,Healthy,LLB,Yes,8.0,2.0,No,0,1,0.5019851227530205,False Positive
+96125,Male,20.0,Bhopal,Student,2.0,0.0,8.17,3.0,0.0,More than 8 hours,Healthy,Class 12,Yes,6.0,4.0,No,0,1,0.5565260218202936,False Positive
+88010,Male,32.0,Bangalore,Student,5.0,0.0,7.52,4.0,0.0,5-6 hours,Healthy,BCA,No,8.0,5.0,No,1,0,0.45016913225382976,False Negative
+14357,Female,29.0,Rajkot,Student,4.0,0.0,8.04,4.0,0.0,Less than 5 hours,Moderate,BCA,Yes,3.0,1.0,Yes,1,0,0.47689007765515884,False Negative
+99927,Female,24.0,Srinagar,Student,5.0,0.0,5.59,1.0,0.0,7-8 hours,Unhealthy,BCA,No,12.0,3.0,No,0,1,0.8342072269447756,False Positive
+108865,Male,33.0,Delhi,Student,5.0,0.0,9.97,2.0,0.0,7-8 hours,Moderate,LLM,No,9.0,3.0,No,1,0,0.45547840263403105,False Negative
+71824,Female,23.0,Ludhiana,Student,1.0,0.0,9.31,1.0,0.0,Less than 5 hours,Healthy,B.Pharm,Yes,7.0,3.0,No,1,0,0.4652973870949348,False Negative
+26022,Female,18.0,Surat,Student,5.0,0.0,9.79,2.0,0.0,More than 8 hours,Moderate,Class 12,No,3.0,2.0,No,1,0,0.47289243782806273,False Negative
+27001,Female,23.0,Ghaziabad,Student,3.0,0.0,5.57,1.0,0.0,5-6 hours,Unhealthy,M.Tech,Yes,6.0,5.0,No,0,1,0.9399827702636486,False Positive
+36475,Female,27.0,Rajkot,Student,2.0,0.0,7.25,3.0,0.0,More than 8 hours,Healthy,LLM,Yes,6.0,3.0,Yes,1,0,0.31220180610634635,False Negative
+139583,Female,27.0,Delhi,Student,4.0,0.0,5.61,3.0,0.0,7-8 hours,Unhealthy,PhD,No,12.0,1.0,No,1,0,0.26854807099661115,False Negative
+23765,Male,21.0,Rajkot,Student,1.0,0.0,7.72,2.0,0.0,Less than 5 hours,Moderate,MSc,Yes,10.0,1.0,No,1,0,0.3567002060098186,False Negative
+140082,Female,28.0,Thane,Student,3.0,0.0,5.77,5.0,0.0,5-6 hours,Unhealthy,MSc,Yes,1.0,4.0,No,0,1,0.5418872342466954,False Positive
+104996,Female,31.0,Thane,Student,3.0,0.0,5.77,4.0,0.0,7-8 hours,Healthy,M.Tech,Yes,6.0,2.0,Yes,1,0,0.24999658415714676,False Negative
+112061,Female,19.0,Delhi,Student,3.0,0.0,7.17,5.0,0.0,7-8 hours,Healthy,Class 12,Yes,11.0,1.0,Yes,0,1,0.5015470091848098,False Positive
+140685,Female,27.0,Surat,Student,5.0,0.0,5.75,5.0,0.0,5-6 hours,Unhealthy,Class 12,Yes,7.0,1.0,Yes,0,1,0.7577869001487612,False Positive
+85852,Female,30.0,Ahmedabad,Student,3.0,0.0,7.83,3.0,0.0,More than 8 hours,Healthy,BHM,Yes,0.0,4.0,Yes,1,0,0.3853600079938333,False Negative
+76628,Male,19.0,Vadodara,Student,4.0,0.0,8.9,1.0,0.0,5-6 hours,Unhealthy,Class 12,Yes,12.0,2.0,No,0,1,0.9591342746255108,False Positive
+82601,Female,25.0,Patna,Student,4.0,0.0,7.02,5.0,0.0,Less than 5 hours,Unhealthy,B.Pharm,No,1.0,2.0,Yes,1,0,0.19774569976193332,False Negative
+101526,Male,34.0,Varanasi,Student,3.0,0.0,9.54,3.0,0.0,Less than 5 hours,Healthy,MHM,No,11.0,4.0,Yes,1,0,0.20526713345616682,False Negative
+86574,Female,32.0,Ghaziabad,Student,1.0,0.0,9.24,2.0,0.0,7-8 hours,Unhealthy,BBA,Yes,8.0,3.0,Yes,1,0,0.398319382611015,False Negative
+73524,Female,20.0,Surat,Student,5.0,0.0,6.75,2.0,0.0,Less than 5 hours,Healthy,Class 12,Yes,11.0,1.0,No,0,1,0.9007460289473026,False Positive
+20099,Female,21.0,Visakhapatnam,Student,4.0,0.0,9.63,5.0,0.0,Less than 5 hours,Moderate,BCA,Yes,7.0,1.0,Yes,0,1,0.7385405548312616,False Positive
+114168,Male,22.0,Agra,Student,3.0,0.0,9.44,2.0,0.0,More than 8 hours,Unhealthy,Class 12,No,10.0,2.0,Yes,1,0,0.3057689424056907,False Negative
+90122,Female,23.0,Srinagar,Student,2.0,0.0,8.53,2.0,0.0,7-8 hours,Healthy,BE,No,12.0,5.0,Yes,1,0,0.3953620914091523,False Negative
+105217,Female,33.0,Thane,Student,4.0,0.0,6.0,2.0,0.0,7-8 hours,Unhealthy,PhD,Yes,12.0,3.0,No,0,1,0.8820222202467347,False Positive
+97554,Male,26.0,Jaipur,Student,5.0,0.0,6.41,1.0,0.0,7-8 hours,Moderate,BCA,No,10.0,2.0,No,0,1,0.5109829184641399,False Positive
+17441,Male,19.0,Pune,Student,1.0,0.0,7.77,3.0,0.0,7-8 hours,Moderate,Class 12,Yes,7.0,3.0,Yes,1,0,0.4607749507905534,False Negative
+37578,Male,33.0,Patna,Student,3.0,0.0,5.99,3.0,0.0,5-6 hours,Unhealthy,PhD,No,10.0,3.0,Yes,1,0,0.21894990262231678,False Negative
+18340,Female,31.0,Patna,Student,2.0,0.0,5.91,3.0,0.0,Less than 5 hours,Moderate,B.Tech,Yes,10.0,3.0,No,0,1,0.5254368560363822,False Positive
+114868,Female,24.0,Vasai-Virar,Student,3.0,0.0,8.91,5.0,0.0,Less than 5 hours,Moderate,B.Arch,No,8.0,3.0,No,1,0,0.20534379461897273,False Negative
+11676,Female,25.0,Delhi,Student,1.0,0.0,8.25,2.0,0.0,5-6 hours,Healthy,LLM,Yes,12.0,3.0,No,1,0,0.40481630458980933,False Negative
+133938,Female,33.0,Agra,Student,3.0,0.0,9.67,2.0,0.0,5-6 hours,Healthy,M.Ed,Yes,12.0,2.0,Yes,1,0,0.4759346531985629,False Negative
+11949,Female,34.0,Thane,Student,5.0,0.0,5.37,1.0,0.0,Less than 5 hours,Unhealthy,MCA,Yes,6.0,1.0,Yes,0,1,0.8320756740761246,False Positive
+140044,Male,27.0,Nagpur,Student,3.0,0.0,6.26,4.0,0.0,Less than 5 hours,Moderate,MCA,Yes,10.0,1.0,No,1,0,0.43545590666806483,False Negative
+78536,Female,25.0,Thane,Student,3.0,0.0,7.25,4.0,0.0,More than 8 hours,Unhealthy,MSc,Yes,10.0,1.0,Yes,0,1,0.5558985065272638,False Positive
+48571,Male,28.0,Vasai-Virar,Student,5.0,0.0,5.58,2.0,0.0,More than 8 hours,Unhealthy,M.Ed,No,8.0,3.0,Yes,0,1,0.6304889494143373,False Positive
+101583,Male,28.0,Jaipur,Student,5.0,0.0,7.21,4.0,0.0,7-8 hours,Moderate,B.Pharm,Yes,10.0,2.0,No,0,1,0.8022414123261794,False Positive
+100783,Male,25.0,Kanpur,Student,2.0,0.0,8.11,2.0,0.0,More than 8 hours,Moderate,Class 12,Yes,12.0,2.0,No,1,0,0.4740027433451214,False Negative
+27636,Female,29.0,Bhopal,Student,2.0,0.0,8.04,3.0,0.0,7-8 hours,Healthy,LLM,No,10.0,1.0,No,1,0,0.02166809141319946,False Negative
+108919,Male,27.0,Indore,Student,1.0,0.0,5.74,3.0,0.0,5-6 hours,Unhealthy,M.Ed,Yes,11.0,4.0,No,0,1,0.5943891490415675,False Positive
+59011,Female,32.0,Vadodara,Student,3.0,0.0,6.79,5.0,0.0,7-8 hours,Healthy,MCA,No,7.0,2.0,Yes,1,0,0.02878929660275868,False Negative
+77344,Female,33.0,Vasai-Virar,Student,4.0,0.0,7.7,1.0,0.0,7-8 hours,Healthy,BE,Yes,1.0,4.0,No,0,1,0.6251828631057724,False Positive
+52848,Male,21.0,Thane,Student,1.0,0.0,8.69,1.0,0.0,More than 8 hours,Unhealthy,BSc,No,0.0,5.0,Yes,1,0,0.20233988286930324,False Negative
+89816,Male,18.0,Bangalore,Student,1.0,0.0,7.85,2.0,0.0,7-8 hours,Moderate,Class 12,No,7.0,2.0,No,1,0,0.05743849687063534,False Negative
+135832,Male,32.0,Srinagar,Student,5.0,0.0,9.71,4.0,0.0,5-6 hours,Moderate,MBA,Yes,8.0,3.0,No,0,1,0.8085362241986549,False Positive
+40015,Male,21.0,Kalyan,Student,2.0,0.0,7.8,5.0,0.0,7-8 hours,Unhealthy,MCA,No,11.0,1.0,Yes,1,0,0.10146149387460923,False Negative
+7160,Male,26.0,Thane,Student,1.0,0.0,9.79,5.0,0.0,7-8 hours,Unhealthy,MBBS,Yes,6.0,3.0,No,1,0,0.29683530947104086,False Negative
+10265,Male,24.0,Mumbai,Student,3.0,0.0,9.95,1.0,0.0,More than 8 hours,Moderate,Class 12,Yes,7.0,5.0,No,0,1,0.8867007270195886,False Positive
+102268,Male,29.0,Thane,Student,1.0,0.0,9.21,2.0,0.0,7-8 hours,Unhealthy,B.Pharm,Yes,7.0,4.0,No,0,1,0.5146601252342021,False Positive
+123238,Male,28.0,Vadodara,Student,3.0,0.0,5.89,2.0,0.0,More than 8 hours,Unhealthy,B.Arch,Yes,8.0,1.0,No,1,0,0.47675435340841466,False Negative
+124242,Female,22.0,Thane,Student,5.0,0.0,7.53,4.0,0.0,Less than 5 hours,Unhealthy,BHM,No,11.0,3.0,Yes,0,1,0.830399911681127,False Positive
+25216,Male,33.0,Jaipur,Student,5.0,0.0,9.44,5.0,0.0,5-6 hours,Unhealthy,MA,Yes,10.0,5.0,Yes,0,1,0.9560395083281943,False Positive
+100148,Female,33.0,Delhi,Student,4.0,0.0,7.03,1.0,0.0,More than 8 hours,Unhealthy,BA,No,8.0,3.0,No,1,0,0.3118230347160058,False Negative
+28749,Male,32.0,Nashik,Student,3.0,0.0,6.88,4.0,0.0,More than 8 hours,Unhealthy,M.Tech,No,1.0,5.0,Yes,1,0,0.15106804625658357,False Negative
+118975,Male,30.0,Mumbai,Student,4.0,0.0,7.1,2.0,0.0,Less than 5 hours,Healthy,B.Tech,Yes,10.0,1.0,Yes,0,1,0.6311464528520447,False Positive
+75094,Male,21.0,Ahmedabad,Student,1.0,0.0,6.28,4.0,0.0,5-6 hours,Unhealthy,BE,Yes,7.0,4.0,No,0,1,0.6211181921249119,False Positive
+44394,Female,31.0,Visakhapatnam,Student,2.0,0.0,9.96,1.0,0.0,Less than 5 hours,Moderate,LLM,Yes,4.0,3.0,No,1,0,0.4722554771696383,False Negative
+89542,Female,34.0,Thane,Student,5.0,0.0,6.27,5.0,0.0,5-6 hours,Healthy,BCA,Yes,9.0,4.0,Yes,0,1,0.8107095103773386,False Positive
+73956,Female,23.0,Bhopal,Student,2.0,0.0,7.22,3.0,0.0,7-8 hours,Healthy,MSc,Yes,10.0,2.0,Yes,1,0,0.4327882709896827,False Negative
+46409,Female,25.0,Visakhapatnam,Student,3.0,0.0,6.37,3.0,0.0,5-6 hours,Moderate,M.Pharm,No,4.0,3.0,Yes,1,0,0.15021746955917992,False Negative
+15237,Female,31.0,Delhi,Student,4.0,0.0,8.91,2.0,0.0,7-8 hours,Moderate,B.Ed,No,6.0,5.0,Yes,0,1,0.5294659307985256,False Positive
+131193,Female,23.0,Indore,Student,2.0,0.0,7.15,4.0,0.0,7-8 hours,Moderate,B.Tech,Yes,10.0,2.0,Yes,0,1,0.5020390185664786,False Positive
+107715,Female,22.0,Bhopal,Student,2.0,0.0,7.22,4.0,0.0,Less than 5 hours,Unhealthy,BHM,Yes,10.0,1.0,No,0,1,0.5498951293094695,False Positive
+47094,Male,25.0,Kanpur,Student,4.0,0.0,8.5,4.0,0.0,Less than 5 hours,Healthy,Class 12,No,2.0,2.0,No,1,0,0.09076926585569657,False Negative
+77545,Female,23.0,Srinagar,Student,3.0,0.0,8.09,5.0,0.0,Less than 5 hours,Healthy,BCA,Yes,3.0,4.0,No,0,1,0.6074850969288038,False Positive
+117859,Male,24.0,Hyderabad,Student,2.0,0.0,8.59,4.0,0.0,Less than 5 hours,Unhealthy,BBA,No,0.0,5.0,No,1,0,0.24691422686209574,False Negative
+127293,Female,20.0,Surat,Student,3.0,0.0,8.9,4.0,0.0,More than 8 hours,Moderate,Class 12,Yes,12.0,2.0,No,0,1,0.7067631374156444,False Positive
+84413,Male,28.0,Varanasi,Student,2.0,0.0,5.86,3.0,0.0,More than 8 hours,Unhealthy,B.Ed,Yes,3.0,4.0,No,1,0,0.44936208130231065,False Negative
+26415,Female,28.0,Hyderabad,Student,3.0,0.0,9.66,4.0,0.0,7-8 hours,Unhealthy,BE,No,9.0,5.0,No,1,0,0.48602236360467604,False Negative
+73136,Female,19.0,Varanasi,Student,4.0,0.0,9.21,2.0,0.0,More than 8 hours,Healthy,Class 12,No,4.0,4.0,Yes,1,0,0.4638732379815648,False Negative
+33758,Male,21.0,Kalyan,Student,2.0,0.0,7.47,5.0,0.0,Less than 5 hours,Moderate,MSc,No,11.0,1.0,No,1,0,0.06250275804521424,False Negative
+19286,Male,33.0,Bhopal,Student,5.0,0.0,7.5,1.0,0.0,Less than 5 hours,Unhealthy,Class 12,No,12.0,4.0,Yes,0,1,0.8534493442156489,False Positive
+34300,Female,28.0,City,Student,3.0,0.0,7.49,3.0,0.0,7-8 hours,Unhealthy,Class 12,No,6.0,2.0,No,1,0,0.10743645570850642,False Negative
+53555,Female,24.0,Chennai,Student,3.0,0.0,9.89,5.0,0.0,7-8 hours,Unhealthy,BA,Yes,12.0,1.0,Yes,0,1,0.6552020060161039,False Positive
+121826,Female,28.0,Nagpur,Student,2.0,0.0,9.93,3.0,0.0,Less than 5 hours,Unhealthy,B.Com,No,7.0,5.0,Yes,1,0,0.36352274740557317,False Negative
+108421,Female,19.0,Bangalore,Student,3.0,0.0,8.46,4.0,0.0,5-6 hours,Unhealthy,Class 12,Yes,9.0,2.0,No,0,1,0.7880561096913652,False Positive
+120443,Female,31.0,Vasai-Virar,Student,5.0,0.0,7.1,4.0,0.0,5-6 hours,Healthy,ME,No,12.0,5.0,Yes,0,1,0.6240253844344462,False Positive
+131598,Male,34.0,Kolkata,Student,3.0,0.0,6.41,1.0,0.0,7-8 hours,Moderate,MCA,Yes,6.0,4.0,Yes,0,1,0.7232569758752647,False Positive
+131785,Male,29.0,Ludhiana,Student,1.0,0.0,5.39,1.0,0.0,5-6 hours,Unhealthy,MBBS,No,11.0,5.0,No,1,0,0.2618965782390525,False Negative
+8315,Male,32.0,Kolkata,Student,3.0,0.0,6.78,1.0,0.0,Less than 5 hours,Moderate,M.Tech,Yes,6.0,2.0,No,0,1,0.5234177676387993,False Positive
+104413,Male,28.0,Kalyan,Student,4.0,0.0,8.04,5.0,0.0,Less than 5 hours,Healthy,M.Ed,No,9.0,5.0,Yes,1,0,0.4783619284978405,False Negative
+109471,Male,34.0,Pune,Student,1.0,0.0,5.26,3.0,0.0,Less than 5 hours,Healthy,M.Pharm,No,4.0,3.0,No,1,0,0.009063916239030594,False Negative
+122364,Female,32.0,Ludhiana,Student,2.0,0.0,9.9,1.0,0.0,5-6 hours,Moderate,B.Arch,No,3.0,5.0,No,1,0,0.14085643175045984,False Negative
+1655,Male,21.0,Bangalore,Student,3.0,0.0,5.26,1.0,0.0,More than 8 hours,Moderate,B.Tech,No,8.0,5.0,No,0,1,0.5763482057849039,False Positive
+66960,Male,28.0,Ludhiana,Student,3.0,0.0,7.02,4.0,0.0,Less than 5 hours,Moderate,MSc,Yes,3.0,2.0,Yes,1,0,0.413776524993007,False Negative
+98579,Female,22.0,Mumbai,Student,3.0,0.0,5.57,5.0,0.0,More than 8 hours,Unhealthy,B.Com,No,10.0,3.0,No,1,0,0.21253755375330405,False Negative
+843,Female,23.0,Bhopal,Student,5.0,0.0,5.74,2.0,0.0,5-6 hours,Moderate,B.Ed,Yes,2.0,3.0,No,0,1,0.8969821554995376,False Positive
+13308,Male,24.0,Lucknow,Student,5.0,0.0,7.09,1.0,0.0,More than 8 hours,Unhealthy,B.Arch,Yes,5.0,4.0,No,0,1,0.9722769287494523,False Positive
+92491,Male,32.0,Bhopal,Student,1.0,0.0,9.96,3.0,0.0,More than 8 hours,Unhealthy,BCA,Yes,10.0,3.0,Yes,1,0,0.35640442582583926,False Negative
+29410,Male,18.0,Kalyan,Student,3.0,0.0,7.25,5.0,0.0,7-8 hours,Unhealthy,Class 12,Yes,2.0,1.0,No,1,0,0.4537870536118349,False Negative
+123431,Female,19.0,Bangalore,Student,1.0,0.0,5.74,5.0,0.0,More than 8 hours,Unhealthy,Class 12,Yes,7.0,1.0,No,1,0,0.15544457707557227,False Negative
+16472,Male,34.0,Lucknow,Student,4.0,0.0,8.9,4.0,0.0,5-6 hours,Unhealthy,BE,No,6.0,4.0,Yes,1,0,0.32231921208835457,False Negative
+43692,Male,34.0,Hyderabad,Student,3.0,0.0,8.71,1.0,0.0,More than 8 hours,Moderate,MBA,Yes,7.0,5.0,Yes,0,1,0.8098321862822341,False Positive
+12439,Female,33.0,Surat,Student,4.0,0.0,6.33,3.0,0.0,Less than 5 hours,Moderate,MA,No,3.0,4.0,Yes,1,0,0.2580297824857239,False Negative
+19958,Male,24.0,Kalyan,Student,4.0,0.0,7.49,3.0,0.0,More than 8 hours,Unhealthy,BA,Yes,10.0,1.0,Yes,0,1,0.8100575605219579,False Positive
+138635,Female,24.0,Bhopal,Student,1.0,0.0,7.88,5.0,0.0,More than 8 hours,Moderate,MBBS,Yes,6.0,5.0,No,1,0,0.40162533913376625,False Negative
+74301,Male,18.0,Patna,Student,2.0,0.0,8.04,4.0,0.0,7-8 hours,Moderate,Class 12,Yes,8.0,2.0,No,0,1,0.5109272395825464,False Positive
+45349,Male,24.0,Nagpur,Student,3.0,0.0,8.21,1.0,0.0,7-8 hours,Moderate,BCA,Yes,6.0,2.0,Yes,0,1,0.6828813435856296,False Positive
+99285,Female,22.0,Kalyan,Student,2.0,0.0,7.22,5.0,0.0,7-8 hours,Moderate,MBBS,Yes,7.0,4.0,Yes,0,1,0.6503213774772584,False Positive
+58780,Male,21.0,Rajkot,Student,2.0,0.0,7.51,1.0,0.0,More than 8 hours,Healthy,BA,Yes,10.0,5.0,Yes,0,1,0.8580657776394303,False Positive
+27449,Female,22.0,Srinagar,Student,2.0,0.0,8.35,3.0,0.0,5-6 hours,Unhealthy,BHM,No,10.0,4.0,No,1,0,0.3383012043474424,False Negative
+33179,Male,33.0,Jaipur,Student,3.0,0.0,8.92,3.0,0.0,7-8 hours,Unhealthy,LLM,No,12.0,2.0,Yes,1,0,0.16051461823788432,False Negative
+97621,Male,28.0,Agra,Student,3.0,0.0,8.88,4.0,0.0,5-6 hours,Unhealthy,MSc,Yes,0.0,5.0,Yes,0,1,0.7345847827423505,False Positive
+91052,Female,26.0,Hyderabad,Student,1.0,0.0,9.49,1.0,0.0,Less than 5 hours,Healthy,MBA,Yes,12.0,2.0,Yes,1,0,0.4730205652066056,False Negative
+22159,Female,29.0,Patna,Student,5.0,0.0,5.32,3.0,0.0,7-8 hours,Healthy,MCA,Yes,10.0,2.0,No,0,1,0.7900907704208171,False Positive
+117227,Male,26.0,Agra,Student,1.0,0.0,7.09,5.0,0.0,Less than 5 hours,Unhealthy,B.Pharm,Yes,10.0,3.0,Yes,1,0,0.4622617565314425,False Negative
+123414,Female,19.0,Agra,Student,2.0,0.0,5.58,5.0,0.0,5-6 hours,Moderate,Class 12,Yes,5.0,4.0,No,0,1,0.5306260706655346,False Positive
+76147,Male,33.0,Bangalore,Student,2.0,0.0,8.63,1.0,0.0,7-8 hours,Unhealthy,LLB,No,12.0,3.0,Yes,1,0,0.22051463890813638,False Negative
+54513,Male,20.0,Ahmedabad,Student,3.0,0.0,7.88,1.0,0.0,Less than 5 hours,Healthy,Class 12,Yes,10.0,2.0,No,0,1,0.8101098450732673,False Positive
+140090,Male,26.0,Visakhapatnam,Student,2.0,0.0,9.56,4.0,0.0,Less than 5 hours,Unhealthy,B.Com,No,10.0,5.0,No,1,0,0.41380588370638527,False Negative
+91961,Male,29.0,Srinagar,Student,2.0,0.0,9.95,5.0,0.0,7-8 hours,Moderate,MCA,Yes,1.0,5.0,Yes,1,0,0.4413255369191922,False Negative
+61161,Female,33.0,Bhopal,Student,3.0,0.0,9.16,1.0,0.0,7-8 hours,Healthy,MA,Yes,12.0,1.0,Yes,1,0,0.4522606655411174,False Negative
+20889,Female,32.0,Kanpur,Student,5.0,0.0,8.79,1.0,0.0,7-8 hours,Moderate,BA,Yes,11.0,2.0,Yes,0,1,0.9081674620200364,False Positive
+113328,Male,30.0,Delhi,Student,4.0,0.0,7.1,2.0,0.0,Less than 5 hours,Healthy,PhD,No,10.0,3.0,No,1,0,0.29769880180462666,False Negative
+18741,Female,28.0,Srinagar,Student,4.0,0.0,5.37,1.0,0.0,More than 8 hours,Unhealthy,MBBS,Yes,2.0,2.0,Yes,0,1,0.7296734775576599,False Positive
+22609,Female,23.0,Kolkata,Student,3.0,0.0,5.32,4.0,0.0,7-8 hours,Unhealthy,Others,No,7.0,4.0,Yes,1,0,0.42920453792098223,False Negative
+41895,Male,29.0,Varanasi,Student,2.0,0.0,7.94,4.0,0.0,Less than 5 hours,Healthy,B.Ed,Yes,3.0,5.0,Yes,0,1,0.5001244353950454,False Positive
+124839,Male,20.0,Delhi,Student,4.0,0.0,8.91,4.0,0.0,7-8 hours,Unhealthy,Class 12,No,12.0,4.0,No,0,1,0.7687418843860421,False Positive
+92135,Male,24.0,Delhi,Student,4.0,0.0,8.46,2.0,0.0,More than 8 hours,Unhealthy,MD,No,8.0,3.0,No,0,1,0.5097770832532162,False Positive
+17086,Male,27.0,Hyderabad,Student,4.0,0.0,9.93,2.0,0.0,5-6 hours,Moderate,BBA,No,7.0,3.0,Yes,1,0,0.43506909023210016,False Negative
+47077,Male,24.0,Agra,Student,1.0,0.0,7.6,2.0,0.0,5-6 hours,Moderate,MSc,Yes,9.0,2.0,Yes,1,0,0.30784070009971976,False Negative
+12752,Female,23.0,Agra,Student,3.0,0.0,9.93,2.0,0.0,7-8 hours,Healthy,BCA,No,1.0,4.0,No,1,0,0.14841486487205344,False Negative
+40143,Female,23.0,Bhopal,Student,5.0,0.0,7.21,5.0,0.0,More than 8 hours,Moderate,BA,Yes,4.0,2.0,No,0,1,0.7460298256179101,False Positive
+4281,Female,26.0,Surat,Student,4.0,0.0,8.78,2.0,0.0,5-6 hours,Moderate,B.Com,Yes,5.0,2.0,No,0,1,0.7154883091069919,False Positive
+83402,Female,29.0,Agra,Student,2.0,0.0,6.7,1.0,0.0,Less than 5 hours,Moderate,BCA,Yes,10.0,1.0,No,1,0,0.3574771326416878,False Negative
+75373,Male,25.0,Srinagar,Student,5.0,0.0,10.0,5.0,0.0,5-6 hours,Healthy,M.Tech,Yes,4.0,4.0,Yes,0,1,0.8631896842372557,False Positive
+11336,Female,19.0,Srinagar,Student,3.0,0.0,9.91,4.0,0.0,7-8 hours,Unhealthy,Class 12,No,10.0,3.0,Yes,1,0,0.48916648686011954,False Negative
+97373,Female,18.0,Bhopal,Student,5.0,0.0,6.42,3.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,11.0,1.0,Yes,0,1,0.9690370810319333,False Positive
+61779,Male,22.0,Vadodara,Student,1.0,0.0,8.91,4.0,0.0,More than 8 hours,Moderate,B.Ed,Yes,12.0,5.0,No,0,1,0.6614795905690887,False Positive
+107733,Male,33.0,Patna,Student,3.0,0.0,7.88,2.0,0.0,5-6 hours,Moderate,BE,Yes,3.0,4.0,No,0,1,0.5660991739805622,False Positive
+4570,Male,22.0,Kolkata,Student,2.0,0.0,9.67,2.0,0.0,Less than 5 hours,Unhealthy,BBA,Yes,6.0,3.0,Yes,0,1,0.8439567421931827,False Positive
+42262,Male,28.0,Kalyan,Student,1.0,0.0,8.21,2.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,12.0,1.0,Yes,1,0,0.4150371981999861,False Negative
+34333,Female,23.0,Agra,Student,2.0,0.0,8.04,3.0,0.0,5-6 hours,Moderate,B.Arch,Yes,10.0,4.0,Yes,0,1,0.7702738849676873,False Positive
+64483,Male,21.0,Ahmedabad,Student,1.0,0.0,9.21,4.0,0.0,7-8 hours,Moderate,B.Com,No,2.0,3.0,Yes,1,0,0.04026167417734865,False Negative
+13511,Male,34.0,Pune,Student,2.0,0.0,6.79,1.0,0.0,More than 8 hours,Unhealthy,M.Ed,No,2.0,1.0,Yes,1,0,0.015762637879188215,False Negative
+114242,Female,26.0,Mumbai,Student,4.0,0.0,6.7,5.0,0.0,Less than 5 hours,Healthy,BHM,No,9.0,2.0,Yes,1,0,0.1483541456857816,False Negative
+102899,Male,26.0,Delhi,Student,3.0,0.0,6.39,3.0,0.0,5-6 hours,Unhealthy,MBBS,No,12.0,2.0,Yes,1,0,0.29549761116152556,False Negative
+94204,Male,26.0,Nashik,Student,1.0,0.0,9.74,2.0,0.0,Less than 5 hours,Unhealthy,B.Arch,No,10.0,5.0,No,1,0,0.37135897964661474,False Negative
+13160,Female,23.0,Pune,Student,3.0,0.0,7.71,1.0,0.0,5-6 hours,Moderate,BSc,Yes,0.0,3.0,No,0,1,0.6387305714021048,False Positive
+118852,Male,25.0,Lucknow,Student,4.0,0.0,7.38,2.0,0.0,Less than 5 hours,Healthy,MA,No,12.0,5.0,Yes,0,1,0.764337885515275,False Positive
+38251,Male,25.0,Vasai-Virar,Student,2.0,0.0,9.97,2.0,0.0,Less than 5 hours,Moderate,BCA,Yes,10.0,1.0,No,1,0,0.4730680735458054,False Negative
+34287,Male,32.0,Hyderabad,Student,3.0,0.0,7.09,2.0,0.0,More than 8 hours,Unhealthy,M.Tech,No,3.0,4.0,Yes,1,0,0.1904473566843223,False Negative
+64129,Male,32.0,Agra,Student,3.0,0.0,8.04,1.0,0.0,Less than 5 hours,Unhealthy,Class 12,Yes,0.0,2.0,No,1,0,0.4207761999204382,False Negative
+69190,Male,21.0,Mumbai,Student,3.0,0.0,6.75,4.0,0.0,7-8 hours,Moderate,BA,Yes,12.0,2.0,No,0,1,0.6917048852079167,False Positive
+102728,Male,33.0,Patna,Student,4.0,0.0,10.0,3.0,0.0,Less than 5 hours,Moderate,BSc,Yes,4.0,1.0,Yes,0,1,0.5023703517437443,False Positive
+126139,Female,21.0,Agra,Student,1.0,0.0,8.88,2.0,0.0,Less than 5 hours,Unhealthy,B.Arch,No,0.0,1.0,Yes,1,0,0.036687315855524094,False Negative
+36055,Male,20.0,Mumbai,Student,2.0,0.0,6.7,5.0,0.0,Less than 5 hours,Unhealthy,Class 12,No,11.0,4.0,Yes,1,0,0.4047893740554919,False Negative
+102859,Male,26.0,Agra,Student,3.0,0.0,5.65,1.0,0.0,Less than 5 hours,Unhealthy,MBA,No,3.0,4.0,No,1,0,0.3527670812538621,False Negative
+134497,Female,20.0,Bangalore,Student,3.0,0.0,7.0,3.0,0.0,5-6 hours,Healthy,Class 12,Yes,12.0,3.0,No,0,1,0.7910492825054596,False Positive
+73536,Female,24.0,Lucknow,Student,2.0,0.0,9.56,3.0,0.0,7-8 hours,Moderate,BHM,Yes,12.0,2.0,Yes,0,1,0.5837166102466497,False Positive
+35345,Female,24.0,Pune,Student,3.0,0.0,5.99,5.0,0.0,More than 8 hours,Unhealthy,MBBS,No,2.0,5.0,No,1,0,0.22356682466897243,False Negative
+136907,Female,25.0,Bangalore,Student,2.0,0.0,9.97,4.0,0.0,7-8 hours,Healthy,MBA,Yes,4.0,5.0,No,0,1,0.5127327330460952,False Positive
+137396,Male,33.0,Visakhapatnam,Student,2.0,0.0,5.12,1.0,0.0,5-6 hours,Moderate,BBA,Yes,10.0,1.0,Yes,1,0,0.2619416061134117,False Negative
+41942,Male,29.0,Kolkata,Student,3.0,0.0,7.88,1.0,0.0,Less than 5 hours,Moderate,LLM,Yes,2.0,1.0,No,1,0,0.38888883250664746,False Negative
+17543,Female,22.0,Ahmedabad,Student,2.0,0.0,8.91,2.0,0.0,5-6 hours,Moderate,BCA,No,7.0,5.0,Yes,1,0,0.4339212746961045,False Negative
+92283,Female,26.0,Jaipur,Student,4.0,0.0,5.45,3.0,0.0,More than 8 hours,Healthy,BE,Yes,6.0,2.0,No,1,0,0.4667927198865106,False Negative
+16152,Female,29.0,Kalyan,Student,1.0,0.0,6.91,2.0,0.0,Less than 5 hours,Moderate,LLM,Yes,10.0,4.0,Yes,0,1,0.6246599513235236,False Positive
+89876,Female,23.0,Varanasi,Student,1.0,0.0,6.37,5.0,0.0,7-8 hours,Unhealthy,BE,Yes,12.0,2.0,No,1,0,0.3381801635128365,False Negative
+140122,Female,24.0,Pune,Student,3.0,0.0,5.68,5.0,0.0,Less than 5 hours,Healthy,BA,No,11.0,3.0,Yes,1,0,0.18098555812369768,False Negative
+68474,Male,24.0,Varanasi,Student,4.0,0.0,8.91,4.0,0.0,7-8 hours,Moderate,Class 12,Yes,11.0,2.0,Yes,0,1,0.8227202821685883,False Positive
+28301,Female,33.0,Surat,Student,3.0,0.0,7.39,4.0,0.0,Less than 5 hours,Moderate,MBBS,No,2.0,2.0,No,1,0,0.03235070649147768,False Negative
+135811,Female,32.0,Delhi,Student,1.0,0.0,5.27,3.0,0.0,7-8 hours,Unhealthy,ME,Yes,2.0,5.0,No,1,0,0.3138353070748394,False Negative
+101822,Female,29.0,Bhopal,Student,3.0,0.0,9.39,5.0,0.0,Less than 5 hours,Moderate,M.Ed,Yes,11.0,1.0,No,1,0,0.44045022147336726,False Negative
+138681,Female,28.0,Meerut,Student,2.0,0.0,5.1,3.0,0.0,5-6 hours,Moderate,B.Com,Yes,4.0,3.0,No,1,0,0.30996630269148084,False Negative
+112062,Female,20.0,Bhopal,Student,3.0,0.0,8.91,4.0,0.0,Less than 5 hours,Unhealthy,Class 12,No,0.0,4.0,Yes,1,0,0.4115643642034114,False Negative
+98125,Male,29.0,Chennai,Student,2.0,0.0,7.53,3.0,0.0,Less than 5 hours,Moderate,MBBS,Yes,11.0,1.0,Yes,1,0,0.36546094489286873,False Negative
+102880,Male,31.0,Surat,Student,3.0,0.0,6.42,1.0,0.0,More than 8 hours,Healthy,LLM,Yes,4.0,2.0,Yes,1,0,0.3206310944577265,False Negative
+18384,Male,29.0,Ludhiana,Student,2.0,0.0,5.79,4.0,0.0,Less than 5 hours,Unhealthy,MCA,Yes,8.0,2.0,Yes,1,0,0.4881201615668456,False Negative
+94231,Female,25.0,Visakhapatnam,Student,2.0,0.0,5.64,2.0,0.0,Less than 5 hours,Healthy,M.Tech,Yes,4.0,5.0,No,0,1,0.6553246435103238,False Positive
+39311,Male,25.0,Kolkata,Student,4.0,0.0,7.48,3.0,0.0,More than 8 hours,Unhealthy,B.Com,No,6.0,2.0,No,1,0,0.2548526058351557,False Negative
+116204,Male,20.0,Nashik,Student,3.0,0.0,6.03,3.0,0.0,Less than 5 hours,Healthy,M.Pharm,No,3.0,3.0,No,1,0,0.16087226387393413,False Negative
+134169,Female,23.0,Faridabad,Student,2.0,0.0,8.44,2.0,0.0,5-6 hours,Healthy,BBA,No,0.0,3.0,Yes,1,0,0.0562046318464779,False Negative
+87080,Female,19.0,Kolkata,Student,4.0,0.0,8.9,2.0,0.0,5-6 hours,Unhealthy,Class 12,No,7.0,3.0,No,0,1,0.6667955743875145,False Positive
+83373,Male,29.0,Meerut,Student,2.0,0.0,5.27,5.0,0.0,Less than 5 hours,Moderate,BCA,Yes,10.0,1.0,No,1,0,0.2058737825891598,False Negative
+138801,Female,34.0,Meerut,Student,3.0,0.0,5.87,5.0,0.0,5-6 hours,Unhealthy,B.Pharm,Yes,10.0,5.0,No,0,1,0.7663249159073154,False Positive
+34502,Male,28.0,Srinagar,Student,1.0,0.0,7.53,2.0,0.0,Less than 5 hours,Healthy,MSc,Yes,8.0,1.0,Yes,1,0,0.13444787177275352,False Negative
+46371,Male,20.0,Bhopal,Student,1.0,0.0,9.44,5.0,0.0,5-6 hours,Moderate,Class 12,No,11.0,4.0,No,1,0,0.1298402854774949,False Negative
+81883,Female,22.0,Thane,Student,3.0,0.0,8.58,3.0,0.0,5-6 hours,Unhealthy,BE,No,4.0,3.0,No,1,0,0.27897587516323735,False Negative
+46176,Male,20.0,Ludhiana,Student,4.0,0.0,6.42,4.0,0.0,More than 8 hours,Moderate,Class 12,Yes,10.0,3.0,No,0,1,0.8714115274818548,False Positive
+49533,Female,26.0,Thane,Student,4.0,0.0,9.74,5.0,0.0,7-8 hours,Moderate,BCA,No,10.0,4.0,No,1,0,0.4374139408774614,False Negative
+131375,Female,34.0,Nagpur,Student,4.0,0.0,8.04,5.0,0.0,More than 8 hours,Healthy,BE,Yes,9.0,2.0,No,1,0,0.2741830977762914,False Negative
+83933,Male,28.0,Kalyan,Student,2.0,0.0,8.17,5.0,0.0,Less than 5 hours,Unhealthy,Class 12,No,6.0,5.0,No,1,0,0.20820354476497852,False Negative
+66861,Male,23.0,Kalyan,Student,5.0,0.0,5.77,3.0,0.0,More than 8 hours,Healthy,BA,Yes,3.0,3.0,No,0,1,0.7995055456717376,False Positive
+62621,Male,31.0,Varanasi,Student,3.0,0.0,6.99,2.0,0.0,7-8 hours,Unhealthy,MD,Yes,12.0,1.0,Yes,0,1,0.6242045125359226,False Positive
+99769,Male,25.0,Hyderabad,Student,5.0,0.0,6.85,5.0,0.0,5-6 hours,Healthy,MBBS,No,5.0,4.0,Yes,1,0,0.44799726826760666,False Negative
+29151,Male,33.0,Indore,Student,3.0,0.0,8.91,1.0,0.0,7-8 hours,Moderate,BHM,Yes,11.0,1.0,Yes,1,0,0.48808670643565116,False Negative
+11224,Female,30.0,Nagpur,Student,3.0,0.0,7.92,2.0,0.0,5-6 hours,Moderate,BHM,Yes,10.0,1.0,No,1,0,0.38067846319072807,False Negative
+50772,Female,21.0,Vadodara,Student,1.0,0.0,9.72,4.0,0.0,5-6 hours,Unhealthy,B.Arch,No,11.0,2.0,No,1,0,0.08917480742093041,False Negative
+99390,Male,20.0,Indore,Student,1.0,0.0,7.85,3.0,0.0,Less than 5 hours,Moderate,Class 12,Yes,11.0,3.0,No,0,1,0.6069967187658043,False Positive
+118136,Male,19.0,Ludhiana,Student,5.0,0.0,8.52,5.0,0.0,7-8 hours,Unhealthy,Class 12,No,12.0,2.0,No,0,1,0.7001430676026772,False Positive

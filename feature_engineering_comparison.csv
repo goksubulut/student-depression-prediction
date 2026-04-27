@@ -1,0 +1,3 @@
+engineered_features,cv_f1_macro_mean,cv_roc_auc_mean
+False,0.839552620232935,0.921548453413634
+True,0.8394235892263676,0.9214778864609741
