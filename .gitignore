@@ -1,4 +1,9 @@
 .claude/
+.venv/
+.jupyter/
+.local/
+__pycache__/
+*.pyc
 
 # Project-specific
 data/cleaned.csv

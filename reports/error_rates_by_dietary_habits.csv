@@ -1,0 +1,5 @@
+Dietary Habits,Correct,False Negative,False Positive
+Healthy,0.848,0.099,0.053
+Moderate,0.835,0.087,0.078
+Others,0.667,0.0,0.333
+Unhealthy,0.846,0.084,0.07
