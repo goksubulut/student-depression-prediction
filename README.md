@@ -1,70 +1,157 @@
 # Student Depression Prediction Using Machine Learning
 
-SENG 352 Data Analysis term project for building a reproducible binary classification pipeline that predicts student depression risk from academic, lifestyle, demographic, and mental-health related survey features.
+SENG 352 Data Analysis term project — a fully reproducible, end-to-end binary classification pipeline that predicts student depression risk from academic, lifestyle, demographic, and mental-health survey features.
+
+> **Disclaimer:** This model is not a clinical diagnostic tool. It is a classroom machine-learning project and should not be used for real clinical decisions.
+
+---
 
 ## Dataset
 
-- **Name:** Student Depression Dataset
-- **Source:** [Kaggle: hopesb/student-depression-dataset](https://www.kaggle.com/datasets/hopesb/student-depression-dataset)
-- **Expected size:** approximately 27,901 rows and 18 columns
-- **Target variable:** `Depression`
-- **Target type:** binary classification
-  - `0` = No Depression
-  - `1` = Depression
+| | |
+|---|---|
+| **Name** | Student Depression Dataset |
+| **Source** | [Kaggle: hopesb/student-depression-dataset](https://www.kaggle.com/datasets/hopesb/student-depression-dataset) |
+| **Raw size** | 27,901 rows × 18 columns |
+| **Clean size** | 27,859 rows × 18 columns |
+| **Target** | `Depression` — binary (0 = No Depression, 1 = Depression) |
+| **Class balance** | 0: %41.4 / 1: %58.6 |
 
-Place the CSV file at:
-
-```text
-data/raw/Student Depression Dataset.csv
+Place the raw CSV at:
+```
+data/Student Depression Dataset.csv
 ```
 
-The workspace also keeps the original downloaded CSV at `data/Student Depression Dataset.csv`.
+---
 
 ## Project Structure
 
-```text
+```
 student-depression-prediction/
 ├── data/
-│   ├── raw/Student Depression Dataset.csv
-│   └── processed/
-├── figures/
-├── models/
+│   ├── Student Depression Dataset.csv   # raw data (not committed)
+│   └── cleaned.csv                      # output of DQA step (not committed)
 ├── notebooks/
-│   └── student_depression_prediction_analysis.ipynb
-├── reports/
-│   └── final_report_notes.md
+│   ├── 01_dqa.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_modeling.ipynb
+│   └── 04_error_analysis.ipynb
 ├── src/
-│   └── project_pipeline.py
-├── README.md
-└── requirements.txt
+│   ├── dqa.py              # Data Quality Assessment
+│   ├── eda.py              # Exploratory Data Analysis
+│   ├── features.py         # Feature engineering + preprocessing pipeline
+│   ├── train.py            # Model training + MLflow tracking
+│   ├── evaluate.py         # Evaluation + error analysis
+│   ├── shap_analysis.py    # SHAP explainability
+│   ├── lime_analysis.py    # LIME explainability
+│   ├── fairness.py         # Subgroup & fairness evaluation
+│   ├── significance.py     # Statistical significance testing
+│   ├── ensemble.py         # Stacking ensemble (BONUS)
+│   ├── ann_model.py        # Artificial Neural Network (MLP)
+│   ├── bayesian_opt.py     # Bayesian hyperparameter optimization
+│   ├── embedding_viz.py    # UMAP & t-SNE visualization
+│   ├── seed_sensitivity.py # Seed sensitivity analysis
+│   └── counterfactual.py   # Counterfactual explanations
+├── models/
+│   ├── best_model.pkl        # LogisticRegression_Tuned
+│   ├── svm_model.pkl
+│   ├── ann_model.pkl
+│   ├── stacking_model.pkl
+│   └── bayesopt_model.pkl
+├── reports/
+│   ├── figures/              # All saved plots (not committed)
+│   ├── analysis_log.md       # Step-by-step findings & decisions
+│   └── model_card.md         # Model card (Mitchell et al. 2019)
+├── main.py                   # End-to-end pipeline runner
+├── requirements.txt
+└── README.md
 ```
+
+---
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+---
 
 ## How to Run
 
-Use Python 3. A virtual environment is recommended.
-
+### Full pipeline (recommended)
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-jupyter notebook notebooks/student_depression_prediction_analysis.ipynb
+python main.py
 ```
 
-On macOS, XGBoost may require the OpenMP runtime (`libomp`). If XGBoost cannot be imported, the notebook skips it and still compares the required sklearn models plus `MLPClassifier`.
+Runs all steps sequentially:
+1. Data Quality Assessment → `data/cleaned.csv`
+2. EDA → `reports/figures/`
+3. Feature Engineering → 43 → 15 features via RFE
+4. Model Training → MLflow experiment `student-depression-prediction`
+5. Evaluation → confusion matrix, ROC, PR curves
+6. SHAP & LIME explainability
+7. Subgroup/fairness evaluation
+8. Embedding visualization (UMAP + t-SNE)
+9. Statistical significance testing
+10. Counterfactual explanations
 
-Run the notebook from top to bottom after restarting the kernel. The notebook uses `random_state = 42` throughout and saves:
+### Step-by-step via notebooks
+```bash
+jupyter notebook notebooks/
+```
 
-- EDA plots to `figures/`
-- cleaned data to `data/processed/student_depression_clean.csv`
-- model comparison results to `model_comparison_results.csv`
-- feature engineering comparison to `feature_engineering_comparison.csv`
-- tuning results to `best_parameters.csv`
-- final test metrics to `final_test_metrics.csv`
-- final model pipeline to `models/final_model.pkl`
-- error analysis outputs to `reports/`
+### View MLflow experiment UI
+```bash
+mlflow ui
+# open http://localhost:5000
+```
 
-## Objective
+---
 
-The project compares multiple supervised machine learning models, evaluates them with stratified 5-fold cross-validation and a held-out test set, and discusses false negatives as a critical risk in depression early-warning settings.
+## Model Results
 
-This model is **not** a clinical diagnostic tool. It is only suitable as a classroom machine-learning project or, with substantial expert review and governance, a decision-support prototype.
+| Model | CV F1-macro | CV ROC-AUC | Notes |
+|---|---|---|---|
+| **LogisticRegression_Tuned** ✅ | **0.8397** | **0.9192** | Best model |
+| SVM_RBF_Tuned | 0.8397 | 0.9190 | Statistically equivalent to LR |
+| LightGBM | 0.8369 | 0.9140 | |
+| RandomForest | 0.8304 | 0.9102 | |
+| ANN (MLP) | 0.8388 | 0.9183 | (128, 64, 32) hidden layers |
+| XGBoost | 0.8233 | 0.9010 | |
+| Stacking Ensemble | 0.8395 | 0.9197 | LR+RF+XGB+LGB |
+| DecisionTree | 0.8156 | 0.8946 | |
+
+### Test Set (held-out, n=5,572)
+
+| Metric | Value |
+|---|---|
+| F1-macro | **0.8353** |
+| ROC-AUC | **0.9208** |
+| Average Precision | **0.9401** |
+| Accuracy | **0.84** |
+| Bootstrap 95% CI (F1) | [0.8288, 0.8475] |
+
+---
+
+## Top Features (SHAP)
+
+| Rank | Feature | Mean \|SHAP\| |
+|---|---|---|
+| 1 | Have you ever had suicidal thoughts? | 1.079 |
+| 2 | Academic Pressure | 0.893 |
+| 3 | Financial Stress | 0.659 |
+| 4 | Dietary Habits (Healthy) | 0.435 |
+| 5 | Work/Study Hours | 0.355 |
+
+---
+
+## Key Design Decisions
+
+- **No data leakage** — preprocessing fitted on train set only
+- **Class imbalance** — `class_weight='balanced'` / `scale_pos_weight`
+- **Feature selection** — RFE with LogisticRegression (43 → 15 features)
+- **Experiment tracking** — MLflow (local), experiment: `student-depression-prediction`
+- **Random seed** — 42 throughout (seed sensitivity std=0.0005, model is stable)
+- **Statistical validation** — McNemar + paired t-test confirm LR ≈ SVM (p>0.05)
+- **Fairness** — Subgroup evaluation flags low Academic Pressure group (recall %58.6)
