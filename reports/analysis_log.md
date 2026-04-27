@@ -75,6 +75,22 @@ Tüm veri bilimi ve analiz adımlarının bulguları, kararları ve sonuçları.
 | 4 | Age | 0.227 |
 | 5 | Work/Study Hours | 0.209 |
 
+### Missingness Pattern Görselleştirmesi
+| Dosya | İçerik |
+|---|---|
+| `missingness_matrix.png` | Raw datasette null konumları (missingno matrix) |
+
+- Raw datasette yalnızca **1 sütunda null** var: `Financial Stress` (3 satır)
+- Nullity korelasyon heatmap'i atlandı — en az 2 null sütun gerekiyor; veri seti bu açıdan temiz.
+
+### Train vs Test Dağılım Karşılaştırması
+| Dosya | İçerik |
+|---|---|
+| `train_test_distribution.png` | Numeric özellikler için KDE — Train (mavi) vs Test (kırmızı) |
+
+- Tüm numeric özelliklerde train ve test dağılımları birbiriyle örtüşüyor.
+- **Data drift yok** — stratified split başarılı çalışmış.
+
 ### Öne Çıkan Bulgular
 - **Suicidal thoughts** tek başına en güçlü sinyal (r=0.55) — beklenebilir, ancak model için kritik özellik.
 - **Academic Pressure** güçlü pozitif ilişki: depresyonlu grubun baskı skoru belirgin şekilde yüksek.
@@ -161,6 +177,128 @@ SVM (RBF, C=1.0, gamma=auto), LR_Tuned ile aynı F1-macro skorunu elde etti (0.8
 
 ---
 
+## STEP 4d — Subgroup / Fairness Evaluation
+
+**Tarih:** 2026-04-27
+**Dosya:** `src/fairness.py`
+
+### Analiz Edilen Subgrouplar
+Gender, Age Group, Academic Pressure, Financial Stress, Family History of Mental Illness
+
+### Sonuçlar (F1-macro | Recall-Depression)
+
+| Subgroup | Group | n | F1-macro | Recall (Dep) |
+|---|---|---|---|---|
+| Overall | All | 5.572 | 0.835 | 0.837 |
+| Gender | Female | 2.413 | 0.832 | 0.846 |
+| Gender | Male | 3.159 | 0.838 | 0.831 |
+| Age Group | <=20 | 1.105 | 0.804 | **0.886** |
+| Age Group | 21–25 | 1.711 | 0.839 | 0.864 |
+| Age Group | 26–30 | 1.558 | 0.821 | 0.803 |
+| Age Group | 31+ | 1.198 | 0.833 | **0.759** ⚠️ |
+| Academic Pressure | Low (1–2) | 1.857 | 0.774 | **0.586** ⚠️ |
+| Academic Pressure | Medium (3) | 1.480 | 0.799 | 0.804 |
+| Academic Pressure | High (4–5) | 2.235 | 0.768 | **0.925** |
+| Financial Stress | Low (1–2) | 2.041 | 0.816 | **0.692** ⚠️ |
+| Financial Stress | Medium (3) | 1.015 | 0.786 | **0.784** ⚠️ |
+| Financial Stress | High (4–5) | 2.516 | 0.818 | 0.915 |
+| Family History | Yes | 2.738 | 0.834 | 0.852 |
+| Family History | No | 2.834 | 0.837 | 0.822 |
+
+### Fairness Gaps
+| Subgroup | F1 Gap | Recall Gap | Flagged |
+|---|---|---|---|
+| Gender | 0.006 | 0.016 | — |
+| Age Group | 0.036 | **0.126** | 31+ |
+| Academic Pressure | 0.031 | **0.340** | Low (1–2) |
+| Financial Stress | 0.033 | **0.223** | Low (1–2), Medium (3) |
+| Family History | 0.003 | 0.030 | — |
+
+### Kaydedilen Grafikler
+| Dosya | İçerik |
+|---|---|
+| `subgroup_fairness.png` | Subgroup bazında F1 / Recall / Precision bar chart |
+| `subgroup_heatmap.png` | Tüm subgrouplar için metrik ısı haritası |
+
+### Kritik Bulgular
+- **Gender & Family History**: Adil dağılım, anlamlı fark yok.
+- **Academic Pressure LOW (1–2)** ⚠️: Recall sadece **%58.6** — düşük baskılı ama depresyonda olan öğrencilerin %41'i kaçırılıyor. En kritik fairness açığı.
+- **Financial Stress LOW (1–2)** ⚠️: Recall **%69.2** — düşük finansal stres ile depresyon kombinasyonu modeli zorluyor.
+- **Age 31+** ⚠️: Recall **%75.9** — yaşlı öğrencilerde depresyon daha az görünür kalıyor.
+- Yüksek baskılı/stresli gruplarda recall çok yüksek (>%90) — model bu grupları kolayca yakalıyor.
+
+---
+
+## STEP 4e — Stacking Ensemble (BONUS)
+
+**Tarih:** 2026-04-27
+**Dosya:** `src/ensemble.py`
+
+### Yapı
+- **Base learners:** Logistic Regression, Random Forest, XGBoost, LightGBM
+- **Meta-learner:** Logistic Regression (C=1.0, balanced)
+- **Stack method:** predict_proba (OOF tahminleri ile eğitim)
+- **passthrough=True:** Meta-learner orijinal özellikleri de görüyor
+
+### Sonuçlar
+| Metrik | Stacking | LR_Tuned (Best Single) | Delta |
+|---|---|---|---|
+| CV F1-macro | 0.8395 ± 0.0032 | 0.8397 ± 0.0046 | -0.0002 |
+| CV ROC-AUC | 0.9197 | 0.9192 | +0.0005 |
+| CV Accuracy | 0.8433 | 0.8435 | -0.0002 |
+
+**MLflow Run ID:** `77b2af4c49074ac985e7c395d8e72c86`
+**Model dosyası:** `models/stacking_model.pkl`
+
+### Yorum
+Stacking ensemble LR_Tuned'ı pratikte geçemiyor (ΔF1 = -0.0002). Bu veri setinde temel ilişkiler doğrusal ve basit — karmaşık ensemble ekstra varyans kazancı sağlamıyor. **Üretim için LR_Tuned tercih edilir:** 100x daha hızlı inference, daha az bellek, daha yorumlanabilir.
+
+---
+
+## STEP 4b — Statistical Significance Testing
+
+**Tarih:** 2026-04-27
+**Dosya:** `src/significance.py`
+**Karşılaştırılan modeller:** LogisticRegression_Tuned vs SVM_RBF_Tuned
+
+### Testler ve Sonuçlar
+
+#### 1. Paired t-test (5-fold CV F1-macro skorları üzerinde)
+| | LR_Tuned | SVM_RBF |
+|---|---|---|
+| Fold 1 | 0.8392 | 0.8382 |
+| Fold 2 | 0.8384 | 0.8376 |
+| Fold 3 | 0.8323 | 0.8345 |
+| Fold 4 | 0.8425 | 0.8419 |
+| Fold 5 | 0.8460 | 0.8461 |
+| **Mean** | **0.8397** | **0.8397** |
+
+- t-statistic = 0.0171 | **p = 0.9872**
+- Wilcoxon signed-rank p = 0.8125
+- **Sonuç:** İstatistiksel olarak anlamlı fark yok — iki model CV skorları açısından birbirinden ayırt edilemiyor.
+
+#### 2. McNemar's Test (test seti üzerinde hata örüntüsü karşılaştırması)
+| | SVM doğru | SVM yanlış |
+|---|---|---|
+| **LR doğru** | 4.637 | 36 |
+| **LR yanlış** | 53 | 846 |
+
+- Statistic = 2.8764 | **p = 0.0899**
+- **Sonuç:** p > 0.05 — iki modelin hata örüntüleri istatistiksel olarak farklı değil.
+
+#### 3. Bootstrap %95 Güven Aralığı (LR_Tuned test F1-macro, n=1000)
+- **[0.8288, 0.8475]** (mean=0.8385)
+
+### Kaydedilen Grafik
+| Dosya | İçerik |
+|---|---|
+| `cv_score_boxplot.png` | 5-fold CV F1 dağılımı — model başına boxplot |
+
+### Genel Yorum
+LR_Tuned ve SVM_RBF **istatistiksel olarak eşdeğer** performans gösteriyor. Hiçbir test (paired t-test, Wilcoxon, McNemar) p < 0.05 vermedi. Dağıtım için **Logistic Regression tercih edilir** — daha hızlı inference, daha yorumlanabilir katsayılar, daha düşük bellek kullanımı. SVM'in ek maliyeti (eğitim süresi, kernel hesabı) bu veri setinde anlamlı kazanım sağlamıyor.
+
+---
+
 ## STEP 5b — SHAP Explainability
 
 **Tarih:** 2026-04-26
@@ -197,6 +335,24 @@ SVM (RBF, C=1.0, gamma=auto), LR_Tuned ile aynı F1-macro skorunu elde etti (0.8
 - **Financial Stress** (0.66) — monoton pozitif ilişki: stres arttıkça SHAP artar.
 - **Dietary Habits_Healthy** (0.44) — sağlıklı beslenme depresyon olasılığını düşürüyor (negatif SHAP).
 - SHAP sıralaması point-biserial korelasyon sıralamasıyla büyük ölçüde örtüşüyor — model yorumlanabilir ve tutarlı.
+
+---
+
+## STEP 4c — Model Card
+
+**Tarih:** 2026-04-27
+**Dosya:** `reports/model_card.md`
+
+Model card şu bölümleri kapsamaktadır:
+- Model detayları (hiperparametreler, MLflow run ID, dosya)
+- Amaçlanan ve önerilmeyen kullanımlar
+- Eğitim verisi ve ön işleme adımları
+- Test/CV performans metrikleri + bootstrap CI
+- Karşılaştırmalı model tablosu
+- SHAP özellik önemi
+- Hata analizi (FP/FN profilleri + eşik önerisi)
+- Etik değerlendirme (kısıtlamalar, adalet, gizlilik)
+- Yeniden üretilebilirlik bilgileri
 
 ---
 

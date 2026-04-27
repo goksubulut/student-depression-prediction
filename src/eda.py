@@ -6,6 +6,7 @@ import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import missingno as msno
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -179,6 +180,70 @@ def plot_class_distribution(df: pd.DataFrame) -> None:
     ax.pie(counts, labels=labels, colors=colors, autopct="%1.1f%%", startangle=90)
     ax.set_title("Depression Class Distribution", fontsize=14)
     _save(fig, "class_distribution_pie.png")
+
+
+def plot_missingness(df_raw: pd.DataFrame) -> None:
+    """
+    Missingness pattern visualization using missingno.
+
+    Generates two plots:
+    - Matrix plot: shows where nulls appear across rows
+    - Heatmap: shows nullity correlation between columns
+
+    Parameters
+    ----------
+    df_raw : raw (uncleaned) DataFrame to show original missing patterns
+    """
+    # Matrix plot
+    fig, ax = plt.subplots(figsize=(12, 6))
+    msno.matrix(df_raw, ax=ax, sparkline=False, fontsize=10)
+    ax.set_title("Missingness Matrix — Raw Dataset", fontsize=13)
+    fig.tight_layout()
+    _save(fig, "missingness_matrix.png")
+
+    # Heatmap — only if there are at least 2 columns with nulls
+    null_cols = df_raw.columns[df_raw.isnull().any()].tolist()
+    if len(null_cols) >= 2:
+        fig, ax = plt.subplots(figsize=(8, 6))
+        msno.heatmap(df_raw, ax=ax, fontsize=10)
+        ax.set_title("Nullity Correlation Heatmap — Raw Dataset", fontsize=13)
+        fig.tight_layout()
+        _save(fig, "missingness_heatmap.png")
+    else:
+        logger.info("Only %d column(s) with nulls — skipping heatmap.", len(null_cols))
+
+
+def plot_train_test_distribution(df_clean: pd.DataFrame) -> None:
+    """
+    Train-vs-test distribution comparison for numeric features.
+
+    Overlays KDE plots of train and test splits to detect data drift.
+    Uses the same 80/20 stratified split as the modeling pipeline (seed=42).
+    """
+    from sklearn.model_selection import train_test_split
+
+    X = df_clean.drop(columns=["Depression"])
+    y = df_clean["Depression"]
+    X_train, X_test, _, _ = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+
+    numeric_cols = [c for c in NUMERIC_COLS if c in X.columns]
+    fig, axes = plt.subplots(2, 3, figsize=(16, 10))
+    axes = axes.flatten()
+
+    for i, col in enumerate(numeric_cols):
+        ax = axes[i]
+        sns.kdeplot(X_train[col].dropna(), ax=ax, label="Train", color="steelblue", fill=True, alpha=0.4)
+        sns.kdeplot(X_test[col].dropna(), ax=ax, label="Test", color="tomato", fill=True, alpha=0.4)
+        ax.set_title(f"{col} — Train vs Test", fontsize=11)
+        ax.set_xlabel(col)
+        ax.set_ylabel("Density")
+        ax.legend()
+
+    axes[-1].set_visible(False)
+    fig.suptitle("Train vs Test Distribution Comparison (Data Drift Check)", fontsize=13, y=1.01)
+    fig.tight_layout()
+    _save(fig, "train_test_distribution.png")
+    logger.info("Train-vs-test distribution plot saved.")
 
 
 def plot_pairplot(df: pd.DataFrame, top_features: list) -> None:
