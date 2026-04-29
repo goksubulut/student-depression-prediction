@@ -32,10 +32,7 @@ student-depression-prediction/
 │   ├── Student Depression Dataset.csv   # raw data (not committed)
 │   └── cleaned.csv                      # output of DQA step (not committed)
 ├── notebooks/
-│   ├── 01_dqa.ipynb
-│   ├── 02_eda.ipynb
-│   ├── 03_modeling.ipynb
-│   └── 04_error_analysis.ipynb
+│   └── student_depression_colab.ipynb  # main notebook delivery (Colab-ready)
 ├── src/
 │   ├── dqa.py              # Data Quality Assessment
 │   ├── eda.py              # Exploratory Data Analysis
@@ -96,10 +93,15 @@ Runs all steps sequentially:
 9. Statistical significance testing
 10. Counterfactual explanations
 
-### Step-by-step via notebooks
+### Notebook-first run (recommended for presentation/submission)
 ```bash
-jupyter notebook notebooks/
+# open notebooks/student_depression_colab.ipynb in Google Colab
 ```
+
+The notebook includes:
+- full analysis narrative (DQA -> EDA -> modeling -> explainability -> fairness)
+- checklist evidence section for SENG 352 evaluation
+- Gradio demo section for interactive risk analysis
 
 ### View MLflow experiment UI
 ```bash

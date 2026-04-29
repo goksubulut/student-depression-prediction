@@ -10,11 +10,11 @@ The dataset is the Student Depression Dataset from Kaggle (`hopesb/student-depre
 
 ## 3. Data Quality Assessment
 
-The notebook verifies dataset shape, column names, data types, summary statistics, the existence of the `Depression` target, and binary target values. The loaded dataset has 27,901 rows and 18 columns. Missing values are checked for every column, with specific attention to `Financial Stress`. `Financial Stress` has 3 missing values, so those rows are dropped.
+The notebook validates schema, target integrity, missingness, duplicates, and outlier-related edge cases before modeling. The raw dataset has 27,901 rows and 18 columns. `Financial Stress` has 3 missing rows; those rows are removed.
 
-Duplicate rows, `CGPA = 0`, high ages such as 59, and IQR-based numeric outliers are inspected. The dataset has 0 duplicate rows, 9 rows with `CGPA = 0`, and 1 row with age 59 or higher. Outliers are not automatically removed because unusual values may reflect valid student circumstances or survey coding. Rare categories such as `Sleep Duration = Others` and `Dietary Habits = Others` are kept and handled through one-hot encoding because they are valid survey responses and removing them would discard real observations.
+After checks, 9 rows with `CGPA = 0` are dropped as likely data-entry artifacts. Rare categories `Sleep Duration = Others` and `Dietary Habits = Others` are also removed to keep encoding consistent and reduce sparse noise in low-frequency bins. The final cleaned dataset has 27,859 rows.
 
-`Work Pressure` and `Job Satisfaction` are inspected for near-zero variance. `Work Pressure = 0` for about 99.99% of rows and `Job Satisfaction = 0` for about 99.97% of rows, so they are dropped from modeling.
+`Work Pressure` and `Job Satisfaction` are near-zero-variance and are excluded from modeling.
 
 ## 4. EDA Summary
 
@@ -22,25 +22,35 @@ The analysis saves target distribution plots, numeric histograms, numeric boxplo
 
 ## 5. Preprocessing
 
-The preprocessing workflow uses `sklearn` `Pipeline` and `ColumnTransformer`. Numeric features are scaled using `StandardScaler`, and nominal categorical variables are one-hot encoded with `handle_unknown="ignore"`. The train-test split is stratified, uses an 80/20 split, and uses `random_state = 42`.
+The preprocessing workflow uses `ColumnTransformer` with stratified 80/20 split (`random_state = 42`). Numeric features are scaled with `MinMaxScaler`. Nominal categorical variables are one-hot encoded with `handle_unknown="ignore"`.
 
-`Sleep Duration` is not ordinal encoded as a primary categorical feature because the dataset includes an `Others` response and the categories are survey intervals rather than exact measurements. For the engineered interaction feature only, sleep categories are converted to approximate numeric hour estimates.
+`Sleep Duration` is ordinal-encoded (1-5) and used both as a standalone feature and inside an interaction term.
 
 ## 6. Feature Engineering
 
-The pipeline tests engineered features including `Academic_Pressure_x_Sleep`, `Stress_Load`, `Academic_Lifestyle_Load`, `Sleep_Hours_Estimate`, and `CGPA_Category`. Model performance is compared with and without engineered features using stratified 5-fold cross-validation.
+Core feature engineering includes:
+- dropping non-informative columns (`id`, `Profession`, `Work Pressure`, `Job Satisfaction`, `City`)
+- binary mapping for suicidal-thoughts and family-history fields
+- interaction feature `AP_x_Sleep`
+- RFE-based feature selection (43 to 15 features)
 
 ## 7. Models Used
 
-The notebook compares Logistic Regression, class-balanced Logistic Regression, class-balanced Decision Tree, class-balanced Random Forest, MLPClassifier, and XGBoost when the package is importable. In the completed local run, XGBoost was skipped because the installed package could not load the macOS OpenMP runtime (`libomp`). Cross-validation records accuracy, precision, recall, F1-score, macro F1-score, and ROC-AUC.
+The project compares Logistic Regression, Decision Tree, Random Forest, XGBoost, and LightGBM under stratified 5-fold CV. Additional analyses include SVM, ANN, stacking, Bayesian optimization, fairness analysis, significance tests, SHAP, LIME, and counterfactual explanations.
 
 ## 8. Evaluation Results
 
-The saved outputs are `model_comparison_results.csv`, `best_parameters.csv`, and `final_test_metrics.csv`. In the completed run, the final held-out test metrics are accuracy = 0.8423, precision = 0.8793, recall = 0.8470, F1 = 0.8628, macro F1 = 0.8387, and ROC-AUC = 0.9189. The final evaluation includes a classification report, confusion matrix, ROC curve, precision-recall curve, feature importance, and misclassification analysis.
+The tuned Logistic Regression model is selected as final. Held-out test metrics:
+- Accuracy: 0.84
+- F1-macro: 0.8353
+- ROC-AUC: 0.9208
+- Average Precision: 0.9401
+
+Evaluation artifacts include confusion matrix, ROC/PR curves, calibration, threshold analysis, and detailed FP/FN profiling.
 
 ## 9. Best Model and Justification
 
-The best model is selected primarily using macro F1-score during cross-validation, with ROC-AUC considered as a secondary ranking metric. Macro F1 is appropriate because it gives both classes meaningful weight and is less forgiving when one class performs poorly. The tuned class-balanced Logistic Regression model was selected, with `C = 0.01`, `penalty = l2`, and `solver = lbfgs`.
+The best model is selected primarily by macro F1, with ROC-AUC as secondary support. The final model is tuned class-balanced Logistic Regression (`C = 0.1`, `penalty = l2`, `solver = lbfgs`). It is preferred over statistically equivalent alternatives (such as SVM) due to interpretability and deployment simplicity.
 
 ## 10. Error Analysis
 

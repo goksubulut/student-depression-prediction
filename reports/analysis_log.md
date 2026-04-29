@@ -7,7 +7,7 @@ Tüm veri bilimi ve analiz adımlarının bulguları, kararları ve sonuçları.
 ## STEP 1 — Data Quality Assessment (DQA)
 
 **Tarih:** 2026-04-25
-**Dosya:** `src/dqa.py`, `notebooks/01_dqa.ipynb`
+**Dosya:** `src/dqa.py`, `notebooks/student_depression_colab.ipynb`
 **Girdi:** `data/Student Depression Dataset.csv`
 **Çıktı:** `data/cleaned.csv`
 
@@ -50,7 +50,7 @@ Tüm veri bilimi ve analiz adımlarının bulguları, kararları ve sonuçları.
 ## STEP 2 — Exploratory Data Analysis (EDA)
 
 **Tarih:** 2026-04-25
-**Dosya:** `src/eda.py`, `notebooks/02_eda.ipynb`
+**Dosya:** `src/eda.py`, `notebooks/student_depression_colab.ipynb`
 **Girdi:** `data/cleaned.csv`
 **Çıktı:** `reports/figures/` altında 8 grafik
 
@@ -139,7 +139,7 @@ Tüm veri bilimi ve analiz adımlarının bulguları, kararları ve sonuçları.
 ## STEP 4 — Modeling
 
 **Tarih:** 2026-04-25
-**Dosya:** `src/train.py`, `notebooks/03_modeling.ipynb`
+**Dosya:** `src/train.py`, `notebooks/student_depression_colab.ipynb`
 **MLflow Experiment:** `student-depression-prediction`
 **CV:** Stratified 5-Fold, seed=42
 
@@ -463,7 +463,7 @@ Model card şu bölümleri kapsamaktadır:
 ## STEP 5 — Evaluation & Error Analysis
 
 **Tarih:** 2026-04-25
-**Dosya:** `src/evaluate.py`, `notebooks/04_error_analysis.ipynb`
+**Dosya:** `src/evaluate.py`, `notebooks/student_depression_colab.ipynb`
 **Model:** LogisticRegression_Tuned (C=0.1)
 **Test seti:** 5.572 satır
 
